@@ -1,0 +1,70 @@
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/CortexM0/ARM_GCC_473/Debug/main.o : C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_I2C.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_I2C_PVT.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_PINS.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_PVT.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_scl.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_scl_aliases.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_sda.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_sda_aliases.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_PINS.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_PVT.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_SPI_UART.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_SPI_UART_PVT.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_rx.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_rx_aliases.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_tx.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_tx_aliases.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/core_cm0.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/core_cmFunc.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/core_cmInstr.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cyPm.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cydisabledsheets.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/project.h C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/main.c C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/mpu6050.h 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/CyFlash.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/CyLib.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_I2C.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_I2C_PVT.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_PINS.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_PVT.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_scl.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_scl_aliases.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_sda.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/I2C_MPU6050_sda_aliases.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_PINS.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_PVT.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_SPI_UART.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_SPI_UART_PVT.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_rx.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_rx_aliases.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_tx.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/SERIAL_tx_aliases.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/core_cm0.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/core_cmFunc.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/core_cmInstr.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cyPm.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cydisabledsheets.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cyfitter.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cypins.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/cytypes.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/Generated_Source/PSoC4/project.h : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/main.c : 
+
+C:/Users/Sam/Documents/GitHub/MPU-6050/Examples/2\ MPU-6050-PSoC-GettingAngles/MPU-6050-PSoC-GettingAngles.cydsn/mpu6050.h : 
+

@@ -20,8 +20,89 @@
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\TopDesign.cysch</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\MPU-6050-PSoC-GettingAngles.cydwr</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Header Files</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Header Files\mpu6050.h</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Source Files</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Source Files\i2cFunctions.c</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Source Files\main.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Source Files\mpu6050.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\cm0gcc.ld</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\Cm0Iar.icf</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\Cm0RealView.scat</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\Cm0Start.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\core_cm0.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\core_cm0_psoc4.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\core_cmFunc.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\core_cmInstr.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyBootAsmGnu.s</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyBootAsmIar.s</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyBootAsmRv.s</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyFlash.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyFlash.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyLib.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyLib.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\cypins.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\cyPm.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\cyPm.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\cytypes.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\cyutils.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_BOOT.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C_BOOT.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C_INT.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C_MASTER.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C_PVT.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_PINS.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_PM.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_PVT.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050_scl</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050_scl\I2C_MPU6050_scl.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050_scl\I2C_MPU6050_scl.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050_scl\I2C_MPU6050_scl_aliases.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050_sda</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050_sda\I2C_MPU6050_sda.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050_sda\I2C_MPU6050_sda.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050_sda\I2C_MPU6050_sda_aliases.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL\SERIAL.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL\SERIAL.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL\SERIAL_BOOT.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL\SERIAL_PINS.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL\SERIAL_PM.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL\SERIAL_PVT.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL\SERIAL_SPI_UART.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL\SERIAL_SPI_UART.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL\SERIAL_SPI_UART_INT.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL\SERIAL_SPI_UART_PVT.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL\SERIAL_UART.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL\SERIAL_UART_BOOT.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL_rx</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL_rx\SERIAL_rx.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL_rx\SERIAL_rx.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL_rx\SERIAL_rx_aliases.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL_tx</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL_tx\SERIAL_tx.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL_tx\SERIAL_tx.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\SERIAL_tx\SERIAL_tx_aliases.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cydevice_trm.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cydevicegnu_trm.inc</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cydeviceiar_trm.inc</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cydevicerv_trm.inc</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cydisabledsheets.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cyfitter.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cyfitter_cfg.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cyfitter_cfg.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cyfittergnu.inc</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cyfitteriar.inc</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cyfitterrv.inc</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cymetadata.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\project.h</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>MPU-6050-PSoC-GettingAngles-000</v>
@@ -29,8 +110,49 @@
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\TopDesign.cysch</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\MPU-6050-PSoC-GettingAngles.cydwr</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Header Files</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Header Files\mpu6050.h</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Source Files</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Source Files\i2cFunctions.c</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Source Files\main.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Source Files\mpu6050.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\cm0gcc.ld</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\Cm0Iar.icf</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\Cm0RealView.scat</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\Cm0Start.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\core_cm0.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\core_cm0_psoc4.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\core_cmFunc.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\core_cmInstr.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyBootAsmGnu.s</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyBootAsmIar.s</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyBootAsmRv.s</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyFlash.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyFlash.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyLib.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\CyLib.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\cypins.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\cyPm.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\cyPm.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\cytypes.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\cy_boot\cyutils.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_BOOT.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C_BOOT.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C_INT.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C_MASTER.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C_PVT.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_PINS.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_PM.c</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_PVT.h</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050_scl</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\Generated_Source\PSoC4\I2C_MPU6050_scl\I2C_MPU6050_scl.c</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -51,12 +173,84 @@
 <ExpandedNodeIds>
 <v>MPU-6050-PSoC-GettingAngles-000</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\Cm0Start.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\CyFlash.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\CyLib.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\cymetadata.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\cyPm.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\cyutils.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_BOOT.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_I2C.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_I2C_BOOT.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_I2C_INT.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_I2C_MASTER.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_PM.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_scl.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_sda.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\i2cFunctions.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\main.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\mpu6050.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_BOOT.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_PM.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_rx.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_SPI_UART.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_SPI_UART_INT.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_tx.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_UART.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_UART_BOOT.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.elf</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.hex</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.map</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\MPU-6050-PSoC-GettingAngles.rpt</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\MPU-6050-PSoC-GettingAngles_timing.html</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>MPU-6050-PSoC-GettingAngles-000</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\Cm0Start.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\CyFlash.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\CyLib.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\cymetadata.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\cyPm.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\cyutils.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_BOOT.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_I2C.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_I2C_BOOT.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_I2C_INT.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_I2C_MASTER.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_PM.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_scl.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\I2C_MPU6050_sda.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\i2cFunctions.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\main.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\mpu6050.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_BOOT.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_PM.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_rx.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_SPI_UART.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_SPI_UART_INT.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_tx.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_UART.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\Listing Files\SERIAL_UART_BOOT.lst</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.elf</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.hex</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.map</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\MPU-6050-PSoC-GettingAngles.rpt</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\MPU-6050-PSoC-GettingAngles_timing.html</v>
 </VisibleNodeIds>
@@ -73,6 +267,7 @@
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\PSoC 4 Architecture TRM</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\PSoC 4200 Family Datasheet</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\System Reference Guide v4_10</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\SCB_P4_v1_20</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>MPU-6050-PSoC-GettingAngles-000</v>
@@ -80,6 +275,7 @@
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\PSoC 4 Architecture TRM</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\PSoC 4200 Family Datasheet</v>
 <v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\System Reference Guide v4_10</v>
+<v>MPU-6050-PSoC-GettingAngles-000\MPU-6050-PSoC-GettingAngles\SCB_P4_v1_20</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
