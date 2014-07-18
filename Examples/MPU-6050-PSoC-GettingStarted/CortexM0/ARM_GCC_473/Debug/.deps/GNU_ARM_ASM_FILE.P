@@ -1,0 +1,4 @@
+C:/Users/Sam/Dropbox/Work/2014/MPU-6050/MPU-6050-PSoC-GettingStarted.cydsn/CortexM0/ARM_GCC_473/Debug/CyBootAsmGnu.o : C:/Users/Sam/Dropbox/Work/2014/MPU-6050/MPU-6050-PSoC-GettingStarted.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s 
+
+C:/Users/Sam/Dropbox/Work/2014/MPU-6050/MPU-6050-PSoC-GettingStarted.cydsn/Generated_Source/PSoC4/CyBootAsmGnu.s : 
+
