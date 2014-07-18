@@ -1,0 +1,1833 @@
+Archive member included because of file (symbol)
+
+.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+                              .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o (cyfitter_cfg)
+.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+                              .\CortexM0\ARM_GCC_473\Debug\main.o (I2C_MPU6050_Start)
+.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+                              .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o) (I2C_MPU6050_I2CInit)
+.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+                              .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o) (I2C_MPU6050_mstrStatus)
+.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+                              .\CortexM0\ARM_GCC_473\Debug\main.o (SERIAL_Start)
+.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+                              .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o) (SERIAL_UartInit)
+.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+                              .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o) (I2C_MPU6050_sda_Read)
+.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+                              .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o) (I2C_MPU6050_scl_Write)
+.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyBootAsmGnu.o)
+                              .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o) (CyDelayCycles)
+.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+                              .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o) (CyDelayUs)
+.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+                              .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o) (I2C_MPU6050_I2C_ISR)
+.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+                              .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o) (SERIAL_SpiUartReadRxData)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_udivsi3.o)
+                              .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o) (__aeabi_uidiv)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_divsi3.o)
+                              .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o (__aeabi_idiv)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_dvmd_tls.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(addsf3.o)
+                              .\CortexM0\ARM_GCC_473\Debug\main.o (__aeabi_fadd)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(divsf3.o)
+                              .\CortexM0\ARM_GCC_473\Debug\main.o (__aeabi_fdiv)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(fixsfsi.o)
+                              .\CortexM0\ARM_GCC_473\Debug\main.o (__aeabi_f2iz)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(floatsisf.o)
+                              .\CortexM0\ARM_GCC_473\Debug\main.o (__aeabi_i2f)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_clzsi2.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(addsf3.o) (__clzsi2)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-__atexit2.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__register_exitproc)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-fini.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_fini_array)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memcpy.o)
+                              .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o) (memcpy)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o (memset)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sprintf.o)
+                              .\CortexM0\ARM_GCC_473\Debug\main.o (sprintf)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sprintf.o) (_svfprintf_r)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-vfprintf_i.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o) (_printf_i)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-freer.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o) (_free_r)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-mallocr.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o) (_malloc_r)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memchr.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o) (memchr)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memmove.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o) (memmove)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reallocr.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o) (_realloc_r)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sbrkr.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-mallocr.o) (_sbrk_r)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-strlen.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-vfprintf_i.o) (strlen)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-msizer.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reallocr.o) (_malloc_usable_size_r)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reent.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sbrkr.o) (errno)
+c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(sbrk.o)
+                              c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sbrkr.o) (_sbrk)
+
+Allocating common symbols
+Common symbol       size              file
+
+CAY                 0x2               .\CortexM0\ARM_GCC_473\Debug\main.o
+AZoff               0x4               .\CortexM0\ARM_GCC_473\Debug\main.o
+I2C_MPU6050_mstrWrBufIndexTmp
+                    0x4               .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+CGZ                 0x2               .\CortexM0\ARM_GCC_473\Debug\main.o
+errno               0x4               c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reent.o)
+Gsense              0x4               .\CortexM0\ARM_GCC_473\Debug\main.o
+I2C_MPU6050_state   0x1               .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+CAX                 0x2               .\CortexM0\ARM_GCC_473\Debug\main.o
+GXoff               0x4               .\CortexM0\ARM_GCC_473\Debug\main.o
+I2C_MPU6050_mstrRdBufIndex
+                    0x4               .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+I2C_MPU6050_mstrWrBufSize
+                    0x4               .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+I2C_MPU6050_mstrControl
+                    0x1               .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+I2C_MPU6050_mstrWrBufIndex
+                    0x4               .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+CGX                 0x2               .\CortexM0\ARM_GCC_473\Debug\main.o
+buffer              0x16              .\CortexM0\ARM_GCC_473\Debug\main.o
+AYoff               0x4               .\CortexM0\ARM_GCC_473\Debug\main.o
+I2C_MPU6050_mstrWrBufPtr
+                    0x4               .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+CT                  0x2               .\CortexM0\ARM_GCC_473\Debug\main.o
+GYoff               0x4               .\CortexM0\ARM_GCC_473\Debug\main.o
+CGY                 0x2               .\CortexM0\ARM_GCC_473\Debug\main.o
+I2C_MPU6050_mstrRdBufSize
+                    0x4               .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+buf                 0xc8              .\CortexM0\ARM_GCC_473\Debug\main.o
+AXoff               0x4               .\CortexM0\ARM_GCC_473\Debug\main.o
+devAddr             0x1               .\CortexM0\ARM_GCC_473\Debug\main.o
+Asense              0x4               .\CortexM0\ARM_GCC_473\Debug\main.o
+I2C_MPU6050_mstrStatus
+                    0x2               .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+I2C_MPU6050_mstrRdBufPtr
+                    0x4               .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+GZoff               0x4               .\CortexM0\ARM_GCC_473\Debug\main.o
+CAZ                 0x2               .\CortexM0\ARM_GCC_473\Debug\main.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ .text          0x00000000       0x74 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\main.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\main.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .text.I2CReadBit
+                0x00000000       0x4c .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .text.I2CWriteWords
+                0x00000000       0x84 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .text.I2CWriteWord
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.I2C_MPU6050_I2CAddress
+                0x00000000       0x20 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getAuxVDDIOLevel
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setAuxVDDIOLevel
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getRate
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setRate
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getExternalFrameSync
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setExternalFrameSync
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getDLPFMode
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setDLPFMode
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getFullScaleGyroRange
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getAccelXSelfTest
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setAccelXSelfTest
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getAccelYSelfTest
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setAccelYSelfTest
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getAccelZSelfTest
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setAccelZSelfTest
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getFullScaleAccelRange
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getDHPFMode
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setDHPFMode
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getFreefallDetectionThreshold
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setFreefallDetectionThreshold
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getFreefallDetectionDuration
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setFreefallDetectionDuration
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getMotionDetectionThreshold
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setMotionDetectionThreshold
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getMotionDetectionDuration
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setMotionDetectionDuration
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getZeroMotionDetectionThreshold
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setZeroMotionDetectionThreshold
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getZeroMotionDetectionDuration
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setZeroMotionDetectionDuration
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getTempFIFOEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setTempFIFOEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getXGyroFIFOEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setXGyroFIFOEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getYGyroFIFOEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setYGyroFIFOEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getZGyroFIFOEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setZGyroFIFOEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getAccelFIFOEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setAccelFIFOEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave2FIFOEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlave2FIFOEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave1FIFOEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlave1FIFOEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave0FIFOEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlave0FIFOEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getMultiMasterEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setMultiMasterEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getWaitForExternalSensorEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setWaitForExternalSensorEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave3FIFOEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlave3FIFOEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlaveReadWriteTransitionEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlaveReadWriteTransitionEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getMasterClockSpeed
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setMasterClockSpeed
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlaveAddress
+                0x00000000       0x4c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlaveAddress
+                0x00000000       0x4c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlaveRegister
+                0x00000000       0x4c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlaveRegister
+                0x00000000       0x4c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlaveEnabled
+                0x00000000       0x54 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlaveEnabled
+                0x00000000       0x4c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlaveWordByteSwap
+                0x00000000       0x54 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlaveWordByteSwap
+                0x00000000       0x4c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlaveWriteMode
+                0x00000000       0x54 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlaveWriteMode
+                0x00000000       0x4c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlaveWordGroupOffset
+                0x00000000       0x54 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlaveWordGroupOffset
+                0x00000000       0x4c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlaveDataLength
+                0x00000000       0x50 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlaveDataLength
+                0x00000000       0x50 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave4Address
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlave4Address
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave4Register
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlave4Register
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlave4OutputByte
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave4Enabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlave4Enabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave4InterruptEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlave4InterruptEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave4WriteMode
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlave4WriteMode
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave4MasterDelay
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlave4MasterDelay
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlate4InputByte
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getPassthroughStatus
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave4IsDone
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getLostArbitration
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave4Nack
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave3Nack
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave2Nack
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave1Nack
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlave0Nack
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getInterruptMode
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setInterruptMode
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getInterruptDrive
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setInterruptDrive
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getInterruptLatch
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setInterruptLatch
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getInterruptLatchClear
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setInterruptLatchClear
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getFSyncInterruptLevel
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setFSyncInterruptLevel
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getFSyncInterruptEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setFSyncInterruptEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getI2CBypassEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setI2CBypassEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getClockOutputEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setClockOutputEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setIntEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntFreefallEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setIntFreefallEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntMotionEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setIntMotionEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntZeroMotionEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setIntZeroMotionEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntFIFOBufferOverflowEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setIntFIFOBufferOverflowEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntI2CMasterEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setIntI2CMasterEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntDataReadyEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setIntDataReadyEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntStatus
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntFreefallStatus
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntMotionStatus
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntZeroMotionStatus
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntFIFOBufferOverflowStatus
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntI2CMasterStatus
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntDataReadyStatus
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getMotion9
+                0x00000000       0xd8 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getMotion9t
+                0x00000000       0xec .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getMotion6
+                0x00000000       0xa4 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getAcceleration
+                0x00000000       0x68 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getAccelerationX
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getAccelerationY
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getAccelerationZ
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getTemperature
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getRotation
+                0x00000000       0x68 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getRotationX
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getRotationY
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getRotationZ
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getExternalSensorByte
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getExternalSensorWord
+                0x00000000       0x44 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getExternalSensorDWord
+                0x00000000       0x4c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getXNegMotionDetected
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getXPosMotionDetected
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getYNegMotionDetected
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getYPosMotionDetected
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getZNegMotionDetected
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getZPosMotionDetected
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getZeroMotionDetected
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlaveOutputByte
+                0x00000000       0x44 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getExternalShadowDelayEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setExternalShadowDelayEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSlaveDelayEnabled
+                0x00000000       0x44 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setSlaveDelayEnabled
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_resetGyroscopePath
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_resetAccelerometerPath
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_resetTemperaturePath
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getAccelerometerPowerOnDelay
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setAccelerometerPowerOnDelay
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getFreefallDetectionCounterDecrement
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setFreefallDetectionCounterDecrement
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getMotionDetectionCounterDecrement
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setMotionDetectionCounterDecrement
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getFIFOEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setFIFOEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getI2CMasterModeEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setI2CMasterModeEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_switchSPIEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_resetFIFO
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_resetI2CMaster
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_resetSensors
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_reset
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getSleepEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getWakeCycleEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setWakeCycleEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getTempSensorEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setTempSensorEnabled
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getClockSource
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getWakeFrequency
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setWakeFrequency
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getStandbyXAccelEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setStandbyXAccelEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getStandbyYAccelEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setStandbyYAccelEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getStandbyZAccelEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setStandbyZAccelEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getStandbyXGyroEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setStandbyXGyroEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getStandbyYGyroEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setStandbyYGyroEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getStandbyZGyroEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setStandbyZGyroEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getFIFOCount
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getFIFOByte
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getFIFOBytes
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setFIFOByte
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setDeviceID
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getOTPBankValid
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setOTPBankValid
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getXGyroOffset
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setXGyroOffset
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getYGyroOffset
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setYGyroOffset
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getZGyroOffset
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setZGyroOffset
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getXFineGain
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setXFineGain
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getYFineGain
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setYFineGain
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getZFineGain
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setZFineGain
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getXAccelOffset
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setXAccelOffset
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getYAccelOffset
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setYAccelOffset
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getZAccelOffset
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setZAccelOffset
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getXGyroOffsetUser
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setXGyroOffsetUser
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getYGyroOffsetUser
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setYGyroOffsetUser
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getZGyroOffsetUser
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setZGyroOffsetUser
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntPLLReadyEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setIntPLLReadyEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntDMPEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setIntDMPEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getDMPInt5Status
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getDMPInt4Status
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getDMPInt3Status
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getDMPInt2Status
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getDMPInt1Status
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getDMPInt0Status
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntPLLReadyStatus
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getIntDMPStatus
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getDMPEnabled
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setDMPEnabled
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_resetDMP
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setMemoryBank
+                0x00000000       0x64 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setMemoryStartAddress
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_readMemoryByte
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_writeMemoryByte
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_readMemoryBlock
+                0x00000000      0x12c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getDMPConfig1
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setDMPConfig1
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_getDMPConfig2
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setDMPConfig2
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text.MPU6050_setup_compass
+                0x00000000       0x70 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .text._exit    0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .text.CYCONFIGCPY
+                0x00000000       0x24 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .text.CYCONFIGCPYCODE
+                0x00000000       0x24 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .text.I2C_MPU6050_Stop
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .text.I2C_MPU6050_SetCustomInterruptHandler
+                0x00000000       0x18 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .text.I2C_MPU6050_ScbModeStop
+                0x00000000        0xc .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .text.I2C_MPU6050_I2CStop
+                0x00000000       0x24 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .text.I2C_MPU6050_I2CMasterWriteBuf
+                0x00000000      0x11c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .text.I2C_MPU6050_I2CMasterReadBuf
+                0x00000000      0x12c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .text.I2C_MPU6050_I2CMasterGetReadBufSize
+                0x00000000       0x14 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .text.I2C_MPU6050_I2CMasterGetWriteBufSize
+                0x00000000       0x14 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .text.I2C_MPU6050_I2CMasterClearReadBuf
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .text.I2C_MPU6050_I2CMasterClearWriteBuf
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .text.I2C_MPU6050_I2CMasterStatus
+                0x00000000       0x38 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .text.I2C_MPU6050_I2CMasterClearStatus
+                0x00000000       0x24 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .text.SERIAL_Stop
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .text.SERIAL_SetCustomInterruptHandler
+                0x00000000       0x18 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .text.SERIAL_ScbModeStop
+                0x00000000        0x8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .text.SERIAL_UartSetRxAddress
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .text.SERIAL_UartSetRxAddressMask
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .text.SERIAL_UartGetChar
+                0x00000000       0x44 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .text.SERIAL_UartGetByte
+                0x00000000       0x68 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .text.SERIAL_UartPutCRLF
+                0x00000000       0x24 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .text.I2C_MPU6050_sda_Write
+                0x00000000       0x4c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .text.I2C_MPU6050_sda_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .text.I2C_MPU6050_sda_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .text.I2C_MPU6050_sda_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .text.I2C_MPU6050_scl_SetDriveMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .text.I2C_MPU6050_scl_ReadDataReg
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .text.I2C_MPU6050_scl_ClearInterrupt
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyBootAsmGnu.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysClkImoStart
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysClkImoStop
+                0x00000000       0x18 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysClkIloStart
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysClkIloStop
+                0x00000000       0x18 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysClkWriteHfclkDirect
+                0x00000000       0x44 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysClkWriteSysclkDiv
+                0x00000000       0x44 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysClkWriteImoFreq
+                0x00000000      0x200 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtLock
+                0x00000000       0x44 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtUnlock
+                0x00000000       0x5c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtReadEnabledStatus
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtWriteMode
+                0x00000000       0x70 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtReadMode
+                0x00000000       0x24 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtWriteClearOnMatch
+                0x00000000       0x68 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtReadClearOnMatch
+                0x00000000       0x40 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtEnable
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtDisable
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtWriteCascade
+                0x00000000       0x68 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtReadCascade
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtWriteMatch
+                0x00000000       0x74 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtWriteToggleBit
+                0x00000000       0x54 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtReadToggleBit
+                0x00000000       0x18 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtReadMatch
+                0x00000000       0x44 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtReadCount
+                0x00000000       0x54 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtGetInterruptSource
+                0x00000000       0x1c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtClearInterrupt
+                0x00000000       0xb8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysWdtResetCounters
+                0x00000000       0x38 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysLvdEnable
+                0x00000000       0x48 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysLvdDisable
+                0x00000000       0x28 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysLvdGetInterruptSource
+                0x00000000       0x18 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysLvdClearInterrupt
+                0x00000000       0x14 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySysGetResetReason
+                0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x24 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000       0x18 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x48 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x38 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x58 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CyIntSetPending
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CyIntClearPending
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x20 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x80 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .rodata        0x00000000       0x30 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .text.SERIAL_SpiUartReadRxData
+                0x00000000       0x20 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .text.SERIAL_SpiUartGetRxBufferSize
+                0x00000000       0x20 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .text.SERIAL_SpiUartClearRxBuffer
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .text.SERIAL_SpiUartPutArray
+                0x00000000       0x34 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .text.SERIAL_SpiUartGetTxBufferSize
+                0x00000000       0x20 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .text.SERIAL_SpiUartClearTxBuffer
+                0x00000000       0x2c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .text.SERIAL_SpiUartDisableIntRx
+                0x00000000       0x20 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .text.SERIAL_SpiUartDisableIntTx
+                0x00000000       0x20 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_udivsi3.o)
+ .text          0x00000000       0xc0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_dvmd_tls.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(addsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(addsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(divsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(divsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(fixsfsi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(fixsfsi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(floatsisf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(floatsisf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_clzsi2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_clzsi2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-__atexit2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-__atexit2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-__atexit2.o)
+ .text.__register_exitproc
+                0x00000000       0x18 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-__atexit2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x30 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-fini.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-fini.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-fini.o)
+ .text.__libc_fini_array
+                0x00000000       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-fini.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memcpy.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memcpy.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sprintf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sprintf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sprintf.o)
+ .text._sprintf_r
+                0x00000000       0x40 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sprintf.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o)
+ .text.__ssprint_r
+                0x00000000      0x100 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-vfprintf_i.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-vfprintf_i.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-vfprintf_i.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-freer.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-freer.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-freer.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-mallocr.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-mallocr.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-mallocr.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memchr.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memchr.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memchr.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memmove.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memmove.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memmove.o)
+ .text.memmove  0x00000000       0x30 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memmove.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reallocr.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reallocr.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reallocr.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sbrkr.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sbrkr.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sbrkr.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-strlen.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-strlen.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-strlen.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-msizer.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-msizer.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-msizer.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reent.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reent.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x00000000       0x1a c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reent.o)
+ .text._reclaim_reent
+                0x00000000       0xc0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reent.o)
+ .text._wrapup_reent
+                0x00000000       0x34 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reent.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(sbrk.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(sbrk.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(sbrk.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00008000         xr
+ram              0x20000000         0x00001000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+START GROUP
+LOAD .\CortexM0\ARM_GCC_473\Debug\main.o
+LOAD .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+LOAD .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+LOAD .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+LOAD .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+LOAD .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a
+LOAD C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM0\ARM_GCC_473\Debug\CyComponentLibrary.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000080                CY_FLASH_ROW_SIZE = 0x80
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x200002c8                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20001000                PROVIDE (__cy_stack, (ORIGIN (ram) + 0x1000))
+                0x20000c00                PROVIDE (__cy_heap_end, (__cy_stack - 0x400))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x00003f80                appl2_start = (appl1_start + ALIGN ((((0x8000 - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+
+.text           0x00000000     0x2bb8
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010        0x8 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.psocinit)
+ .psocinit      0x00000018      0x260 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+                0x00000168                cyfitter_cfg
+                0x00000278                . = MAX (., 0x100)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00000278       0x60 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ .text.main     0x000002d8      0x2f8 .\CortexM0\ARM_GCC_473\Debug\main.o
+                0x000002d8                main
+ .text.I2CReadBytes
+                0x000005d0       0x94 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+                0x000005d0                I2CReadBytes
+ .text.I2CReadByte
+                0x00000664       0x30 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+                0x00000664                I2CReadByte
+ .text.I2CReadBits
+                0x00000694       0x8c .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+                0x00000694                I2CReadBits
+ .text.I2CWriteBytes
+                0x00000720       0x74 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+                0x00000720                I2CWriteBytes
+ .text.I2CWriteByte
+                0x00000794       0x2c .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+                0x00000794                I2CWriteByte
+ .text.I2CWriteBits
+                0x000007c0       0xd8 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+                0x000007c0                I2CWriteBits
+ .text.I2CWriteBit
+                0x00000898       0xa0 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+                0x00000898                I2CWriteBit
+ .text.MPU6050_init
+                0x00000938       0x14 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+                0x00000938                MPU6050_init
+ .text.MPU6050_initialize
+                0x0000094c       0x20 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+                0x0000094c                MPU6050_initialize
+ .text.MPU6050_testConnection
+                0x0000096c       0x18 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+                0x0000096c                MPU6050_testConnection
+ .text.MPU6050_setFullScaleGyroRange
+                0x00000984       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+                0x00000984                MPU6050_setFullScaleGyroRange
+ .text.MPU6050_setFullScaleAccelRange
+                0x000009b0       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+                0x000009b0                MPU6050_setFullScaleAccelRange
+ .text.MPU6050_getMotion6t
+                0x000009dc       0xb8 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+                0x000009dc                MPU6050_getMotion6t
+ .text.MPU6050_setSleepEnabled
+                0x00000a94       0x28 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+                0x00000a94                MPU6050_setSleepEnabled
+ .text.MPU6050_setClockSource
+                0x00000abc       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+                0x00000abc                MPU6050_setClockSource
+ .text.MPU6050_getDeviceID
+                0x00000ae8       0x2c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+                0x00000ae8                MPU6050_getDeviceID
+ .text.IntDefaultHandler
+                0x00000b14        0x8 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+                0x00000b14                IntDefaultHandler
+ .text.Start_c  0x00000b1c       0xa4 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+                0x00000b1c                Start_c
+ .text.initialize_psoc
+                0x00000bc0       0x64 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+                0x00000bc0                initialize_psoc
+ .text.CYMEMZERO
+                0x00000c24       0x20 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .text.AnalogSetDefault
+                0x00000c44        0x8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .text.I2C_MPU6050_Init
+                0x00000c4c        0xc .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+                0x00000c4c                I2C_MPU6050_Init
+ .text.I2C_MPU6050_Enable
+                0x00000c58       0x20 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+                0x00000c58                I2C_MPU6050_Enable
+ .text.I2C_MPU6050_Start
+                0x00000c78       0x24 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+                0x00000c78                I2C_MPU6050_Start
+ .text.I2C_MPU6050_ScbEnableIntr
+                0x00000c9c       0x10 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .text.I2C_MPU6050_I2CInit
+                0x00000cac       0xf0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+                0x00000cac                I2C_MPU6050_I2CInit
+ .text.I2C_MPU6050_I2CMasterSendStart
+                0x00000d9c      0x110 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+                0x00000d9c                I2C_MPU6050_I2CMasterSendStart
+ .text.I2C_MPU6050_I2CMasterSendRestart
+                0x00000eac      0x108 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+                0x00000eac                I2C_MPU6050_I2CMasterSendRestart
+ .text.I2C_MPU6050_I2CMasterSendStop
+                0x00000fb4       0xbc .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+                0x00000fb4                I2C_MPU6050_I2CMasterSendStop
+ .text.I2C_MPU6050_I2CMasterWriteByte
+                0x00001070       0xcc .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+                0x00001070                I2C_MPU6050_I2CMasterWriteByte
+ .text.I2C_MPU6050_I2CMasterReadByte
+                0x0000113c       0xac .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+                0x0000113c                I2C_MPU6050_I2CMasterReadByte
+ .text.I2C_MPU6050_I2CReStartGeneration
+                0x000011e8       0xb4 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+                0x000011e8                I2C_MPU6050_I2CReStartGeneration
+ .text.SERIAL_Init
+                0x0000129c        0xc .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+                0x0000129c                SERIAL_Init
+ .text.SERIAL_Enable
+                0x000012a8       0x20 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+                0x000012a8                SERIAL_Enable
+ .text.SERIAL_Start
+                0x000012c8       0x24 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+                0x000012c8                SERIAL_Start
+ .text.SERIAL_ScbEnableIntr
+                0x000012ec        0x8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .text.SERIAL_UartInit
+                0x000012f4       0xa8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+                0x000012f4                SERIAL_UartInit
+ .text.SERIAL_UartPutString
+                0x0000139c       0x34 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+                0x0000139c                SERIAL_UartPutString
+ .text.I2C_MPU6050_sda_Read
+                0x000013d0       0x1c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+                0x000013d0                I2C_MPU6050_sda_Read
+ .text.I2C_MPU6050_scl_Write
+                0x000013ec       0x4c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+                0x000013ec                I2C_MPU6050_scl_Write
+ .text.I2C_MPU6050_scl_Read
+                0x00001438       0x1c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+                0x00001438                I2C_MPU6050_scl_Read
+ *fill*         0x00001454        0x4 00
+ .text          0x00001458       0x20 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyBootAsmGnu.o)
+                0x00001458                CyDelayCycles
+                0x0000146a                CyEnterCriticalSection
+                0x00001472                CyExitCriticalSection
+ .text.CyIntSetVector
+                0x00001478       0x4c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+                0x00001478                CyIntSetVector
+ .text.CyIntSetPriority
+                0x000014c4       0xa8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+                0x000014c4                CyIntSetPriority
+ .text.CyIntEnable
+                0x0000156c       0x2c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+                0x0000156c                CyIntEnable
+ .text.CyIntDisable
+                0x00001598       0x2c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+                0x00001598                CyIntDisable
+ .text.CyHalt   0x000015c4       0x14 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+                0x000015c4                CyHalt
+ .text.CyDelay  0x000015d8       0x48 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+                0x000015d8                CyDelay
+ .text.CyDelayUs
+                0x00001620       0x28 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+                0x00001620                CyDelayUs
+ .text.I2C_MPU6050_I2C_ISR
+                0x00001648      0x4e8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+                0x00001648                I2C_MPU6050_I2C_ISR
+ .text.SERIAL_SpiUartWriteTxData
+                0x00001b30       0x2c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+                0x00001b30                SERIAL_SpiUartWriteTxData
+ .text          0x00001b5c       0x9c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_udivsi3.o)
+                0x00001b5c                __aeabi_uidiv
+                0x00001b5c                __udivsi3
+                0x00001be4                __aeabi_uidivmod
+ .text          0x00001bf8        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_dvmd_tls.o)
+                0x00001bf8                __aeabi_idiv0
+                0x00001bf8                __aeabi_ldiv0
+ .text          0x00001bfc      0x3ac c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(addsf3.o)
+                0x00001bfc                __aeabi_fadd
+ .text          0x00001fa8      0x274 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(divsf3.o)
+                0x00001fa8                __aeabi_fdiv
+ .text          0x0000221c       0x40 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(fixsfsi.o)
+                0x0000221c                __aeabi_f2iz
+ .text          0x0000225c       0xa8 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(floatsisf.o)
+                0x0000225c                __aeabi_i2f
+ .text          0x00002304       0x3c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_clzsi2.o)
+                0x00002304                __clzsi2
+ .text.__libc_init_array
+                0x00002340       0x4c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-init.o)
+                0x00002340                __libc_init_array
+ .text.memcpy   0x0000238c       0x12 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memcpy.o)
+                0x0000238c                memcpy
+ .text.memset   0x0000239e       0x12 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memset.o)
+                0x0000239e                memset
+ .text.sprintf  0x000023b0       0x44 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sprintf.o)
+                0x000023b0                siprintf
+                0x000023b0                sprintf
+ .text.__ssputc_r
+                0x000023f4       0xb0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o)
+                0x000023f4                __ssputc_r
+ .text._svfprintf_r
+                0x000024a4      0x1f8 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o)
+                0x000024a4                _svfiprintf_r
+                0x000024a4                _svfprintf_r
+ .text._printf_common
+                0x0000269c       0xe0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-vfprintf_i.o)
+                0x0000269c                _printf_common
+ .text._printf_i
+                0x0000277c      0x234 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-vfprintf_i.o)
+                0x0000277c                _printf_i
+ .text._free_r  0x000029b0       0x90 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-freer.o)
+                0x000029b0                _free_r
+ .text._malloc_r
+                0x00002a40       0x94 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-mallocr.o)
+                0x00002a40                _malloc_r
+ .text.memchr   0x00002ad4       0x18 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memchr.o)
+                0x00002ad4                memchr
+ .text._realloc_r
+                0x00002aec       0x4c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reallocr.o)
+                0x00002aec                _realloc_r
+ .text._sbrk_r  0x00002b38       0x24 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sbrkr.o)
+                0x00002b38                _sbrk_r
+ .text.strlen   0x00002b5c        0xe c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-strlen.o)
+                0x00002b5c                strlen
+ .text._malloc_usable_size_r
+                0x00002b6a       0x14 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-msizer.o)
+                0x00002b6a                _malloc_usable_size_r
+ *fill*         0x00002b7e        0x2 00
+ .text._sbrk    0x00002b80       0x38 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(sbrk.o)
+                0x00002b80                _sbrk
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x00002bb8        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00002bb8        0x0
+ .iplt          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00002bb8        0x4
+ *(.eh_frame)
+ .eh_frame      0x00002bb8        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ .eh_frame      0x00002bb8        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+                0x00002bbc                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00002bbc                __exidx_end = .
+
+.rodata         0x00002bbc      0x1ec
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00002bbc      0x12c .\CortexM0\ARM_GCC_473\Debug\main.o
+ .rodata        0x00002ce8       0x10 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .rodata        0x00002cf8       0x40 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(divsf3.o)
+ .rodata.str1.1
+                0x00002d38        0x2 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-impure.o)
+ .rodata.str1.1
+                0x00002d3a       0x11 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o)
+ .rodata.str1.1
+                0x00002d4b       0x22 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-vfprintf_i.o)
+                0x00002d70                . = ALIGN (0x4)
+ *fill*         0x00002d6d        0x3 00
+ *(.init)
+ .init          0x00002d70        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+                0x00002d70                _init
+ .init          0x00002d74        0x8 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+                0x00002d7c                . = ALIGN (0x4)
+                0x00002d7c                __preinit_array_start = .
+ *(.preinit_array)
+                0x00002d7c                __preinit_array_end = .
+                0x00002d7c                . = ALIGN (0x4)
+                0x00002d7c                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00002d7c        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ .init_array    0x00002d80        0x4 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+                0x00002d84                __init_array_end = .
+                0x00002d84                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00002d84        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+                0x00002d84                _fini
+ .fini          0x00002d88        0x8 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+                0x00002d90                . = ALIGN (0x4)
+                0x00002d90                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x00002d90        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00002d94                __fini_array_end = .
+                0x00002d94                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x00002d94                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x00002d94                . = ALIGN (0x4)
+                0x00002d94                __cy_regions = .
+                0x00002d94        0x4 LONG 0x2da8 __cy_region_init_ram
+                0x00002d98        0x4 LONG 0x200000c8 __cy_region_start_data
+                0x00002d9c        0x4 LONG 0x80 __cy_region_init_size_ram
+                0x00002da0        0x4 LONG 0x180 __cy_region_zero_size_ram
+                0x00002da4                __cy_regions_end = .
+                0x00002da8                . = ALIGN (0x8)
+ *fill*         0x00002da4        0x4 00
+                0x00002da8                _etext = .
+
+.ramvectors     0x20000000       0xc0
+                0x20000000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x20000000       0xc0 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+                0x20000000                CyRamVectors
+
+.noinit         0x200000c0        0x4
+ *(.noinit)
+ .noinit        0x200000c0        0x4 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+
+.data           0x200000c8       0x80 load address 0x00002da8
+                0x200000c8                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x200000c8        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ .jcr           0x200000c8        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x200000cc        0x4 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .data          0x200000d0       0x10 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+                0x200000d0                cydelayFreqHz
+                0x200000d4                cydelayFreqKhz
+                0x200000d8                cydelayFreqMhz
+                0x200000dc                cydelay32kMs
+ .data.impure_data
+                0x200000e0       0x64 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x20000144        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-impure.o)
+                0x20000144                _impure_ptr
+                0x20000148                . = ALIGN (0x8)
+ *(.ram)
+                0x20000148                _edata = .
+
+.igot.plt       0x20000148        0x0 load address 0x00002e28
+ .igot.plt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+
+.bss            0x20000148      0x180 load address 0x00002e28
+                0x20000148                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x20000148       0x1c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ .bss           0x20000164        0x4 .\CortexM0\ARM_GCC_473\Debug\main.o
+                0x20000164                i
+ .bss           0x20000168        0x8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+                0x20000168                I2C_MPU6050_initVar
+                0x2000016c                I2C_MPU6050_customIntrHandler
+ .bss           0x20000170        0x8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+                0x20000170                SERIAL_initVar
+                0x20000174                SERIAL_customIntrHandler
+ .bss.__malloc_free_list
+                0x20000178        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-mallocr.o)
+                0x20000178                __malloc_free_list
+ .bss.heap_end.4231
+                0x2000017c        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(sbrk.o)
+ *(COMMON)
+ COMMON         0x20000180      0x11e .\CortexM0\ARM_GCC_473\Debug\main.o
+                0x20000180                CAY
+                0x20000184                AZoff
+                0x20000188                CGZ
+                0x2000018c                Gsense
+                0x20000190                CAX
+                0x20000194                GXoff
+                0x20000198                CGX
+                0x2000019c                buffer
+                0x200001b4                AYoff
+                0x200001b8                CT
+                0x200001bc                GYoff
+                0x200001c0                CGY
+                0x200001c4                buf
+                0x2000028c                AXoff
+                0x20000290                devAddr
+                0x20000294                Asense
+                0x20000298                GZoff
+                0x2000029c                CAZ
+ COMMON         0x2000029e        0x1 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+                0x2000029e                I2C_MPU6050_state
+ *fill*         0x2000029f        0x1 00
+ COMMON         0x200002a0       0x24 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+                0x200002a0                I2C_MPU6050_mstrWrBufIndexTmp
+                0x200002a4                I2C_MPU6050_mstrRdBufIndex
+                0x200002a8                I2C_MPU6050_mstrWrBufSize
+                0x200002ac                I2C_MPU6050_mstrControl
+                0x200002b0                I2C_MPU6050_mstrWrBufIndex
+                0x200002b4                I2C_MPU6050_mstrWrBufPtr
+                0x200002b8                I2C_MPU6050_mstrRdBufSize
+                0x200002bc                I2C_MPU6050_mstrStatus
+                0x200002c0                I2C_MPU6050_mstrRdBufPtr
+ COMMON         0x200002c4        0x4 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reent.o)
+                0x200002c4                errno
+                0x200002c8                . = ALIGN (0x8)
+ *(.ram.b)
+                0x200002c8                _end = .
+                0x200002c8                __end = .
+                0x200002c8                PROVIDE (end, .)
+                0x200002c8                PROVIDE (__bss_end__, .)
+                0x00002da8                __cy_region_init_ram = LOADADDR (.data)
+                0x00000080                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x00000180                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x200002c8      0x100 load address 0x00002e28
+                0x200002c8                . = _end
+                0x200003c8                . = (. + 0x100)
+ *fill*         0x200002c8      0x100 00
+                0x200003c8                __cy_heap_limit = .
+
+.stack          0x20000c00      0x400
+                0x20000c00                __cy_stack_limit = .
+                0x20001000                . = (. + 0x400)
+ *fill*         0x20000c00      0x400 00
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+
+.cyloadermeta
+ *(.cyloadermeta)
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyflashprotect
+                0x90400000       0x20
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000       0x20 .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+                0x90500000                cy_metadata
+
+.cychipprotect  0x90600000        0x4
+ *(.cychipprotect)
+ .cychipprotect
+                0x90600000        0x4 .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+                0x90600000                cy_meta_chipprotect
+
+.rel.dyn        0x00002e28        0x0 load address 0x90600004
+ .rel.iplt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xdc8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 .\CortexM0\ARM_GCC_473\Debug\main.o
+ .debug_aranges
+                0x00000020       0x68 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .debug_aranges
+                0x00000088      0x838 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .debug_aranges
+                0x000008c0       0x18 .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+ .debug_aranges
+                0x000008d8       0x40 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .debug_aranges
+                0x00000918       0x50 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .debug_aranges
+                0x00000968       0x50 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .debug_aranges
+                0x000009b8       0x28 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .debug_aranges
+                0x000009e0       0x88 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .debug_aranges
+                0x00000a68       0x50 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .debug_aranges
+                0x00000ab8       0x50 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .debug_aranges
+                0x00000b08       0x40 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .debug_aranges
+                0x00000b48       0x40 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .debug_aranges
+                0x00000b88       0x20 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000ba8      0x1a0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .debug_aranges
+                0x00000d48       0x20 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+ .debug_aranges
+                0x00000d68       0x60 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x5102
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x230 .\CortexM0\ARM_GCC_473\Debug\main.o
+ .debug_info    0x00000230      0x432 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .debug_info    0x00000662     0x2602 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .debug_info    0x00002c64      0x100 .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+ .debug_info    0x00002d64      0x2c0 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .debug_info    0x00003024      0x36d .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .debug_info    0x00003391      0x197 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .debug_info    0x00003528      0x12c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .debug_info    0x00003654      0x4ba .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .debug_info    0x00003b0e      0x197 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .debug_info    0x00003ca5      0x224 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .debug_info    0x00003ec9      0x168 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .debug_info    0x00004031      0x168 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .debug_info    0x00004199       0xc0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyBootAsmGnu.o)
+ .debug_info    0x00004259      0xac5 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .debug_info    0x00004d1e      0x1a7 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+ .debug_info    0x00004ec5      0x23d .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+
+.debug_abbrev   0x00000000      0xf3d
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x96 .\CortexM0\ARM_GCC_473\Debug\main.o
+ .debug_abbrev  0x00000096       0xa1 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .debug_abbrev  0x00000137      0x18c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .debug_abbrev  0x000002c3       0x5d .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+ .debug_abbrev  0x00000320      0x164 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .debug_abbrev  0x00000484      0x17b .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .debug_abbrev  0x000005ff       0xc5 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .debug_abbrev  0x000006c4       0x7a .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .debug_abbrev  0x0000073e      0x156 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .debug_abbrev  0x00000894       0xc5 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .debug_abbrev  0x00000959       0xee .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .debug_abbrev  0x00000a47       0xac .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .debug_abbrev  0x00000af3       0xac .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .debug_abbrev  0x00000b9f       0x14 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00000bb3      0x1a2 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .debug_abbrev  0x00000d55       0x97 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+ .debug_abbrev  0x00000dec      0x151 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+
+.debug_line     0x00000000     0x2b33
+ *(.debug_line)
+ .debug_line    0x00000000      0x176 .\CortexM0\ARM_GCC_473\Debug\main.o
+ .debug_line    0x00000176      0x1cf .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .debug_line    0x00000345     0x1478 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .debug_line    0x000017bd       0x53 .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+ .debug_line    0x00001810      0x19b .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .debug_line    0x000019ab      0x188 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .debug_line    0x00001b33       0xe3 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .debug_line    0x00001c16       0xad .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .debug_line    0x00001cc3      0x2a8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .debug_line    0x00001f6b       0xd8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .debug_line    0x00002043      0x103 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .debug_line    0x00002146       0xb5 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .debug_line    0x000021fb       0xb5 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .debug_line    0x000022b0       0x68 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyBootAsmGnu.o)
+ .debug_line    0x00002318      0x541 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .debug_line    0x00002859      0x1b3 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+ .debug_line    0x00002a0c      0x127 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+
+.debug_frame    0x00000000     0x3434
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x44 .\CortexM0\ARM_GCC_473\Debug\main.o
+ .debug_frame   0x00000044      0x15c .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .debug_frame   0x000001a0     0x1ea4 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .debug_frame   0x00002044       0xa8 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .debug_frame   0x000020ec       0xe8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .debug_frame   0x000021d4       0xd8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .debug_frame   0x000022ac       0x48 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .debug_frame   0x000022f4      0x1c0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .debug_frame   0x000024b4       0xd8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .debug_frame   0x0000258c       0xec .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .debug_frame   0x00002678       0xa8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .debug_frame   0x00002720       0xa8 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .debug_frame   0x000027c8      0x628 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .debug_frame   0x00002df0       0x30 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+ .debug_frame   0x00002e20      0x128 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .debug_frame   0x00002f48       0x20 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00002f68       0x20 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_divsi3.o)
+ .debug_frame   0x00002f88       0x30 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(addsf3.o)
+ .debug_frame   0x00002fb8       0x3c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(divsf3.o)
+ .debug_frame   0x00002ff4       0x28 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(fixsfsi.o)
+ .debug_frame   0x0000301c       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(floatsisf.o)
+ .debug_frame   0x00003048       0x28 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-__atexit2.o)
+ .debug_frame   0x00003070       0x28 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-exit.o)
+ .debug_frame   0x00003098       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-fini.o)
+ .debug_frame   0x000030c4       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-init.o)
+ .debug_frame   0x000030f0       0x28 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memcpy.o)
+ .debug_frame   0x00003118       0x28 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memset.o)
+ .debug_frame   0x00003140       0x4c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sprintf.o)
+ .debug_frame   0x0000318c       0x78 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o)
+ .debug_frame   0x00003204       0x54 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-vfprintf_i.o)
+ .debug_frame   0x00003258       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-freer.o)
+ .debug_frame   0x00003284       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-mallocr.o)
+ .debug_frame   0x000032b0       0x28 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memchr.o)
+ .debug_frame   0x000032d8       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memmove.o)
+ .debug_frame   0x00003304       0x30 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reallocr.o)
+ .debug_frame   0x00003334       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sbrkr.o)
+ .debug_frame   0x00003360       0x20 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-strlen.o)
+ .debug_frame   0x00003380       0x28 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-msizer.o)
+ .debug_frame   0x000033a8       0x64 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reent.o)
+ .debug_frame   0x0000340c       0x28 c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(sbrk.o)
+
+.debug_str      0x00000000     0x2fea
+ *(.debug_str)
+ .debug_str     0x00000000      0x176 .\CortexM0\ARM_GCC_473\Debug\main.o
+                                0x1b7 (size before relaxing)
+ .debug_str     0x00000176       0xc3 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+                                0x22b (size before relaxing)
+ .debug_str     0x00000239     0x1cc5 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+                               0x1e4e (size before relaxing)
+ .debug_str     0x00001efe       0x61 .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+                                0x1b9 (size before relaxing)
+ .debug_str     0x00001f5f      0x112 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+                                0x282 (size before relaxing)
+ .debug_str     0x00002071      0x141 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+                                0x2c6 (size before relaxing)
+ .debug_str     0x000021b2       0xfd .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+                                0x275 (size before relaxing)
+ .debug_str     0x000022af       0xb2 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+                                0x224 (size before relaxing)
+ .debug_str     0x00002361      0x2d4 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+                                0x4b1 (size before relaxing)
+ .debug_str     0x00002635       0xc6 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+                                0x243 (size before relaxing)
+ .debug_str     0x000026fb      0x10e .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+                                0x27b (size before relaxing)
+ .debug_str     0x00002809       0xc1 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+                                0x22e (size before relaxing)
+ .debug_str     0x000028ca       0xae .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+                                0x22e (size before relaxing)
+ .debug_str     0x00002978      0x4e3 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+                                0x695 (size before relaxing)
+ .debug_str     0x00002e5b       0x59 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+                                0x2f1 (size before relaxing)
+ .debug_str     0x00002eb4      0x136 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+                                0x2c1 (size before relaxing)
+
+.debug_loc      0x00000000     0x4d80
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x44 .\CortexM0\ARM_GCC_473\Debug\main.o
+ .debug_loc     0x00000044      0x230 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .debug_loc     0x00000274     0x331c .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .debug_loc     0x00003590      0x100 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .debug_loc     0x00003690      0x170 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .debug_loc     0x00003800      0x140 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .debug_loc     0x00003940       0x58 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .debug_loc     0x00003998      0x2e0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .debug_loc     0x00003c78      0x140 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .debug_loc     0x00003db8      0x17c .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .debug_loc     0x00003f34      0x100 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .debug_loc     0x00004034      0x100 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .debug_loc     0x00004134      0xa34 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .debug_loc     0x00004b68       0x38 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+ .debug_loc     0x00004ba0      0x1e0 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0xca0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x10 .\CortexM0\ARM_GCC_473\Debug\main.o
+ .debug_ranges  0x00000010       0x58 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .debug_ranges  0x00000068      0x828 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .debug_ranges  0x00000890       0x30 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .debug_ranges  0x000008c0       0x40 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .debug_ranges  0x00000900       0x40 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .debug_ranges  0x00000940       0x18 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .debug_ranges  0x00000958       0x78 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .debug_ranges  0x000009d0       0x40 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .debug_ranges  0x00000a10       0x40 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .debug_ranges  0x00000a50       0x30 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .debug_ranges  0x00000a80       0x30 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .debug_ranges  0x00000ab0      0x190 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .debug_ranges  0x00000c40       0x10 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+ .debug_ranges  0x00000c50       0x50 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 .\CortexM0\ARM_GCC_473\Debug\main.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+ .comment       0x00000000       0x71 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x28
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1e c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crti.o
+ .ARM.attributes
+                0x0000001e       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.attributes
+                0x00000066       0x31 .\CortexM0\ARM_GCC_473\Debug\main.o
+ .ARM.attributes
+                0x00000097       0x31 .\CortexM0\ARM_GCC_473\Debug\i2cFunctions.o
+ .ARM.attributes
+                0x000000c8       0x31 .\CortexM0\ARM_GCC_473\Debug\mpu6050.o
+ .ARM.attributes
+                0x000000f9       0x31 .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+ .ARM.attributes
+                0x0000012a       0x31 .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+ .ARM.attributes
+                0x0000015b       0x31 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(cyfitter_cfg.o)
+ .ARM.attributes
+                0x0000018c       0x31 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050.o)
+ .ARM.attributes
+                0x000001bd       0x31 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C.o)
+ .ARM.attributes
+                0x000001ee       0x31 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_MASTER.o)
+ .ARM.attributes
+                0x0000021f       0x31 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL.o)
+ .ARM.attributes
+                0x00000250       0x31 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_UART.o)
+ .ARM.attributes
+                0x00000281       0x31 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_sda.o)
+ .ARM.attributes
+                0x000002b2       0x31 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_scl.o)
+ .ARM.attributes
+                0x000002e3       0x21 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x00000304       0x31 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(CyLib.o)
+ .ARM.attributes
+                0x00000335       0x31 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(I2C_MPU6050_I2C_INT.o)
+ .ARM.attributes
+                0x00000366       0x31 .\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.a(SERIAL_SPI_UART.o)
+ .ARM.attributes
+                0x00000397       0x1e c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000003b5       0x1e c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x000003d3       0x1e c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000003f1       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(addsf3.o)
+ .ARM.attributes
+                0x0000041d       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(divsf3.o)
+ .ARM.attributes
+                0x00000449       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(fixsfsi.o)
+ .ARM.attributes
+                0x00000475       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(floatsisf.o)
+ .ARM.attributes
+                0x000004a1       0x1e c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m\libgcc.a(_clzsi2.o)
+ .ARM.attributes
+                0x000004bf       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-__atexit2.o)
+ .ARM.attributes
+                0x000004eb       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000517       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-fini.o)
+ .ARM.attributes
+                0x00000543       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000056f       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000059b       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memcpy.o)
+ .ARM.attributes
+                0x000005c7       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000005f3       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sprintf.o)
+ .ARM.attributes
+                0x0000061f       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-svfprintf.o)
+ .ARM.attributes
+                0x0000064b       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-vfprintf_i.o)
+ .ARM.attributes
+                0x00000677       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-freer.o)
+ .ARM.attributes
+                0x000006a3       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-mallocr.o)
+ .ARM.attributes
+                0x000006cf       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memchr.o)
+ .ARM.attributes
+                0x000006fb       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000727       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reallocr.o)
+ .ARM.attributes
+                0x00000753       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x0000077f       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-strlen.o)
+ .ARM.attributes
+                0x000007ab       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-msizer.o)
+ .ARM.attributes
+                0x000007d7       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libc_s.a(lib_a-reent.o)
+ .ARM.attributes
+                0x00000803       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtend.o
+ .ARM.attributes
+                0x0000082f       0x1e c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/armv6-m/crtn.o
+ .ARM.attributes
+                0x0000084d       0x2c c:/program files (x86)/cypress/psoc creator/3.0/psoc creator/import/gnu_cs/arm/4.7.3/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(sbrk.o)
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(.\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-GettingAngles.elf elf32-littlearm)
