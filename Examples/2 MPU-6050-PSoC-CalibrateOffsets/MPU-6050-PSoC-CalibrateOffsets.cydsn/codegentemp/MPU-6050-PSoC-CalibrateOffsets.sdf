@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2014-07-18T14:02:37Z")
+ (DATE "2014-07-20T10:19:57Z")
  (DESIGN "MPU-6050-PSoC-CalibrateOffsets")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "cydsfit")

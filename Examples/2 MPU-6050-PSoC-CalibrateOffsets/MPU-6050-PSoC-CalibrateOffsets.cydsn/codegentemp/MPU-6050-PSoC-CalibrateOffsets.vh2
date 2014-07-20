@@ -2,7 +2,7 @@
 --	Conversion of MPU-6050-PSoC-CalibrateOffsets.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Jul 18 15:02:36 2014
+--	Sun Jul 20 11:19:54 2014
 --
 
 USE cypress.cypress.all;

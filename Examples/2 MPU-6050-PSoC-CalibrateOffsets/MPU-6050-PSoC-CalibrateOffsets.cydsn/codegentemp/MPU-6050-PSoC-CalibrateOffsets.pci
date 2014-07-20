@@ -1,5 +1,5 @@
 # MPU-6050-PSoC-CalibrateOffsets
-# 2014-07-18 14:02:36Z
+# 2014-07-20 10:19:55Z
 
 # IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
 dont_use_io iocell 3 2

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
   24:.\Generated_Source\PSoC4/Cm0Start.c **** 
   25:.\Generated_Source\PSoC4/Cm0Start.c **** /* CPUSS Configuration register */
   26:.\Generated_Source\PSoC4/Cm0Start.c **** #define CY_CPUSS_CONFIG_REG         (*(reg32 *) CYREG_CPUSS_CONFIG)
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 2
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 2
 
 
   27:.\Generated_Source\PSoC4/Cm0Start.c **** #define CY_CPUSS_CONFIG_PTR         ( (reg32 *) CYREG_CPUSS_CONFIG)
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
   81:.\Generated_Source\PSoC4/Cm0Start.c **** ********************************************************************************
   82:.\Generated_Source\PSoC4/Cm0Start.c **** *
   83:.\Generated_Source\PSoC4/Cm0Start.c **** * Summary:
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 3
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 3
 
 
   84:.\Generated_Source\PSoC4/Cm0Start.c **** *  This function is called for all interrupts, other than a reset that is called
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  113:.\Generated_Source\PSoC4/Cm0Start.c **** extern void Reset(void);
  114:.\Generated_Source\PSoC4/Cm0Start.c **** 
  115:.\Generated_Source\PSoC4/Cm0Start.c **** /* Application entry point. */
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 4
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 4
 
 
  116:.\Generated_Source\PSoC4/Cm0Start.c **** extern void $Super$$main(void);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  170:.\Generated_Source\PSoC4/Cm0Start.c **** * Parameters:
  171:.\Generated_Source\PSoC4/Cm0Start.c **** *  None
  172:.\Generated_Source\PSoC4/Cm0Start.c **** *
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 5
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 5
 
 
  173:.\Generated_Source\PSoC4/Cm0Start.c **** * Return:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
   65              	.LCFI3:
   66              		.cfi_def_cfa_offset 24
   67 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 6
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 6
 
 
   68              	.LCFI4:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  239:.\Generated_Source\PSoC4/Cm0Start.c **** *  None
  240:.\Generated_Source\PSoC4/Cm0Start.c **** *
  241:.\Generated_Source\PSoC4/Cm0Start.c **** * Return:
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 7
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 7
 
 
  242:.\Generated_Source\PSoC4/Cm0Start.c **** *  None
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  257:.\Generated_Source\PSoC4/Cm0Start.c ****         unsigned count;
  258:.\Generated_Source\PSoC4/Cm0Start.c **** 
  259:.\Generated_Source\PSoC4/Cm0Start.c ****         for (count = 0u; count != limit; count += sizeof (uint32))
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 8
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 8
 
 
  141              		.loc 1 259 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  185 006c 0433     		add	r3, r3, #4
  186 006e 7B60     		str	r3, [r7, #4]
  187              	.L11:
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 9
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 9
 
 
  264:.\Generated_Source\PSoC4/Cm0Start.c ****         for (count = 0u; count != limit; count += sizeof (uint32))
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  228              		.thumb_func
  229              		.type	Reset, %function
  230              	Reset:
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 10
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 10
 
 
  231              	.LFB3:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  248              		.section	.ramvectors,"aw",%progbits
  249              		.align	2
  250              		.type	CyRamVectors, %object
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 11
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 11
 
 
  251              		.size	CyRamVectors, 192
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  344:.\Generated_Source\PSoC4/Cm0Start.c **** 
  345:.\Generated_Source\PSoC4/Cm0Start.c **** #if (CYDEV_BOOTLOADER_ENABLE)
  346:.\Generated_Source\PSoC4/Cm0Start.c ****     CyBtldr_CheckLaunch();
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 12
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 12
 
 
  347:.\Generated_Source\PSoC4/Cm0Start.c **** #endif /* CYDEV_BOOTLOADER_ENABLE */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  401:.\Generated_Source\PSoC4/Cm0Start.c **** #endif  /* defined(__ARMCC_VERSION) */
  402:.\Generated_Source\PSoC4/Cm0Start.c **** 
  403:.\Generated_Source\PSoC4/Cm0Start.c **** 
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 13
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 13
 
 
  404:.\Generated_Source\PSoC4/Cm0Start.c **** /*******************************************************************************
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  440:.\Generated_Source\PSoC4/Cm0Start.c ****                 __vector_table[indexInit].__fun : &IntDefaultHandler;
  441:.\Generated_Source\PSoC4/Cm0Start.c ****             #else
  442:.\Generated_Source\PSoC4/Cm0Start.c ****                 RomVectors[indexInit] : &IntDefaultHandler;
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 14
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 14
 
 
  290              		.loc 1 442 0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  460:.\Generated_Source\PSoC4/Cm0Start.c ****         }
  461:.\Generated_Source\PSoC4/Cm0Start.c **** 
  462:.\Generated_Source\PSoC4/Cm0Start.c ****     #endif  /* (CYDEV_PROJ_TYPE != CYDEV_PROJ_TYPE_STANDARD) */
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 15
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 15
 
 
  463:.\Generated_Source\PSoC4/Cm0Start.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  374 002c F2010000 		.4byte	.LASF0
  375 0030 02       		.uleb128 0x2
  376 0031 01       		.byte	0x1
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 16
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 16
 
 
  377 0032 08       		.byte	0x8
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  431 0095 F2       		.byte	0xf2
  432 0096 9A000000 		.4byte	0x9a
  433 009a 05       		.uleb128 0x5
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 17
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 17
 
 
  434 009b 6F000000 		.4byte	0x6f
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  488 0108 02       		.byte	0x2
  489 0109 23       		.byte	0x23
  490 010a 08       		.uleb128 0x8
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 18
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 18
 
 
  491 010b 0B       		.uleb128 0xb
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  545 0172 F6       		.byte	0xf6
  546 0173 01       		.byte	0x1
  547 0174 00000000 		.4byte	.LFB2
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 19
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 19
 
 
  548 0178 A4000000 		.4byte	.LFE2
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  602 01e3 64       		.sleb128 -28
  603 01e4 00       		.byte	0
  604 01e5 00       		.byte	0
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 20
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 20
 
 
  605 01e6 07       		.uleb128 0x7
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  659 025b D4       		.byte	0xd4
  660 025c 62020000 		.4byte	0x262
  661 0260 01       		.byte	0x1
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 21
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 21
 
 
  662 0261 01       		.byte	0x1
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  716 0007 03       		.uleb128 0x3
  717 0008 0E       		.uleb128 0xe
  718 0009 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 22
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 22
 
 
  719 000a 0E       		.uleb128 0xe
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  773 0040 16       		.uleb128 0x16
  774 0041 00       		.byte	0
  775 0042 03       		.uleb128 0x3
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 23
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 23
 
 
  776 0043 0E       		.uleb128 0xe
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  830 0079 3B       		.uleb128 0x3b
  831 007a 0B       		.uleb128 0xb
  832 007b 49       		.uleb128 0x49
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 24
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 24
 
 
  833 007c 13       		.uleb128 0x13
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  887 00b4 05       		.uleb128 0x5
  888 00b5 00       		.byte	0
  889 00b6 03       		.uleb128 0x3
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 25
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 25
 
 
  890 00b7 0E       		.uleb128 0xe
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  944 00ed 0E       		.uleb128 0xe
  945 00ee 3A       		.uleb128 0x3a
  946 00ef 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 26
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 26
 
 
  947 00f0 3B       		.uleb128 0x3b
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  1001 0128 00       		.byte	0
  1002 0129 00       		.byte	0
  1003 012a 15       		.uleb128 0x15
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 27
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 27
 
 
  1004 012b 01       		.uleb128 0x1
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  1058 0161 00       		.byte	0
  1059 0162 00       		.byte	0
  1060 0163 00       		.byte	0
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 28
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 28
 
 
  1061              		.section	.debug_loc,"",%progbits
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  1115 007c 04000000 		.4byte	.LCFI6
  1116 0080 06000000 		.4byte	.LCFI7
  1117 0084 0200     		.2byte	0x2
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 29
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 29
 
 
  1118 0086 7D       		.byte	0x7d
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  1172 000a 04       		.byte	0x4
  1173 000b 00       		.byte	0
  1174 000c 0000     		.2byte	0
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 30
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 30
 
 
  1175 000e 0000     		.2byte	0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  1216      696F6E5F 
  1216      6E756D00 
  1217              	.LASF18:
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 31
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 31
 
 
  1218 0038 696E6974 		.ascii	"init\000"
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  1244      6C744861 
  1244      6E646C65 
  1244      7200
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 32
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 32
 
 
  1245              	.LASF10:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  1270 015f 6C6F6E67 		.ascii	"long long int\000"
  1270      206C6F6E 
  1270      6720696E 
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 33
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 33
 
 
  1270      7400
@@ -1978,6 +1978,6 @@ ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 1
  1291      5F726567 
  1291      696F6E00 
  1292              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br
-ARM GAS  C:\Users\Sam\AppData\Local\Temp\cc6MGPmS.s 			page 34
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\cccKGMx3.s 			page 34
 
 

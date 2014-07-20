@@ -18,10 +18,9 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="MPU-6050-PSoC-CalibrateOffsets-000">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets">
 <ExpandedNodeIds>
 <v>MPU-6050-PSoC-CalibrateOffsets-000</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets</v>
 <v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\TopDesign.cysch</v>
 <v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\MPU-6050-PSoC-CalibrateOffsets.cydwr</v>
 <v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Header Files</v>
@@ -112,52 +111,6 @@
 <VisibleNodeIds>
 <v>MPU-6050-PSoC-CalibrateOffsets-000</v>
 <v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\TopDesign.cysch</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\MPU-6050-PSoC-CalibrateOffsets.cydwr</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Header Files</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Header Files\mpu6050.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Source Files</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Source Files\i2cFunctions.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Source Files\main.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Source Files\mpu6050.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\cm0gcc.ld</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\Cm0Iar.icf</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\Cm0RealView.scat</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\Cm0Start.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\core_cm0.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\core_cm0_psoc4.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\core_cmFunc.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\core_cmInstr.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\CyBootAsmGnu.s</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\CyBootAsmIar.s</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\CyBootAsmRv.s</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\CyFlash.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\CyFlash.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\CyLib.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\CyLib.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\cypins.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\cyPm.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\cyPm.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\cytypes.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\cy_boot\cyutils.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_BOOT.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C_BOOT.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C_INT.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C_MASTER.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_I2C_PVT.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_PINS.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_PM.c</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050\I2C_MPU6050_PVT.h</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050_scl</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\Generated_Source\PSoC4\I2C_MPU6050_scl\I2C_MPU6050_scl.c</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -257,7 +210,6 @@
 <v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-CalibrateOffsets.hex</v>
 <v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\CortexM0\ARM_GCC_473\Debug\MPU-6050-PSoC-CalibrateOffsets.map</v>
 <v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\MPU-6050-PSoC-CalibrateOffsets.rpt</v>
-<v>MPU-6050-PSoC-CalibrateOffsets-000\MPU-6050-PSoC-CalibrateOffsets\MPU-6050-PSoC-CalibrateOffsets_timing.html</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -289,7 +241,12 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\main.c" />
+<name v=".\TopDesign\TopDesign.cysch" />
+<name v=".\mpu6050.c" />
+<name v=".\mpu6050.h" />
+</OpenDocs>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

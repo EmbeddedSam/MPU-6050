@@ -1,0 +1,1609 @@
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"main.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.comm	devAddr,1,1
+  18              		.comm	buffer,22,4
+  19              		.comm	buf,200,4
+  20              		.global	i
+  21              		.bss
+  22              		.align	2
+  23              		.type	i, %object
+  24              		.size	i, 4
+  25              	i:
+  26 0000 00000000 		.space	4
+  27              		.comm	CAX,2,2
+  28              		.comm	CAY,2,2
+  29              		.comm	CAZ,2,2
+  30              		.comm	CGX,2,2
+  31              		.comm	CGY,2,2
+  32              		.comm	CGZ,2,2
+  33              		.comm	CT,2,2
+  34              		.comm	AXoff,4,4
+  35              		.comm	AYoff,4,4
+  36              		.comm	AZoff,4,4
+  37              		.comm	GXoff,4,4
+  38              		.comm	GYoff,4,4
+  39              		.comm	GZoff,4,4
+  40              		.comm	AX,4,4
+  41              		.comm	AY,4,4
+  42              		.comm	AZ,4,4
+  43              		.comm	GX,4,4
+  44              		.comm	GY,4,4
+  45              		.comm	GZ,4,4
+  46              		.section	.rodata
+  47              		.align	2
+  48              	.LC0:
+  49 0000 4D505536 		.ascii	"MPU6050 connection successful\012\015\000"
+  49      30353020 
+  49      636F6E6E 
+  49      65637469 
+  49      6F6E2073 
+  50              		.align	2
+  51              	.LC2:
+  52 0020 4D505536 		.ascii	"MPU6050 connection failed\012\012\015\000"
+  52      30353020 
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 2
+
+
+  52      636F6E6E 
+  52      65637469 
+  52      6F6E2066 
+  53 003d 000000   		.align	2
+  54              	.LC4:
+  55 0040 53746172 		.ascii	"Starting to calibrate values from sensor..\012\015\000"
+  55      74696E67 
+  55      20746F20 
+  55      63616C69 
+  55      62726174 
+  56 006d 000000   		.align	2
+  57              	.LC8:
+  58 0070 54657374 		.ascii	"Test Number: %d \012\015\000"
+  58      204E756D 
+  58      6265723A 
+  58      20256420 
+  58      0A0D00
+  59              		.global	__aeabi_i2f
+  60              		.global	__aeabi_fadd
+  61 0083 00       		.align	2
+  62              	.LC23:
+  63 0084 41583A25 		.ascii	"AX:%d, AY:%d, AZ:%d || GX:%d, GY:%d, GZ:%d,\011\000"
+  63      642C2041 
+  63      593A2564 
+  63      2C20415A 
+  63      3A256420 
+  64 00b1 000000   		.align	2
+  65              	.LC25:
+  66 00b4 0A0D00   		.ascii	"\012\015\000"
+  67              		.global	__aeabi_fdiv
+  68 00b7 00       		.align	2
+  69              	.LC27:
+  70 00b8 0A0A5465 		.ascii	"\012\012Test finished, offset values are shown belo"
+  70      73742066 
+  70      696E6973 
+  70      6865642C 
+  70      206F6666 
+  71 00e5 770A0A0D 		.ascii	"w\012\012\015\000"
+  71      00
+  72              		.global	__aeabi_f2iz
+  73 00ea 0000     		.align	2
+  74              	.LC29:
+  75 00ec 41586F66 		.ascii	"AXoff:%d, AYoff:%d, AZoff:%d || GXoff:%d, GYoff:%d,"
+  75      663A2564 
+  75      2C204159 
+  75      6F66663A 
+  75      25642C20 
+  76 011f 20475A6F 		.ascii	" GZoff:%d,\011\000"
+  76      66663A25 
+  76      642C0900 
+  77 012b 00       		.align	2
+  78              	.LC31:
+  79 012c 0D0A0A43 		.ascii	"\015\012\012Converting Values to G's\012\012\015\000"
+  79      6F6E7665 
+  79      7274696E 
+  79      67205661 
+  79      6C756573 
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 3
+
+
+  80              		.global	__aeabi_fsub
+  81              		.global	__aeabi_f2d
+  82              		.global	__aeabi_ddiv
+  83              		.global	__aeabi_d2f
+  84 014b 00       		.align	2
+  85              	.LC39:
+  86 014c 41583A25 		.ascii	"AX:%f, AY:%f, AZ:%f || GX:%f, GY:%f, GZ:%f,\011\000"
+  86      662C2041 
+  86      593A2566 
+  86      2C20415A 
+  86      3A256620 
+  87 0179 000000   		.section	.text.main,"ax",%progbits
+  88              		.align	2
+  89              		.global	main
+  90              		.code	16
+  91              		.thumb_func
+  92              		.type	main, %function
+  93              	main:
+  94              	.LFB33:
+  95              		.file 1 ".\\main.c"
+   1:.\main.c      **** /* ========================================
+   2:.\main.c      ****  *
+   3:.\main.c      ****  * Copyright Samuel Walsh, 2014
+   4:.\main.c      ****  * All Rights Reserved
+   5:.\main.c      ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:.\main.c      ****  *
+   7:.\main.c      ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:.\main.c      ****  * WHICH IS THE PROPERTY OF Samuel Walsh.
+   9:.\main.c      ****  *
+  10:.\main.c      ****  * ========================================
+  11:.\main.c      **** */
+  12:.\main.c      **** #include <project.h>
+  13:.\main.c      **** #include <mpu6050.h>
+  14:.\main.c      **** #include <stdio.h>
+  15:.\main.c      **** 
+  16:.\main.c      **** #define numberOfTests   100
+  17:.\main.c      **** 
+  18:.\main.c      **** char buf[200]; //just to hold text values in for writing to UART
+  19:.\main.c      **** int i = 0; //for loop increment variable
+  20:.\main.c      ****    
+  21:.\main.c      **** int16_t CAX, CAY, CAZ; //current acceleration values
+  22:.\main.c      **** int16_t CGX, CGY, CGZ; //current gyroscope values
+  23:.\main.c      **** int16_t CT;            //current temperature
+  24:.\main.c      ****    
+  25:.\main.c      **** float   AXoff, AYoff, AZoff; //accelerometer offset values
+  26:.\main.c      **** float   GXoff, GYoff, GZoff; //gyroscope offset values
+  27:.\main.c      **** 
+  28:.\main.c      **** float   AX, AY, AZ; //acceleration floats
+  29:.\main.c      **** float   GX, GY, GZ; //gyroscope floats
+  30:.\main.c      ****     
+  31:.\main.c      **** int main()
+  32:.\main.c      **** { 
+  96              		.loc 1 32 0
+  97              		.cfi_startproc
+  98 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+  99              	.LCFI0:
+ 100              		.cfi_def_cfa_offset 20
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 4
+
+
+ 101              		.cfi_offset 4, -20
+ 102              		.cfi_offset 5, -16
+ 103              		.cfi_offset 6, -12
+ 104              		.cfi_offset 7, -8
+ 105              		.cfi_offset 14, -4
+ 106 0002 4F46     		mov	r7, r9
+ 107 0004 4646     		mov	r6, r8
+ 108 0006 C0B4     		push	{r6, r7}
+ 109              	.LCFI1:
+ 110              		.cfi_def_cfa_offset 28
+ 111              		.cfi_offset 8, -28
+ 112              		.cfi_offset 9, -24
+ 113 0008 97B0     		sub	sp, sp, #92
+ 114              	.LCFI2:
+ 115              		.cfi_def_cfa_offset 120
+ 116 000a 0AAF     		add	r7, sp, #40
+ 117              	.LCFI3:
+ 118              		.cfi_def_cfa 7, 80
+  33:.\main.c      **** 	I2C_MPU6050_Start();
+ 119              		.loc 1 33 0
+ 120 000c FFF7FEFF 		bl	I2C_MPU6050_Start
+  34:.\main.c      **** 	SERIAL_Start();
+ 121              		.loc 1 34 0
+ 122 0010 FFF7FEFF 		bl	SERIAL_Start
+  35:.\main.c      **** 	
+  36:.\main.c      ****     CyGlobalIntEnable;
+ 123              		.loc 1 36 0
+ 124              	@ 36 ".\main.c" 1
+ 125 0014 62B6     		CPSIE   i
+ 126              	@ 0 "" 2
+  37:.\main.c      **** 
+  38:.\main.c      **** 	MPU6050_init();
+ 127              		.loc 1 38 0
+ 128              		.code	16
+ 129 0016 FFF7FEFF 		bl	MPU6050_init
+  39:.\main.c      **** 	MPU6050_initialize();
+ 130              		.loc 1 39 0
+ 131 001a FFF7FEFF 		bl	MPU6050_initialize
+  40:.\main.c      **** 	SERIAL_UartPutString(MPU6050_testConnection() ? "MPU6050 connection successful\n\r" : "MPU6050 con
+ 132              		.loc 1 40 0
+ 133 001e FFF7FEFF 		bl	MPU6050_testConnection
+ 134 0022 031C     		mov	r3, r0
+ 135 0024 002B     		cmp	r3, #0
+ 136 0026 01D0     		beq	.L2
+ 137              		.loc 1 40 0 is_stmt 0 discriminator 1
+ 138 0028 064B     		ldr	r3, .L7
+ 139 002a 00E0     		b	.L3
+ 140              	.L2:
+ 141              		.loc 1 40 0 discriminator 2
+ 142 002c 064B     		ldr	r3, .L7+4
+ 143              	.L3:
+ 144              		.loc 1 40 0 discriminator 3
+ 145 002e 181C     		mov	r0, r3
+ 146 0030 FFF7FEFF 		bl	SERIAL_UartPutString
+  41:.\main.c      ****     
+  42:.\main.c      ****     SERIAL_UartPutString("Starting to calibrate values from sensor..\n\r");
+ 147              		.loc 1 42 0 is_stmt 1 discriminator 3
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 5
+
+
+ 148 0034 054B     		ldr	r3, .L7+8
+ 149 0036 181C     		mov	r0, r3
+ 150 0038 FFF7FEFF 		bl	SERIAL_UartPutString
+  43:.\main.c      ****      
+  44:.\main.c      ****     //Count and average the first n values, defined by numberOfTests above..
+  45:.\main.c      ****     for(i=0; i<numberOfTests; i++)
+ 151              		.loc 1 45 0 discriminator 3
+ 152 003c 044B     		ldr	r3, .L7+12
+ 153 003e 0022     		mov	r2, #0
+ 154 0040 1A60     		str	r2, [r3]
+ 155 0042 B4E0     		b	.L4
+ 156              	.L8:
+ 157              		.align	2
+ 158              	.L7:
+ 159 0044 00000000 		.word	.LC0
+ 160 0048 20000000 		.word	.LC2
+ 161 004c 40000000 		.word	.LC4
+ 162 0050 00000000 		.word	i
+ 163              	.L5:
+  46:.\main.c      ****     {
+  47:.\main.c      ****       sprintf(buf, "Test Number: %d \n\r", i);
+ 164              		.loc 1 47 0 discriminator 2
+ 165 0054 F04B     		ldr	r3, .L9+8
+ 166 0056 1B68     		ldr	r3, [r3]
+ 167 0058 F049     		ldr	r1, .L9+12
+ 168 005a F14A     		ldr	r2, .L9+16
+ 169 005c 081C     		mov	r0, r1
+ 170 005e 111C     		mov	r1, r2
+ 171 0060 1A1C     		mov	r2, r3
+ 172 0062 FFF7FEFF 		bl	sprintf
+  48:.\main.c      ****       SERIAL_UartPutString(buf);
+ 173              		.loc 1 48 0 discriminator 2
+ 174 0066 ED4B     		ldr	r3, .L9+12
+ 175 0068 181C     		mov	r0, r3
+ 176 006a FFF7FEFF 		bl	SERIAL_UartPutString
+  49:.\main.c      ****     
+  50:.\main.c      ****       MPU6050_getMotion6t(&CAX, &CAY, &CAZ, &CGX, &CGY, &CGZ, &CT);
+ 177              		.loc 1 50 0 discriminator 2
+ 178 006e ED48     		ldr	r0, .L9+20
+ 179 0070 ED49     		ldr	r1, .L9+24
+ 180 0072 EE4A     		ldr	r2, .L9+28
+ 181 0074 EE4B     		ldr	r3, .L9+32
+ 182 0076 EF4C     		ldr	r4, .L9+36
+ 183 0078 0094     		str	r4, [sp]
+ 184 007a EF4C     		ldr	r4, .L9+40
+ 185 007c 0194     		str	r4, [sp, #4]
+ 186 007e EF4C     		ldr	r4, .L9+44
+ 187 0080 0294     		str	r4, [sp, #8]
+ 188 0082 FFF7FEFF 		bl	MPU6050_getMotion6t
+  51:.\main.c      ****       AXoff += CAX;
+ 189              		.loc 1 51 0 discriminator 2
+ 190 0086 E74B     		ldr	r3, .L9+20
+ 191 0088 1B88     		ldrh	r3, [r3]
+ 192 008a 1BB2     		sxth	r3, r3
+ 193 008c 181C     		mov	r0, r3
+ 194 008e FFF7FEFF 		bl	__aeabi_i2f
+ 195 0092 021C     		add	r2, r0, #0
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 6
+
+
+ 196 0094 EA4B     		ldr	r3, .L9+48
+ 197 0096 1B68     		ldr	r3, [r3]
+ 198 0098 101C     		add	r0, r2, #0
+ 199 009a 191C     		add	r1, r3, #0
+ 200 009c FFF7FEFF 		bl	__aeabi_fadd
+ 201 00a0 031C     		add	r3, r0, #0
+ 202 00a2 1A1C     		add	r2, r3, #0
+ 203 00a4 E64B     		ldr	r3, .L9+48
+ 204 00a6 1A60     		str	r2, [r3]
+  52:.\main.c      ****       AYoff += CAY;
+ 205              		.loc 1 52 0 discriminator 2
+ 206 00a8 DF4B     		ldr	r3, .L9+24
+ 207 00aa 1B88     		ldrh	r3, [r3]
+ 208 00ac 1BB2     		sxth	r3, r3
+ 209 00ae 181C     		mov	r0, r3
+ 210 00b0 FFF7FEFF 		bl	__aeabi_i2f
+ 211 00b4 021C     		add	r2, r0, #0
+ 212 00b6 E34B     		ldr	r3, .L9+52
+ 213 00b8 1B68     		ldr	r3, [r3]
+ 214 00ba 101C     		add	r0, r2, #0
+ 215 00bc 191C     		add	r1, r3, #0
+ 216 00be FFF7FEFF 		bl	__aeabi_fadd
+ 217 00c2 031C     		add	r3, r0, #0
+ 218 00c4 1A1C     		add	r2, r3, #0
+ 219 00c6 DF4B     		ldr	r3, .L9+52
+ 220 00c8 1A60     		str	r2, [r3]
+  53:.\main.c      ****       AZoff += CAZ;
+ 221              		.loc 1 53 0 discriminator 2
+ 222 00ca D84B     		ldr	r3, .L9+28
+ 223 00cc 1B88     		ldrh	r3, [r3]
+ 224 00ce 1BB2     		sxth	r3, r3
+ 225 00d0 181C     		mov	r0, r3
+ 226 00d2 FFF7FEFF 		bl	__aeabi_i2f
+ 227 00d6 021C     		add	r2, r0, #0
+ 228 00d8 DB4B     		ldr	r3, .L9+56
+ 229 00da 1B68     		ldr	r3, [r3]
+ 230 00dc 101C     		add	r0, r2, #0
+ 231 00de 191C     		add	r1, r3, #0
+ 232 00e0 FFF7FEFF 		bl	__aeabi_fadd
+ 233 00e4 031C     		add	r3, r0, #0
+ 234 00e6 1A1C     		add	r2, r3, #0
+ 235 00e8 D74B     		ldr	r3, .L9+56
+ 236 00ea 1A60     		str	r2, [r3]
+  54:.\main.c      ****       GXoff += CGX;
+ 237              		.loc 1 54 0 discriminator 2
+ 238 00ec D04B     		ldr	r3, .L9+32
+ 239 00ee 1B88     		ldrh	r3, [r3]
+ 240 00f0 1BB2     		sxth	r3, r3
+ 241 00f2 181C     		mov	r0, r3
+ 242 00f4 FFF7FEFF 		bl	__aeabi_i2f
+ 243 00f8 021C     		add	r2, r0, #0
+ 244 00fa D44B     		ldr	r3, .L9+60
+ 245 00fc 1B68     		ldr	r3, [r3]
+ 246 00fe 101C     		add	r0, r2, #0
+ 247 0100 191C     		add	r1, r3, #0
+ 248 0102 FFF7FEFF 		bl	__aeabi_fadd
+ 249 0106 031C     		add	r3, r0, #0
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 7
+
+
+ 250 0108 1A1C     		add	r2, r3, #0
+ 251 010a D04B     		ldr	r3, .L9+60
+ 252 010c 1A60     		str	r2, [r3]
+  55:.\main.c      ****       GYoff += CGY;
+ 253              		.loc 1 55 0 discriminator 2
+ 254 010e C94B     		ldr	r3, .L9+36
+ 255 0110 1B88     		ldrh	r3, [r3]
+ 256 0112 1BB2     		sxth	r3, r3
+ 257 0114 181C     		mov	r0, r3
+ 258 0116 FFF7FEFF 		bl	__aeabi_i2f
+ 259 011a 021C     		add	r2, r0, #0
+ 260 011c CC4B     		ldr	r3, .L9+64
+ 261 011e 1B68     		ldr	r3, [r3]
+ 262 0120 101C     		add	r0, r2, #0
+ 263 0122 191C     		add	r1, r3, #0
+ 264 0124 FFF7FEFF 		bl	__aeabi_fadd
+ 265 0128 031C     		add	r3, r0, #0
+ 266 012a 1A1C     		add	r2, r3, #0
+ 267 012c C84B     		ldr	r3, .L9+64
+ 268 012e 1A60     		str	r2, [r3]
+  56:.\main.c      ****       GZoff += CGZ;
+ 269              		.loc 1 56 0 discriminator 2
+ 270 0130 C14B     		ldr	r3, .L9+40
+ 271 0132 1B88     		ldrh	r3, [r3]
+ 272 0134 1BB2     		sxth	r3, r3
+ 273 0136 181C     		mov	r0, r3
+ 274 0138 FFF7FEFF 		bl	__aeabi_i2f
+ 275 013c 021C     		add	r2, r0, #0
+ 276 013e C54B     		ldr	r3, .L9+68
+ 277 0140 1B68     		ldr	r3, [r3]
+ 278 0142 101C     		add	r0, r2, #0
+ 279 0144 191C     		add	r1, r3, #0
+ 280 0146 FFF7FEFF 		bl	__aeabi_fadd
+ 281 014a 031C     		add	r3, r0, #0
+ 282 014c 1A1C     		add	r2, r3, #0
+ 283 014e C14B     		ldr	r3, .L9+68
+ 284 0150 1A60     		str	r2, [r3]
+  57:.\main.c      ****        
+  58:.\main.c      ****       sprintf(buf, "AX:%d, AY:%d, AZ:%d || GX:%d, GY:%d, GZ:%d,\t", CAX,CAY,CAZ,CGX,CGY,CGZ);
+ 285              		.loc 1 58 0 discriminator 2
+ 286 0152 B44B     		ldr	r3, .L9+20
+ 287 0154 1B88     		ldrh	r3, [r3]
+ 288 0156 1AB2     		sxth	r2, r3
+ 289 0158 B34B     		ldr	r3, .L9+24
+ 290 015a 1B88     		ldrh	r3, [r3]
+ 291 015c 18B2     		sxth	r0, r3
+ 292 015e F860     		str	r0, [r7, #12]
+ 293 0160 B249     		ldr	r1, .L9+28
+ 294 0162 0988     		ldrh	r1, [r1]
+ 295 0164 0BB2     		sxth	r3, r1
+ 296 0166 9C46     		mov	ip, r3
+ 297 0168 B149     		ldr	r1, .L9+32
+ 298 016a 0988     		ldrh	r1, [r1]
+ 299 016c 0EB2     		sxth	r6, r1
+ 300 016e B149     		ldr	r1, .L9+36
+ 301 0170 0988     		ldrh	r1, [r1]
+ 302 0172 0DB2     		sxth	r5, r1
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 8
+
+
+ 303 0174 B049     		ldr	r1, .L9+40
+ 304 0176 0988     		ldrh	r1, [r1]
+ 305 0178 0CB2     		sxth	r4, r1
+ 306 017a A848     		ldr	r0, .L9+12
+ 307 017c B649     		ldr	r1, .L9+72
+ 308 017e 6346     		mov	r3, ip
+ 309 0180 0093     		str	r3, [sp]
+ 310 0182 0196     		str	r6, [sp, #4]
+ 311 0184 0295     		str	r5, [sp, #8]
+ 312 0186 0394     		str	r4, [sp, #12]
+ 313 0188 FB68     		ldr	r3, [r7, #12]
+ 314 018a FFF7FEFF 		bl	sprintf
+  59:.\main.c      ****       SERIAL_UartPutString(buf);
+ 315              		.loc 1 59 0 discriminator 2
+ 316 018e A34B     		ldr	r3, .L9+12
+ 317 0190 181C     		mov	r0, r3
+ 318 0192 FFF7FEFF 		bl	SERIAL_UartPutString
+  60:.\main.c      ****       SERIAL_UartPutString("\n\r");
+ 319              		.loc 1 60 0 discriminator 2
+ 320 0196 B14B     		ldr	r3, .L9+76
+ 321 0198 181C     		mov	r0, r3
+ 322 019a FFF7FEFF 		bl	SERIAL_UartPutString
+  61:.\main.c      ****       CyDelay(25);
+ 323              		.loc 1 61 0 discriminator 2
+ 324 019e 1920     		mov	r0, #25
+ 325 01a0 FFF7FEFF 		bl	CyDelay
+  45:.\main.c      ****     for(i=0; i<numberOfTests; i++)
+ 326              		.loc 1 45 0 discriminator 2
+ 327 01a4 9C4B     		ldr	r3, .L9+8
+ 328 01a6 1B68     		ldr	r3, [r3]
+ 329 01a8 5A1C     		add	r2, r3, #1
+ 330 01aa 9B4B     		ldr	r3, .L9+8
+ 331 01ac 1A60     		str	r2, [r3]
+ 332              	.L4:
+  45:.\main.c      ****     for(i=0; i<numberOfTests; i++)
+ 333              		.loc 1 45 0 is_stmt 0 discriminator 1
+ 334 01ae 9A4B     		ldr	r3, .L9+8
+ 335 01b0 1B68     		ldr	r3, [r3]
+ 336 01b2 632B     		cmp	r3, #99
+ 337 01b4 00DC     		bgt	.LCB222
+ 338 01b6 4DE7     		b	.L5	@long jump
+ 339              	.LCB222:
+  62:.\main.c      ****     }
+  63:.\main.c      ****     
+  64:.\main.c      ****     AXoff = AXoff/numberOfTests;
+ 340              		.loc 1 64 0 is_stmt 1
+ 341 01b8 A14B     		ldr	r3, .L9+48
+ 342 01ba 1B68     		ldr	r3, [r3]
+ 343 01bc 181C     		add	r0, r3, #0
+ 344 01be A849     		ldr	r1, .L9+80
+ 345 01c0 FFF7FEFF 		bl	__aeabi_fdiv
+ 346 01c4 031C     		add	r3, r0, #0
+ 347 01c6 1A1C     		add	r2, r3, #0
+ 348 01c8 9D4B     		ldr	r3, .L9+48
+ 349 01ca 1A60     		str	r2, [r3]
+  65:.\main.c      ****     AYoff = AYoff/numberOfTests;
+ 350              		.loc 1 65 0
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 9
+
+
+ 351 01cc 9D4B     		ldr	r3, .L9+52
+ 352 01ce 1B68     		ldr	r3, [r3]
+ 353 01d0 181C     		add	r0, r3, #0
+ 354 01d2 A349     		ldr	r1, .L9+80
+ 355 01d4 FFF7FEFF 		bl	__aeabi_fdiv
+ 356 01d8 031C     		add	r3, r0, #0
+ 357 01da 1A1C     		add	r2, r3, #0
+ 358 01dc 994B     		ldr	r3, .L9+52
+ 359 01de 1A60     		str	r2, [r3]
+  66:.\main.c      ****     AZoff = AZoff/numberOfTests;
+ 360              		.loc 1 66 0
+ 361 01e0 994B     		ldr	r3, .L9+56
+ 362 01e2 1B68     		ldr	r3, [r3]
+ 363 01e4 181C     		add	r0, r3, #0
+ 364 01e6 9E49     		ldr	r1, .L9+80
+ 365 01e8 FFF7FEFF 		bl	__aeabi_fdiv
+ 366 01ec 031C     		add	r3, r0, #0
+ 367 01ee 1A1C     		add	r2, r3, #0
+ 368 01f0 954B     		ldr	r3, .L9+56
+ 369 01f2 1A60     		str	r2, [r3]
+  67:.\main.c      ****     GXoff = GXoff/numberOfTests;
+ 370              		.loc 1 67 0
+ 371 01f4 954B     		ldr	r3, .L9+60
+ 372 01f6 1B68     		ldr	r3, [r3]
+ 373 01f8 181C     		add	r0, r3, #0
+ 374 01fa 9949     		ldr	r1, .L9+80
+ 375 01fc FFF7FEFF 		bl	__aeabi_fdiv
+ 376 0200 031C     		add	r3, r0, #0
+ 377 0202 1A1C     		add	r2, r3, #0
+ 378 0204 914B     		ldr	r3, .L9+60
+ 379 0206 1A60     		str	r2, [r3]
+  68:.\main.c      ****     GYoff = GYoff/numberOfTests;
+ 380              		.loc 1 68 0
+ 381 0208 914B     		ldr	r3, .L9+64
+ 382 020a 1B68     		ldr	r3, [r3]
+ 383 020c 181C     		add	r0, r3, #0
+ 384 020e 9449     		ldr	r1, .L9+80
+ 385 0210 FFF7FEFF 		bl	__aeabi_fdiv
+ 386 0214 031C     		add	r3, r0, #0
+ 387 0216 1A1C     		add	r2, r3, #0
+ 388 0218 8D4B     		ldr	r3, .L9+64
+ 389 021a 1A60     		str	r2, [r3]
+  69:.\main.c      ****     GZoff = GZoff/numberOfTests;
+ 390              		.loc 1 69 0
+ 391 021c 8D4B     		ldr	r3, .L9+68
+ 392 021e 1B68     		ldr	r3, [r3]
+ 393 0220 181C     		add	r0, r3, #0
+ 394 0222 8F49     		ldr	r1, .L9+80
+ 395 0224 FFF7FEFF 		bl	__aeabi_fdiv
+ 396 0228 031C     		add	r3, r0, #0
+ 397 022a 1A1C     		add	r2, r3, #0
+ 398 022c 894B     		ldr	r3, .L9+68
+ 399 022e 1A60     		str	r2, [r3]
+  70:.\main.c      ****     
+  71:.\main.c      ****     SERIAL_UartPutString("\n\nTest finished, offset values are shown below\n\n\r");
+ 400              		.loc 1 71 0
+ 401 0230 8C4B     		ldr	r3, .L9+84
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 10
+
+
+ 402 0232 181C     		mov	r0, r3
+ 403 0234 FFF7FEFF 		bl	SERIAL_UartPutString
+  72:.\main.c      ****     sprintf(buf, "AXoff:%d, AYoff:%d, AZoff:%d || GXoff:%d, GYoff:%d, GZoff:%d,\t", (int)AXoff,(int
+ 404              		.loc 1 72 0
+ 405 0238 814B     		ldr	r3, .L9+48
+ 406 023a 1B68     		ldr	r3, [r3]
+ 407 023c 181C     		add	r0, r3, #0
+ 408 023e FFF7FEFF 		bl	__aeabi_f2iz
+ 409 0242 051C     		mov	r5, r0
+ 410 0244 7F4B     		ldr	r3, .L9+52
+ 411 0246 1B68     		ldr	r3, [r3]
+ 412 0248 181C     		add	r0, r3, #0
+ 413 024a FFF7FEFF 		bl	__aeabi_f2iz
+ 414 024e 041C     		mov	r4, r0
+ 415 0250 7D4B     		ldr	r3, .L9+56
+ 416 0252 1B68     		ldr	r3, [r3]
+ 417 0254 181C     		add	r0, r3, #0
+ 418 0256 FFF7FEFF 		bl	__aeabi_f2iz
+ 419 025a 8146     		mov	r9, r0
+ 420 025c 7B4B     		ldr	r3, .L9+60
+ 421 025e 1B68     		ldr	r3, [r3]
+ 422 0260 181C     		add	r0, r3, #0
+ 423 0262 FFF7FEFF 		bl	__aeabi_f2iz
+ 424 0266 8046     		mov	r8, r0
+ 425 0268 794B     		ldr	r3, .L9+64
+ 426 026a 1B68     		ldr	r3, [r3]
+ 427 026c 181C     		add	r0, r3, #0
+ 428 026e FFF7FEFF 		bl	__aeabi_f2iz
+ 429 0272 061C     		mov	r6, r0
+ 430 0274 774B     		ldr	r3, .L9+68
+ 431 0276 1B68     		ldr	r3, [r3]
+ 432 0278 181C     		add	r0, r3, #0
+ 433 027a FFF7FEFF 		bl	__aeabi_f2iz
+ 434 027e 011C     		mov	r1, r0
+ 435 0280 664A     		ldr	r2, .L9+12
+ 436 0282 794B     		ldr	r3, .L9+88
+ 437 0284 4846     		mov	r0, r9
+ 438 0286 0090     		str	r0, [sp]
+ 439 0288 4046     		mov	r0, r8
+ 440 028a 0190     		str	r0, [sp, #4]
+ 441 028c 0296     		str	r6, [sp, #8]
+ 442 028e 0391     		str	r1, [sp, #12]
+ 443 0290 101C     		mov	r0, r2
+ 444 0292 191C     		mov	r1, r3
+ 445 0294 2A1C     		mov	r2, r5
+ 446 0296 231C     		mov	r3, r4
+ 447 0298 FFF7FEFF 		bl	sprintf
+  73:.\main.c      ****     SERIAL_UartPutString(buf);
+ 448              		.loc 1 73 0
+ 449 029c 5F4B     		ldr	r3, .L9+12
+ 450 029e 181C     		mov	r0, r3
+ 451 02a0 FFF7FEFF 		bl	SERIAL_UartPutString
+ 452              	.L6:
+  74:.\main.c      ****     
+  75:.\main.c      ****     while(1)
+  76:.\main.c      ****     {
+  77:.\main.c      ****       //Convert values to G's
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 11
+
+
+  78:.\main.c      ****       SERIAL_UartPutString("\r\n\nConverting Values to G\'s\n\n\r");  
+ 453              		.loc 1 78 0 discriminator 1
+ 454 02a4 714B     		ldr	r3, .L9+92
+ 455 02a6 181C     		mov	r0, r3
+ 456 02a8 FFF7FEFF 		bl	SERIAL_UartPutString
+  79:.\main.c      ****         
+  80:.\main.c      ****       MPU6050_getMotion6t(&CAX, &CAY, &CAZ, &CGX, &CGY, &CGZ, &CT);
+ 457              		.loc 1 80 0 discriminator 1
+ 458 02ac 5D48     		ldr	r0, .L9+20
+ 459 02ae 5E49     		ldr	r1, .L9+24
+ 460 02b0 5E4A     		ldr	r2, .L9+28
+ 461 02b2 5F4B     		ldr	r3, .L9+32
+ 462 02b4 5F4C     		ldr	r4, .L9+36
+ 463 02b6 0094     		str	r4, [sp]
+ 464 02b8 5F4C     		ldr	r4, .L9+40
+ 465 02ba 0194     		str	r4, [sp, #4]
+ 466 02bc 5F4C     		ldr	r4, .L9+44
+ 467 02be 0294     		str	r4, [sp, #8]
+ 468 02c0 FFF7FEFF 		bl	MPU6050_getMotion6t
+  81:.\main.c      ****       AX = ((float)CAX-AXoff)/16384.00;
+ 469              		.loc 1 81 0 discriminator 1
+ 470 02c4 574B     		ldr	r3, .L9+20
+ 471 02c6 1B88     		ldrh	r3, [r3]
+ 472 02c8 1BB2     		sxth	r3, r3
+ 473 02ca 181C     		mov	r0, r3
+ 474 02cc FFF7FEFF 		bl	__aeabi_i2f
+ 475 02d0 021C     		add	r2, r0, #0
+ 476 02d2 5B4B     		ldr	r3, .L9+48
+ 477 02d4 1B68     		ldr	r3, [r3]
+ 478 02d6 101C     		add	r0, r2, #0
+ 479 02d8 191C     		add	r1, r3, #0
+ 480 02da FFF7FEFF 		bl	__aeabi_fsub
+ 481 02de 031C     		add	r3, r0, #0
+ 482 02e0 181C     		add	r0, r3, #0
+ 483 02e2 8D21     		mov	r1, #141
+ 484 02e4 C905     		lsl	r1, r1, #23
+ 485 02e6 FFF7FEFF 		bl	__aeabi_fdiv
+ 486 02ea 031C     		add	r3, r0, #0
+ 487 02ec 1A1C     		add	r2, r3, #0
+ 488 02ee 604B     		ldr	r3, .L9+96
+ 489 02f0 1A60     		str	r2, [r3]
+  82:.\main.c      ****       AY = ((float)CAY-AYoff)/16384.00; //16384 is just 32768/2 to get our 1G value
+ 490              		.loc 1 82 0 discriminator 1
+ 491 02f2 4D4B     		ldr	r3, .L9+24
+ 492 02f4 1B88     		ldrh	r3, [r3]
+ 493 02f6 1BB2     		sxth	r3, r3
+ 494 02f8 181C     		mov	r0, r3
+ 495 02fa FFF7FEFF 		bl	__aeabi_i2f
+ 496 02fe 021C     		add	r2, r0, #0
+ 497 0300 504B     		ldr	r3, .L9+52
+ 498 0302 1B68     		ldr	r3, [r3]
+ 499 0304 101C     		add	r0, r2, #0
+ 500 0306 191C     		add	r1, r3, #0
+ 501 0308 FFF7FEFF 		bl	__aeabi_fsub
+ 502 030c 031C     		add	r3, r0, #0
+ 503 030e 181C     		add	r0, r3, #0
+ 504 0310 8D21     		mov	r1, #141
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 12
+
+
+ 505 0312 C905     		lsl	r1, r1, #23
+ 506 0314 FFF7FEFF 		bl	__aeabi_fdiv
+ 507 0318 031C     		add	r3, r0, #0
+ 508 031a 1A1C     		add	r2, r3, #0
+ 509 031c 554B     		ldr	r3, .L9+100
+ 510 031e 1A60     		str	r2, [r3]
+  83:.\main.c      ****       AZ = ((float)CAZ-(AZoff-16384))/16384.00; //remove 1G before dividing
+ 511              		.loc 1 83 0 discriminator 1
+ 512 0320 424B     		ldr	r3, .L9+28
+ 513 0322 1B88     		ldrh	r3, [r3]
+ 514 0324 1BB2     		sxth	r3, r3
+ 515 0326 181C     		mov	r0, r3
+ 516 0328 FFF7FEFF 		bl	__aeabi_i2f
+ 517 032c 041C     		add	r4, r0, #0
+ 518 032e 464B     		ldr	r3, .L9+56
+ 519 0330 1B68     		ldr	r3, [r3]
+ 520 0332 181C     		add	r0, r3, #0
+ 521 0334 8D21     		mov	r1, #141
+ 522 0336 C905     		lsl	r1, r1, #23
+ 523 0338 FFF7FEFF 		bl	__aeabi_fsub
+ 524 033c 031C     		add	r3, r0, #0
+ 525 033e 201C     		add	r0, r4, #0
+ 526 0340 191C     		add	r1, r3, #0
+ 527 0342 FFF7FEFF 		bl	__aeabi_fsub
+ 528 0346 031C     		add	r3, r0, #0
+ 529 0348 181C     		add	r0, r3, #0
+ 530 034a 8D21     		mov	r1, #141
+ 531 034c C905     		lsl	r1, r1, #23
+ 532 034e FFF7FEFF 		bl	__aeabi_fdiv
+ 533 0352 031C     		add	r3, r0, #0
+ 534 0354 1A1C     		add	r2, r3, #0
+ 535 0356 484B     		ldr	r3, .L9+104
+ 536 0358 1A60     		str	r2, [r3]
+  84:.\main.c      ****     
+  85:.\main.c      ****       GX = ((float)CGX-GXoff)/131.07; //131.07 is just 32768/250 to get us our 1deg/sec value
+ 537              		.loc 1 85 0 discriminator 1
+ 538 035a 354B     		ldr	r3, .L9+32
+ 539 035c 1B88     		ldrh	r3, [r3]
+ 540 035e 1BB2     		sxth	r3, r3
+ 541 0360 181C     		mov	r0, r3
+ 542 0362 FFF7FEFF 		bl	__aeabi_i2f
+ 543 0366 021C     		add	r2, r0, #0
+ 544 0368 384B     		ldr	r3, .L9+60
+ 545 036a 1B68     		ldr	r3, [r3]
+ 546 036c 101C     		add	r0, r2, #0
+ 547 036e 191C     		add	r1, r3, #0
+ 548 0370 FFF7FEFF 		bl	__aeabi_fsub
+ 549 0374 031C     		add	r3, r0, #0
+ 550 0376 181C     		add	r0, r3, #0
+ 551 0378 FFF7FEFF 		bl	__aeabi_f2d
+ 552 037c 031C     		mov	r3, r0
+ 553 037e 0C1C     		mov	r4, r1
+ 554 0380 181C     		mov	r0, r3
+ 555 0382 211C     		mov	r1, r4
+ 556 0384 234B     		ldr	r3, .L9+4
+ 557 0386 224A     		ldr	r2, .L9
+ 558 0388 FFF7FEFF 		bl	__aeabi_ddiv
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 13
+
+
+ 559 038c 031C     		mov	r3, r0
+ 560 038e 0C1C     		mov	r4, r1
+ 561 0390 181C     		mov	r0, r3
+ 562 0392 211C     		mov	r1, r4
+ 563 0394 FFF7FEFF 		bl	__aeabi_d2f
+ 564 0398 021C     		add	r2, r0, #0
+ 565 039a 384B     		ldr	r3, .L9+108
+ 566 039c 1A60     		str	r2, [r3]
+  86:.\main.c      ****       GY = ((float)CGY-GYoff)/131.07;
+ 567              		.loc 1 86 0 discriminator 1
+ 568 039e 254B     		ldr	r3, .L9+36
+ 569 03a0 1B88     		ldrh	r3, [r3]
+ 570 03a2 1BB2     		sxth	r3, r3
+ 571 03a4 181C     		mov	r0, r3
+ 572 03a6 FFF7FEFF 		bl	__aeabi_i2f
+ 573 03aa 021C     		add	r2, r0, #0
+ 574 03ac 284B     		ldr	r3, .L9+64
+ 575 03ae 1B68     		ldr	r3, [r3]
+ 576 03b0 101C     		add	r0, r2, #0
+ 577 03b2 191C     		add	r1, r3, #0
+ 578 03b4 FFF7FEFF 		bl	__aeabi_fsub
+ 579 03b8 031C     		add	r3, r0, #0
+ 580 03ba 181C     		add	r0, r3, #0
+ 581 03bc FFF7FEFF 		bl	__aeabi_f2d
+ 582 03c0 031C     		mov	r3, r0
+ 583 03c2 0C1C     		mov	r4, r1
+ 584 03c4 181C     		mov	r0, r3
+ 585 03c6 211C     		mov	r1, r4
+ 586 03c8 124B     		ldr	r3, .L9+4
+ 587 03ca 114A     		ldr	r2, .L9
+ 588 03cc FFF7FEFF 		bl	__aeabi_ddiv
+ 589 03d0 031C     		mov	r3, r0
+ 590 03d2 0C1C     		mov	r4, r1
+ 591 03d4 181C     		mov	r0, r3
+ 592 03d6 211C     		mov	r1, r4
+ 593 03d8 FFF7FEFF 		bl	__aeabi_d2f
+ 594 03dc 021C     		add	r2, r0, #0
+ 595 03de 284B     		ldr	r3, .L9+112
+ 596 03e0 1A60     		str	r2, [r3]
+  87:.\main.c      ****       GZ = ((float)CGZ-GZoff)/131.07; 
+ 597              		.loc 1 87 0 discriminator 1
+ 598 03e2 154B     		ldr	r3, .L9+40
+ 599 03e4 1B88     		ldrh	r3, [r3]
+ 600 03e6 1BB2     		sxth	r3, r3
+ 601 03e8 181C     		mov	r0, r3
+ 602 03ea FFF7FEFF 		bl	__aeabi_i2f
+ 603 03ee 021C     		add	r2, r0, #0
+ 604 03f0 184B     		ldr	r3, .L9+68
+ 605 03f2 1B68     		ldr	r3, [r3]
+ 606 03f4 101C     		add	r0, r2, #0
+ 607 03f6 191C     		add	r1, r3, #0
+ 608 03f8 FFF7FEFF 		bl	__aeabi_fsub
+ 609 03fc 031C     		add	r3, r0, #0
+ 610 03fe 181C     		add	r0, r3, #0
+ 611 0400 FFF7FEFF 		bl	__aeabi_f2d
+ 612 0404 031C     		mov	r3, r0
+ 613 0406 0C1C     		mov	r4, r1
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 14
+
+
+ 614 0408 181C     		mov	r0, r3
+ 615 040a 211C     		mov	r1, r4
+ 616 040c 3AE0     		b	.L10
+ 617              	.L11:
+ 618 040e C046     		.align	3
+ 619              	.L9:
+ 620 0410 0AD7A370 		.word	1889785610
+ 621 0414 3D626040 		.word	1080058429
+ 622 0418 00000000 		.word	i
+ 623 041c 00000000 		.word	buf
+ 624 0420 70000000 		.word	.LC8
+ 625 0424 00000000 		.word	CAX
+ 626 0428 00000000 		.word	CAY
+ 627 042c 00000000 		.word	CAZ
+ 628 0430 00000000 		.word	CGX
+ 629 0434 00000000 		.word	CGY
+ 630 0438 00000000 		.word	CGZ
+ 631 043c 00000000 		.word	CT
+ 632 0440 00000000 		.word	AXoff
+ 633 0444 00000000 		.word	AYoff
+ 634 0448 00000000 		.word	AZoff
+ 635 044c 00000000 		.word	GXoff
+ 636 0450 00000000 		.word	GYoff
+ 637 0454 00000000 		.word	GZoff
+ 638 0458 84000000 		.word	.LC23
+ 639 045c B4000000 		.word	.LC25
+ 640 0460 0000C842 		.word	1120403456
+ 641 0464 B8000000 		.word	.LC27
+ 642 0468 EC000000 		.word	.LC29
+ 643 046c 2C010000 		.word	.LC31
+ 644 0470 00000000 		.word	AX
+ 645 0474 00000000 		.word	AY
+ 646 0478 00000000 		.word	AZ
+ 647 047c 00000000 		.word	GX
+ 648 0480 00000000 		.word	GY
+ 649              	.L10:
+ 650 0484 2F4B     		ldr	r3, .L12+4
+ 651 0486 2E4A     		ldr	r2, .L12
+ 652 0488 FFF7FEFF 		bl	__aeabi_ddiv
+ 653 048c 031C     		mov	r3, r0
+ 654 048e 0C1C     		mov	r4, r1
+ 655 0490 181C     		mov	r0, r3
+ 656 0492 211C     		mov	r1, r4
+ 657 0494 FFF7FEFF 		bl	__aeabi_d2f
+ 658 0498 021C     		add	r2, r0, #0
+ 659 049a 2B4B     		ldr	r3, .L12+8
+ 660 049c 1A60     		str	r2, [r3]
+  88:.\main.c      ****     
+  89:.\main.c      ****       sprintf(buf, "AX:%f, AY:%f, AZ:%f || GX:%f, GY:%f, GZ:%f,\t", AX,AY,AZ,GX,GY,GZ);
+ 661              		.loc 1 89 0 discriminator 1
+ 662 049e 2B4B     		ldr	r3, .L12+12
+ 663 04a0 1B68     		ldr	r3, [r3]
+ 664 04a2 181C     		add	r0, r3, #0
+ 665 04a4 FFF7FEFF 		bl	__aeabi_f2d
+ 666 04a8 041C     		mov	r4, r0
+ 667 04aa 0D1C     		mov	r5, r1
+ 668 04ac 284B     		ldr	r3, .L12+16
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 15
+
+
+ 669 04ae 1B68     		ldr	r3, [r3]
+ 670 04b0 181C     		add	r0, r3, #0
+ 671 04b2 FFF7FEFF 		bl	__aeabi_f2d
+ 672 04b6 B862     		str	r0, [r7, #40]
+ 673 04b8 F962     		str	r1, [r7, #44]
+ 674 04ba 264B     		ldr	r3, .L12+20
+ 675 04bc 1B68     		ldr	r3, [r3]
+ 676 04be 181C     		add	r0, r3, #0
+ 677 04c0 FFF7FEFF 		bl	__aeabi_f2d
+ 678 04c4 3862     		str	r0, [r7, #32]
+ 679 04c6 7962     		str	r1, [r7, #36]
+ 680 04c8 234B     		ldr	r3, .L12+24
+ 681 04ca 1B68     		ldr	r3, [r3]
+ 682 04cc 181C     		add	r0, r3, #0
+ 683 04ce FFF7FEFF 		bl	__aeabi_f2d
+ 684 04d2 B861     		str	r0, [r7, #24]
+ 685 04d4 F961     		str	r1, [r7, #28]
+ 686 04d6 214B     		ldr	r3, .L12+28
+ 687 04d8 1B68     		ldr	r3, [r3]
+ 688 04da 181C     		add	r0, r3, #0
+ 689 04dc FFF7FEFF 		bl	__aeabi_f2d
+ 690 04e0 3861     		str	r0, [r7, #16]
+ 691 04e2 7961     		str	r1, [r7, #20]
+ 692 04e4 184B     		ldr	r3, .L12+8
+ 693 04e6 1B68     		ldr	r3, [r3]
+ 694 04e8 181C     		add	r0, r3, #0
+ 695 04ea FFF7FEFF 		bl	__aeabi_f2d
+ 696 04ee 3860     		str	r0, [r7]
+ 697 04f0 7960     		str	r1, [r7, #4]
+ 698 04f2 1B48     		ldr	r0, .L12+32
+ 699 04f4 1B49     		ldr	r1, .L12+36
+ 700 04f6 BA6A     		ldr	r2, [r7, #40]
+ 701 04f8 FB6A     		ldr	r3, [r7, #44]
+ 702 04fa 0092     		str	r2, [sp]
+ 703 04fc 0193     		str	r3, [sp, #4]
+ 704 04fe 3A6A     		ldr	r2, [r7, #32]
+ 705 0500 7B6A     		ldr	r3, [r7, #36]
+ 706 0502 0292     		str	r2, [sp, #8]
+ 707 0504 0393     		str	r3, [sp, #12]
+ 708 0506 BA69     		ldr	r2, [r7, #24]
+ 709 0508 FB69     		ldr	r3, [r7, #28]
+ 710 050a 0492     		str	r2, [sp, #16]
+ 711 050c 0593     		str	r3, [sp, #20]
+ 712 050e 3A69     		ldr	r2, [r7, #16]
+ 713 0510 7B69     		ldr	r3, [r7, #20]
+ 714 0512 0692     		str	r2, [sp, #24]
+ 715 0514 0793     		str	r3, [sp, #28]
+ 716 0516 3A68     		ldr	r2, [r7]
+ 717 0518 7B68     		ldr	r3, [r7, #4]
+ 718 051a 0892     		str	r2, [sp, #32]
+ 719 051c 0993     		str	r3, [sp, #36]
+ 720 051e 221C     		mov	r2, r4
+ 721 0520 2B1C     		mov	r3, r5
+ 722 0522 FFF7FEFF 		bl	sprintf
+  90:.\main.c      ****       SERIAL_UartPutString(buf);
+ 723              		.loc 1 90 0 discriminator 1
+ 724 0526 0E4B     		ldr	r3, .L12+32
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 16
+
+
+ 725 0528 181C     		mov	r0, r3
+ 726 052a FFF7FEFF 		bl	SERIAL_UartPutString
+  91:.\main.c      ****     
+  92:.\main.c      ****       CyDelay(500);
+ 727              		.loc 1 92 0 discriminator 1
+ 728 052e FA23     		mov	r3, #250
+ 729 0530 5B00     		lsl	r3, r3, #1
+ 730 0532 181C     		mov	r0, r3
+ 731 0534 FFF7FEFF 		bl	CyDelay
+  93:.\main.c      ****         
+  94:.\main.c      ****     }
+ 732              		.loc 1 94 0 discriminator 1
+ 733 0538 B4E6     		b	.L6
+ 734              	.L13:
+ 735 053a C046C046 		.align	3
+ 735      C046
+ 736              	.L12:
+ 737 0540 0AD7A370 		.word	1889785610
+ 738 0544 3D626040 		.word	1080058429
+ 739 0548 00000000 		.word	GZ
+ 740 054c 00000000 		.word	AX
+ 741 0550 00000000 		.word	AY
+ 742 0554 00000000 		.word	AZ
+ 743 0558 00000000 		.word	GX
+ 744 055c 00000000 		.word	GY
+ 745 0560 00000000 		.word	buf
+ 746 0564 4C010000 		.word	.LC39
+ 747              		.cfi_endproc
+ 748              	.LFE33:
+ 749              		.size	main, .-main
+ 750              		.text
+ 751              	.Letext0:
+ 752              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\3.0\\psoc creator\\import\\gnu_cs\\arm\\4
+ 753              		.file 3 "./mpu6050.h"
+ 754              		.section	.debug_info,"",%progbits
+ 755              	.Ldebug_info0:
+ 756 0000 6E020000 		.4byte	0x26e
+ 757 0004 0200     		.2byte	0x2
+ 758 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 759 000a 04       		.byte	0x4
+ 760 000b 01       		.uleb128 0x1
+ 761 000c EA000000 		.4byte	.LASF23
+ 762 0010 01       		.byte	0x1
+ 763 0011 54000000 		.4byte	.LASF24
+ 764 0015 33010000 		.4byte	.LASF25
+ 765 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 766 001d 00000000 		.4byte	0
+ 767 0021 00000000 		.4byte	0
+ 768 0025 00000000 		.4byte	.Ldebug_line0
+ 769 0029 02       		.uleb128 0x2
+ 770 002a 01       		.byte	0x1
+ 771 002b 06       		.byte	0x6
+ 772 002c D8000000 		.4byte	.LASF0
+ 773 0030 03       		.uleb128 0x3
+ 774 0031 00000000 		.4byte	.LASF2
+ 775 0035 02       		.byte	0x2
+ 776 0036 2A       		.byte	0x2a
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 17
+
+
+ 777 0037 3B000000 		.4byte	0x3b
+ 778 003b 02       		.uleb128 0x2
+ 779 003c 01       		.byte	0x1
+ 780 003d 08       		.byte	0x8
+ 781 003e 14000000 		.4byte	.LASF1
+ 782 0042 03       		.uleb128 0x3
+ 783 0043 8C000000 		.4byte	.LASF3
+ 784 0047 02       		.byte	0x2
+ 785 0048 35       		.byte	0x35
+ 786 0049 4D000000 		.4byte	0x4d
+ 787 004d 02       		.uleb128 0x2
+ 788 004e 02       		.byte	0x2
+ 789 004f 05       		.byte	0x5
+ 790 0050 B6000000 		.4byte	.LASF4
+ 791 0054 02       		.uleb128 0x2
+ 792 0055 02       		.byte	0x2
+ 793 0056 07       		.byte	0x7
+ 794 0057 34000000 		.4byte	.LASF5
+ 795 005b 02       		.uleb128 0x2
+ 796 005c 04       		.byte	0x4
+ 797 005d 05       		.byte	0x5
+ 798 005e CF000000 		.4byte	.LASF6
+ 799 0062 02       		.uleb128 0x2
+ 800 0063 04       		.byte	0x4
+ 801 0064 07       		.byte	0x7
+ 802 0065 22000000 		.4byte	.LASF7
+ 803 0069 02       		.uleb128 0x2
+ 804 006a 08       		.byte	0x8
+ 805 006b 05       		.byte	0x5
+ 806 006c 9D000000 		.4byte	.LASF8
+ 807 0070 02       		.uleb128 0x2
+ 808 0071 08       		.byte	0x8
+ 809 0072 07       		.byte	0x7
+ 810 0073 75000000 		.4byte	.LASF9
+ 811 0077 04       		.uleb128 0x4
+ 812 0078 04       		.byte	0x4
+ 813 0079 05       		.byte	0x5
+ 814 007a 696E7400 		.ascii	"int\000"
+ 815 007e 02       		.uleb128 0x2
+ 816 007f 04       		.byte	0x4
+ 817 0080 07       		.byte	0x7
+ 818 0081 68000000 		.4byte	.LASF10
+ 819 0085 02       		.uleb128 0x2
+ 820 0086 04       		.byte	0x4
+ 821 0087 04       		.byte	0x4
+ 822 0088 0E000000 		.4byte	.LASF11
+ 823 008c 02       		.uleb128 0x2
+ 824 008d 08       		.byte	0x8
+ 825 008e 04       		.byte	0x4
+ 826 008f 4D000000 		.4byte	.LASF12
+ 827 0093 02       		.uleb128 0x2
+ 828 0094 01       		.byte	0x1
+ 829 0095 08       		.byte	0x8
+ 830 0096 B1000000 		.4byte	.LASF13
+ 831 009a 02       		.uleb128 0x2
+ 832 009b 04       		.byte	0x4
+ 833 009c 07       		.byte	0x7
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 18
+
+
+ 834 009d 94000000 		.4byte	.LASF14
+ 835 00a1 05       		.uleb128 0x5
+ 836 00a2 01       		.byte	0x1
+ 837 00a3 63000000 		.4byte	.LASF26
+ 838 00a7 01       		.byte	0x1
+ 839 00a8 1F       		.byte	0x1f
+ 840 00a9 77000000 		.4byte	0x77
+ 841 00ad 00000000 		.4byte	.LFB33
+ 842 00b1 68050000 		.4byte	.LFE33
+ 843 00b5 00000000 		.4byte	.LLST0
+ 844 00b9 01       		.byte	0x1
+ 845 00ba 06       		.uleb128 0x6
+ 846 00bb C0000000 		.4byte	.LASF15
+ 847 00bf 03       		.byte	0x3
+ 848 00c0 9101     		.2byte	0x191
+ 849 00c2 30000000 		.4byte	0x30
+ 850 00c6 01       		.byte	0x1
+ 851 00c7 05       		.byte	0x5
+ 852 00c8 03       		.byte	0x3
+ 853 00c9 00000000 		.4byte	devAddr
+ 854 00cd 07       		.uleb128 0x7
+ 855 00ce 30000000 		.4byte	0x30
+ 856 00d2 DD000000 		.4byte	0xdd
+ 857 00d6 08       		.uleb128 0x8
+ 858 00d7 9A000000 		.4byte	0x9a
+ 859 00db 15       		.byte	0x15
+ 860 00dc 00       		.byte	0
+ 861 00dd 06       		.uleb128 0x6
+ 862 00de C8000000 		.4byte	.LASF16
+ 863 00e2 03       		.byte	0x3
+ 864 00e3 9201     		.2byte	0x192
+ 865 00e5 CD000000 		.4byte	0xcd
+ 866 00e9 01       		.byte	0x1
+ 867 00ea 05       		.byte	0x5
+ 868 00eb 03       		.byte	0x3
+ 869 00ec 00000000 		.4byte	buffer
+ 870 00f0 07       		.uleb128 0x7
+ 871 00f1 93000000 		.4byte	0x93
+ 872 00f5 00010000 		.4byte	0x100
+ 873 00f9 08       		.uleb128 0x8
+ 874 00fa 9A000000 		.4byte	0x9a
+ 875 00fe C7       		.byte	0xc7
+ 876 00ff 00       		.byte	0
+ 877 0100 09       		.uleb128 0x9
+ 878 0101 62756600 		.ascii	"buf\000"
+ 879 0105 01       		.byte	0x1
+ 880 0106 12       		.byte	0x12
+ 881 0107 F0000000 		.4byte	0xf0
+ 882 010b 01       		.byte	0x1
+ 883 010c 05       		.byte	0x5
+ 884 010d 03       		.byte	0x3
+ 885 010e 00000000 		.4byte	buf
+ 886 0112 09       		.uleb128 0x9
+ 887 0113 6900     		.ascii	"i\000"
+ 888 0115 01       		.byte	0x1
+ 889 0116 13       		.byte	0x13
+ 890 0117 77000000 		.4byte	0x77
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 19
+
+
+ 891 011b 01       		.byte	0x1
+ 892 011c 05       		.byte	0x5
+ 893 011d 03       		.byte	0x3
+ 894 011e 00000000 		.4byte	i
+ 895 0122 09       		.uleb128 0x9
+ 896 0123 43415800 		.ascii	"CAX\000"
+ 897 0127 01       		.byte	0x1
+ 898 0128 15       		.byte	0x15
+ 899 0129 42000000 		.4byte	0x42
+ 900 012d 01       		.byte	0x1
+ 901 012e 05       		.byte	0x5
+ 902 012f 03       		.byte	0x3
+ 903 0130 00000000 		.4byte	CAX
+ 904 0134 09       		.uleb128 0x9
+ 905 0135 43415900 		.ascii	"CAY\000"
+ 906 0139 01       		.byte	0x1
+ 907 013a 15       		.byte	0x15
+ 908 013b 42000000 		.4byte	0x42
+ 909 013f 01       		.byte	0x1
+ 910 0140 05       		.byte	0x5
+ 911 0141 03       		.byte	0x3
+ 912 0142 00000000 		.4byte	CAY
+ 913 0146 09       		.uleb128 0x9
+ 914 0147 43415A00 		.ascii	"CAZ\000"
+ 915 014b 01       		.byte	0x1
+ 916 014c 15       		.byte	0x15
+ 917 014d 42000000 		.4byte	0x42
+ 918 0151 01       		.byte	0x1
+ 919 0152 05       		.byte	0x5
+ 920 0153 03       		.byte	0x3
+ 921 0154 00000000 		.4byte	CAZ
+ 922 0158 09       		.uleb128 0x9
+ 923 0159 43475800 		.ascii	"CGX\000"
+ 924 015d 01       		.byte	0x1
+ 925 015e 16       		.byte	0x16
+ 926 015f 42000000 		.4byte	0x42
+ 927 0163 01       		.byte	0x1
+ 928 0164 05       		.byte	0x5
+ 929 0165 03       		.byte	0x3
+ 930 0166 00000000 		.4byte	CGX
+ 931 016a 09       		.uleb128 0x9
+ 932 016b 43475900 		.ascii	"CGY\000"
+ 933 016f 01       		.byte	0x1
+ 934 0170 16       		.byte	0x16
+ 935 0171 42000000 		.4byte	0x42
+ 936 0175 01       		.byte	0x1
+ 937 0176 05       		.byte	0x5
+ 938 0177 03       		.byte	0x3
+ 939 0178 00000000 		.4byte	CGY
+ 940 017c 09       		.uleb128 0x9
+ 941 017d 43475A00 		.ascii	"CGZ\000"
+ 942 0181 01       		.byte	0x1
+ 943 0182 16       		.byte	0x16
+ 944 0183 42000000 		.4byte	0x42
+ 945 0187 01       		.byte	0x1
+ 946 0188 05       		.byte	0x5
+ 947 0189 03       		.byte	0x3
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 20
+
+
+ 948 018a 00000000 		.4byte	CGZ
+ 949 018e 09       		.uleb128 0x9
+ 950 018f 435400   		.ascii	"CT\000"
+ 951 0192 01       		.byte	0x1
+ 952 0193 17       		.byte	0x17
+ 953 0194 42000000 		.4byte	0x42
+ 954 0198 01       		.byte	0x1
+ 955 0199 05       		.byte	0x5
+ 956 019a 03       		.byte	0x3
+ 957 019b 00000000 		.4byte	CT
+ 958 019f 0A       		.uleb128 0xa
+ 959 01a0 5D000000 		.4byte	.LASF17
+ 960 01a4 01       		.byte	0x1
+ 961 01a5 19       		.byte	0x19
+ 962 01a6 85000000 		.4byte	0x85
+ 963 01aa 01       		.byte	0x1
+ 964 01ab 05       		.byte	0x5
+ 965 01ac 03       		.byte	0x3
+ 966 01ad 00000000 		.4byte	AXoff
+ 967 01b1 0A       		.uleb128 0xa
+ 968 01b2 AB000000 		.4byte	.LASF18
+ 969 01b6 01       		.byte	0x1
+ 970 01b7 19       		.byte	0x19
+ 971 01b8 85000000 		.4byte	0x85
+ 972 01bc 01       		.byte	0x1
+ 973 01bd 05       		.byte	0x5
+ 974 01be 03       		.byte	0x3
+ 975 01bf 00000000 		.4byte	AYoff
+ 976 01c3 0A       		.uleb128 0xa
+ 977 01c4 E4000000 		.4byte	.LASF19
+ 978 01c8 01       		.byte	0x1
+ 979 01c9 19       		.byte	0x19
+ 980 01ca 85000000 		.4byte	0x85
+ 981 01ce 01       		.byte	0x1
+ 982 01cf 05       		.byte	0x5
+ 983 01d0 03       		.byte	0x3
+ 984 01d1 00000000 		.4byte	AZoff
+ 985 01d5 0A       		.uleb128 0xa
+ 986 01d6 97010000 		.4byte	.LASF20
+ 987 01da 01       		.byte	0x1
+ 988 01db 1A       		.byte	0x1a
+ 989 01dc 85000000 		.4byte	0x85
+ 990 01e0 01       		.byte	0x1
+ 991 01e1 05       		.byte	0x5
+ 992 01e2 03       		.byte	0x3
+ 993 01e3 00000000 		.4byte	GXoff
+ 994 01e7 0A       		.uleb128 0xa
+ 995 01e8 08000000 		.4byte	.LASF21
+ 996 01ec 01       		.byte	0x1
+ 997 01ed 1A       		.byte	0x1a
+ 998 01ee 85000000 		.4byte	0x85
+ 999 01f2 01       		.byte	0x1
+ 1000 01f3 05       		.byte	0x5
+ 1001 01f4 03       		.byte	0x3
+ 1002 01f5 00000000 		.4byte	GYoff
+ 1003 01f9 0A       		.uleb128 0xa
+ 1004 01fa 47000000 		.4byte	.LASF22
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 21
+
+
+ 1005 01fe 01       		.byte	0x1
+ 1006 01ff 1A       		.byte	0x1a
+ 1007 0200 85000000 		.4byte	0x85
+ 1008 0204 01       		.byte	0x1
+ 1009 0205 05       		.byte	0x5
+ 1010 0206 03       		.byte	0x3
+ 1011 0207 00000000 		.4byte	GZoff
+ 1012 020b 09       		.uleb128 0x9
+ 1013 020c 415800   		.ascii	"AX\000"
+ 1014 020f 01       		.byte	0x1
+ 1015 0210 1C       		.byte	0x1c
+ 1016 0211 85000000 		.4byte	0x85
+ 1017 0215 01       		.byte	0x1
+ 1018 0216 05       		.byte	0x5
+ 1019 0217 03       		.byte	0x3
+ 1020 0218 00000000 		.4byte	AX
+ 1021 021c 09       		.uleb128 0x9
+ 1022 021d 415900   		.ascii	"AY\000"
+ 1023 0220 01       		.byte	0x1
+ 1024 0221 1C       		.byte	0x1c
+ 1025 0222 85000000 		.4byte	0x85
+ 1026 0226 01       		.byte	0x1
+ 1027 0227 05       		.byte	0x5
+ 1028 0228 03       		.byte	0x3
+ 1029 0229 00000000 		.4byte	AY
+ 1030 022d 09       		.uleb128 0x9
+ 1031 022e 415A00   		.ascii	"AZ\000"
+ 1032 0231 01       		.byte	0x1
+ 1033 0232 1C       		.byte	0x1c
+ 1034 0233 85000000 		.4byte	0x85
+ 1035 0237 01       		.byte	0x1
+ 1036 0238 05       		.byte	0x5
+ 1037 0239 03       		.byte	0x3
+ 1038 023a 00000000 		.4byte	AZ
+ 1039 023e 09       		.uleb128 0x9
+ 1040 023f 475800   		.ascii	"GX\000"
+ 1041 0242 01       		.byte	0x1
+ 1042 0243 1D       		.byte	0x1d
+ 1043 0244 85000000 		.4byte	0x85
+ 1044 0248 01       		.byte	0x1
+ 1045 0249 05       		.byte	0x5
+ 1046 024a 03       		.byte	0x3
+ 1047 024b 00000000 		.4byte	GX
+ 1048 024f 09       		.uleb128 0x9
+ 1049 0250 475900   		.ascii	"GY\000"
+ 1050 0253 01       		.byte	0x1
+ 1051 0254 1D       		.byte	0x1d
+ 1052 0255 85000000 		.4byte	0x85
+ 1053 0259 01       		.byte	0x1
+ 1054 025a 05       		.byte	0x5
+ 1055 025b 03       		.byte	0x3
+ 1056 025c 00000000 		.4byte	GY
+ 1057 0260 09       		.uleb128 0x9
+ 1058 0261 475A00   		.ascii	"GZ\000"
+ 1059 0264 01       		.byte	0x1
+ 1060 0265 1D       		.byte	0x1d
+ 1061 0266 85000000 		.4byte	0x85
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 22
+
+
+ 1062 026a 01       		.byte	0x1
+ 1063 026b 05       		.byte	0x5
+ 1064 026c 03       		.byte	0x3
+ 1065 026d 00000000 		.4byte	GZ
+ 1066 0271 00       		.byte	0
+ 1067              		.section	.debug_abbrev,"",%progbits
+ 1068              	.Ldebug_abbrev0:
+ 1069 0000 01       		.uleb128 0x1
+ 1070 0001 11       		.uleb128 0x11
+ 1071 0002 01       		.byte	0x1
+ 1072 0003 25       		.uleb128 0x25
+ 1073 0004 0E       		.uleb128 0xe
+ 1074 0005 13       		.uleb128 0x13
+ 1075 0006 0B       		.uleb128 0xb
+ 1076 0007 03       		.uleb128 0x3
+ 1077 0008 0E       		.uleb128 0xe
+ 1078 0009 1B       		.uleb128 0x1b
+ 1079 000a 0E       		.uleb128 0xe
+ 1080 000b 55       		.uleb128 0x55
+ 1081 000c 06       		.uleb128 0x6
+ 1082 000d 11       		.uleb128 0x11
+ 1083 000e 01       		.uleb128 0x1
+ 1084 000f 52       		.uleb128 0x52
+ 1085 0010 01       		.uleb128 0x1
+ 1086 0011 10       		.uleb128 0x10
+ 1087 0012 06       		.uleb128 0x6
+ 1088 0013 00       		.byte	0
+ 1089 0014 00       		.byte	0
+ 1090 0015 02       		.uleb128 0x2
+ 1091 0016 24       		.uleb128 0x24
+ 1092 0017 00       		.byte	0
+ 1093 0018 0B       		.uleb128 0xb
+ 1094 0019 0B       		.uleb128 0xb
+ 1095 001a 3E       		.uleb128 0x3e
+ 1096 001b 0B       		.uleb128 0xb
+ 1097 001c 03       		.uleb128 0x3
+ 1098 001d 0E       		.uleb128 0xe
+ 1099 001e 00       		.byte	0
+ 1100 001f 00       		.byte	0
+ 1101 0020 03       		.uleb128 0x3
+ 1102 0021 16       		.uleb128 0x16
+ 1103 0022 00       		.byte	0
+ 1104 0023 03       		.uleb128 0x3
+ 1105 0024 0E       		.uleb128 0xe
+ 1106 0025 3A       		.uleb128 0x3a
+ 1107 0026 0B       		.uleb128 0xb
+ 1108 0027 3B       		.uleb128 0x3b
+ 1109 0028 0B       		.uleb128 0xb
+ 1110 0029 49       		.uleb128 0x49
+ 1111 002a 13       		.uleb128 0x13
+ 1112 002b 00       		.byte	0
+ 1113 002c 00       		.byte	0
+ 1114 002d 04       		.uleb128 0x4
+ 1115 002e 24       		.uleb128 0x24
+ 1116 002f 00       		.byte	0
+ 1117 0030 0B       		.uleb128 0xb
+ 1118 0031 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 23
+
+
+ 1119 0032 3E       		.uleb128 0x3e
+ 1120 0033 0B       		.uleb128 0xb
+ 1121 0034 03       		.uleb128 0x3
+ 1122 0035 08       		.uleb128 0x8
+ 1123 0036 00       		.byte	0
+ 1124 0037 00       		.byte	0
+ 1125 0038 05       		.uleb128 0x5
+ 1126 0039 2E       		.uleb128 0x2e
+ 1127 003a 00       		.byte	0
+ 1128 003b 3F       		.uleb128 0x3f
+ 1129 003c 0C       		.uleb128 0xc
+ 1130 003d 03       		.uleb128 0x3
+ 1131 003e 0E       		.uleb128 0xe
+ 1132 003f 3A       		.uleb128 0x3a
+ 1133 0040 0B       		.uleb128 0xb
+ 1134 0041 3B       		.uleb128 0x3b
+ 1135 0042 0B       		.uleb128 0xb
+ 1136 0043 49       		.uleb128 0x49
+ 1137 0044 13       		.uleb128 0x13
+ 1138 0045 11       		.uleb128 0x11
+ 1139 0046 01       		.uleb128 0x1
+ 1140 0047 12       		.uleb128 0x12
+ 1141 0048 01       		.uleb128 0x1
+ 1142 0049 40       		.uleb128 0x40
+ 1143 004a 06       		.uleb128 0x6
+ 1144 004b 9642     		.uleb128 0x2116
+ 1145 004d 0C       		.uleb128 0xc
+ 1146 004e 00       		.byte	0
+ 1147 004f 00       		.byte	0
+ 1148 0050 06       		.uleb128 0x6
+ 1149 0051 34       		.uleb128 0x34
+ 1150 0052 00       		.byte	0
+ 1151 0053 03       		.uleb128 0x3
+ 1152 0054 0E       		.uleb128 0xe
+ 1153 0055 3A       		.uleb128 0x3a
+ 1154 0056 0B       		.uleb128 0xb
+ 1155 0057 3B       		.uleb128 0x3b
+ 1156 0058 05       		.uleb128 0x5
+ 1157 0059 49       		.uleb128 0x49
+ 1158 005a 13       		.uleb128 0x13
+ 1159 005b 3F       		.uleb128 0x3f
+ 1160 005c 0C       		.uleb128 0xc
+ 1161 005d 02       		.uleb128 0x2
+ 1162 005e 0A       		.uleb128 0xa
+ 1163 005f 00       		.byte	0
+ 1164 0060 00       		.byte	0
+ 1165 0061 07       		.uleb128 0x7
+ 1166 0062 01       		.uleb128 0x1
+ 1167 0063 01       		.byte	0x1
+ 1168 0064 49       		.uleb128 0x49
+ 1169 0065 13       		.uleb128 0x13
+ 1170 0066 01       		.uleb128 0x1
+ 1171 0067 13       		.uleb128 0x13
+ 1172 0068 00       		.byte	0
+ 1173 0069 00       		.byte	0
+ 1174 006a 08       		.uleb128 0x8
+ 1175 006b 21       		.uleb128 0x21
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 24
+
+
+ 1176 006c 00       		.byte	0
+ 1177 006d 49       		.uleb128 0x49
+ 1178 006e 13       		.uleb128 0x13
+ 1179 006f 2F       		.uleb128 0x2f
+ 1180 0070 0B       		.uleb128 0xb
+ 1181 0071 00       		.byte	0
+ 1182 0072 00       		.byte	0
+ 1183 0073 09       		.uleb128 0x9
+ 1184 0074 34       		.uleb128 0x34
+ 1185 0075 00       		.byte	0
+ 1186 0076 03       		.uleb128 0x3
+ 1187 0077 08       		.uleb128 0x8
+ 1188 0078 3A       		.uleb128 0x3a
+ 1189 0079 0B       		.uleb128 0xb
+ 1190 007a 3B       		.uleb128 0x3b
+ 1191 007b 0B       		.uleb128 0xb
+ 1192 007c 49       		.uleb128 0x49
+ 1193 007d 13       		.uleb128 0x13
+ 1194 007e 3F       		.uleb128 0x3f
+ 1195 007f 0C       		.uleb128 0xc
+ 1196 0080 02       		.uleb128 0x2
+ 1197 0081 0A       		.uleb128 0xa
+ 1198 0082 00       		.byte	0
+ 1199 0083 00       		.byte	0
+ 1200 0084 0A       		.uleb128 0xa
+ 1201 0085 34       		.uleb128 0x34
+ 1202 0086 00       		.byte	0
+ 1203 0087 03       		.uleb128 0x3
+ 1204 0088 0E       		.uleb128 0xe
+ 1205 0089 3A       		.uleb128 0x3a
+ 1206 008a 0B       		.uleb128 0xb
+ 1207 008b 3B       		.uleb128 0x3b
+ 1208 008c 0B       		.uleb128 0xb
+ 1209 008d 49       		.uleb128 0x49
+ 1210 008e 13       		.uleb128 0x13
+ 1211 008f 3F       		.uleb128 0x3f
+ 1212 0090 0C       		.uleb128 0xc
+ 1213 0091 02       		.uleb128 0x2
+ 1214 0092 0A       		.uleb128 0xa
+ 1215 0093 00       		.byte	0
+ 1216 0094 00       		.byte	0
+ 1217 0095 00       		.byte	0
+ 1218              		.section	.debug_loc,"",%progbits
+ 1219              	.Ldebug_loc0:
+ 1220              	.LLST0:
+ 1221 0000 00000000 		.4byte	.LFB33
+ 1222 0004 02000000 		.4byte	.LCFI0
+ 1223 0008 0200     		.2byte	0x2
+ 1224 000a 7D       		.byte	0x7d
+ 1225 000b 00       		.sleb128 0
+ 1226 000c 02000000 		.4byte	.LCFI0
+ 1227 0010 08000000 		.4byte	.LCFI1
+ 1228 0014 0200     		.2byte	0x2
+ 1229 0016 7D       		.byte	0x7d
+ 1230 0017 14       		.sleb128 20
+ 1231 0018 08000000 		.4byte	.LCFI1
+ 1232 001c 0A000000 		.4byte	.LCFI2
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 25
+
+
+ 1233 0020 0200     		.2byte	0x2
+ 1234 0022 7D       		.byte	0x7d
+ 1235 0023 1C       		.sleb128 28
+ 1236 0024 0A000000 		.4byte	.LCFI2
+ 1237 0028 0C000000 		.4byte	.LCFI3
+ 1238 002c 0300     		.2byte	0x3
+ 1239 002e 7D       		.byte	0x7d
+ 1240 002f F800     		.sleb128 120
+ 1241 0031 0C000000 		.4byte	.LCFI3
+ 1242 0035 68050000 		.4byte	.LFE33
+ 1243 0039 0300     		.2byte	0x3
+ 1244 003b 77       		.byte	0x77
+ 1245 003c D000     		.sleb128 80
+ 1246 003e 00000000 		.4byte	0
+ 1247 0042 00000000 		.4byte	0
+ 1248              		.section	.debug_aranges,"",%progbits
+ 1249 0000 1C000000 		.4byte	0x1c
+ 1250 0004 0200     		.2byte	0x2
+ 1251 0006 00000000 		.4byte	.Ldebug_info0
+ 1252 000a 04       		.byte	0x4
+ 1253 000b 00       		.byte	0
+ 1254 000c 0000     		.2byte	0
+ 1255 000e 0000     		.2byte	0
+ 1256 0010 00000000 		.4byte	.LFB33
+ 1257 0014 68050000 		.4byte	.LFE33-.LFB33
+ 1258 0018 00000000 		.4byte	0
+ 1259 001c 00000000 		.4byte	0
+ 1260              		.section	.debug_ranges,"",%progbits
+ 1261              	.Ldebug_ranges0:
+ 1262 0000 00000000 		.4byte	.LFB33
+ 1263 0004 68050000 		.4byte	.LFE33
+ 1264 0008 00000000 		.4byte	0
+ 1265 000c 00000000 		.4byte	0
+ 1266              		.section	.debug_line,"",%progbits
+ 1267              	.Ldebug_line0:
+ 1268 0000 B4010000 		.section	.debug_str,"MS",%progbits,1
+ 1268      0200D400 
+ 1268      00000201 
+ 1268      FB0E0D00 
+ 1268      01010101 
+ 1269              	.LASF2:
+ 1270 0000 75696E74 		.ascii	"uint8_t\000"
+ 1270      385F7400 
+ 1271              	.LASF21:
+ 1272 0008 47596F66 		.ascii	"GYoff\000"
+ 1272      6600
+ 1273              	.LASF11:
+ 1274 000e 666C6F61 		.ascii	"float\000"
+ 1274      7400
+ 1275              	.LASF1:
+ 1276 0014 756E7369 		.ascii	"unsigned char\000"
+ 1276      676E6564 
+ 1276      20636861 
+ 1276      7200
+ 1277              	.LASF7:
+ 1278 0022 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1278      20756E73 
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 26
+
+
+ 1278      69676E65 
+ 1278      6420696E 
+ 1278      7400
+ 1279              	.LASF5:
+ 1280 0034 73686F72 		.ascii	"short unsigned int\000"
+ 1280      7420756E 
+ 1280      7369676E 
+ 1280      65642069 
+ 1280      6E7400
+ 1281              	.LASF22:
+ 1282 0047 475A6F66 		.ascii	"GZoff\000"
+ 1282      6600
+ 1283              	.LASF12:
+ 1284 004d 646F7562 		.ascii	"double\000"
+ 1284      6C6500
+ 1285              	.LASF24:
+ 1286 0054 2E5C6D61 		.ascii	".\\main.c\000"
+ 1286      696E2E63 
+ 1286      00
+ 1287              	.LASF17:
+ 1288 005d 41586F66 		.ascii	"AXoff\000"
+ 1288      6600
+ 1289              	.LASF26:
+ 1290 0063 6D61696E 		.ascii	"main\000"
+ 1290      00
+ 1291              	.LASF10:
+ 1292 0068 756E7369 		.ascii	"unsigned int\000"
+ 1292      676E6564 
+ 1292      20696E74 
+ 1292      00
+ 1293              	.LASF9:
+ 1294 0075 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1294      206C6F6E 
+ 1294      6720756E 
+ 1294      7369676E 
+ 1294      65642069 
+ 1295              	.LASF3:
+ 1296 008c 696E7431 		.ascii	"int16_t\000"
+ 1296      365F7400 
+ 1297              	.LASF14:
+ 1298 0094 73697A65 		.ascii	"sizetype\000"
+ 1298      74797065 
+ 1298      00
+ 1299              	.LASF8:
+ 1300 009d 6C6F6E67 		.ascii	"long long int\000"
+ 1300      206C6F6E 
+ 1300      6720696E 
+ 1300      7400
+ 1301              	.LASF18:
+ 1302 00ab 41596F66 		.ascii	"AYoff\000"
+ 1302      6600
+ 1303              	.LASF13:
+ 1304 00b1 63686172 		.ascii	"char\000"
+ 1304      00
+ 1305              	.LASF4:
+ 1306 00b6 73686F72 		.ascii	"short int\000"
+ 1306      7420696E 
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccNcZ5kF.s 			page 27
+
+
+ 1306      7400
+ 1307              	.LASF15:
+ 1308 00c0 64657641 		.ascii	"devAddr\000"
+ 1308      64647200 
+ 1309              	.LASF16:
+ 1310 00c8 62756666 		.ascii	"buffer\000"
+ 1310      657200
+ 1311              	.LASF6:
+ 1312 00cf 6C6F6E67 		.ascii	"long int\000"
+ 1312      20696E74 
+ 1312      00
+ 1313              	.LASF0:
+ 1314 00d8 7369676E 		.ascii	"signed char\000"
+ 1314      65642063 
+ 1314      68617200 
+ 1315              	.LASF19:
+ 1316 00e4 415A6F66 		.ascii	"AZoff\000"
+ 1316      6600
+ 1317              	.LASF23:
+ 1318 00ea 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
+ 1318      4320342E 
+ 1318      372E3320 
+ 1318      32303133 
+ 1318      30333132 
+ 1319 011d 616E6368 		.ascii	"anch revision 196615]\000"
+ 1319      20726576 
+ 1319      6973696F 
+ 1319      6E203139 
+ 1319      36363135 
+ 1320              	.LASF25:
+ 1321 0133 433A5C55 		.ascii	"C:\\Users\\Sam\\Documents\\GitHub\\MPU-6050\\Exampl"
+ 1321      73657273 
+ 1321      5C53616D 
+ 1321      5C446F63 
+ 1321      756D656E 
+ 1322 0160 65735C33 		.ascii	"es\\3 MPU-6050-PSoC-GetAngles\\MPU-6050-PSoC-GetGs."
+ 1322      204D5055 
+ 1322      2D363035 
+ 1322      302D5053 
+ 1322      6F432D47 
+ 1323 0191 63796473 		.ascii	"cydsn\000"
+ 1323      6E00
+ 1324              	.LASF20:
+ 1325 0197 47586F66 		.ascii	"GXoff\000"
+ 1325      6600
+ 1326              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br
