@@ -1,0 +1,81 @@
+--------------- Rebuild Started: 01/29/2014 14:51:12 Project: PSoC 4 Pioneer Modbus Slave, Configuration: ARM GCC 4.7.3 Debug ---------------
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\main.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\cyfitter_cfg.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\cymetadata.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\UART.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\UART_SPI_UART.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\UART_SPI_UART_INT.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\UART_PM.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\UART_UART.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\UART_BOOT.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\UART_UART_BOOT.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\UART_rx.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\UART_SCBCLK.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\UART_tx.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\Cm0Start.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\CyBootAsmGnu.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\CyFlash.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\CyLib.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\cyPm.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\cyutils.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\TX_LED.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\RX_LED.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\UART_RX_FULL.o"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\PSoC 4 Pioneer Modbus Slave.hex"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\PSoC 4 Pioneer Modbus Slave.elf"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\PSoC 4 Pioneer Modbus Slave.map"
+Deleting file ".\PSoC 4 Pioneer Modbus Slave.cycdx"
+Deleting file ".\PSoC 4 Pioneer Modbus Slave.svd"
+Deleting file ".\PSoC 4 Pioneer Modbus Slave.rpt"
+Deleting file ".\PSoC 4 Pioneer Modbus Slave_timing.html"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\.deps\C_FILE.P"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\.deps\ARM_C_FILE.P"
+Deleting file ".\CortexM0\ARM_GCC_473\Debug\.deps\GNU_ARM_ASM_FILE.P"
+cydsfit.exe "-.appdatapath" "C:\Users\Sam\AppData\Local\Cypress Semiconductor\PSoC Creator\3.0" "-.fdsnotice" "-.fdswarpdepfile=warp_dependencies.txt" "-.fdselabdepfile=elab_dependencies.txt" "-.fdsbldfile=generated_files.txt" "-p" "C:\Users\Sam\Dropbox\Work\2014\PSoC 4 Modbus Slave\PSoC 4 Pioneer Modbus Slave\PSoC 4 Pioneer Modbus Slave.cydsn\PSoC 4 Pioneer Modbus Slave.cyprj" "-d" "CY8C4245AXI-483" "-s" "C:\Users\Sam\Dropbox\Work\2014\PSoC 4 Modbus Slave\PSoC 4 Pioneer Modbus Slave\PSoC 4 Pioneer Modbus Slave.cydsn\Generated_Source\PSoC4" "--" "-yv2" "-v3" "-ygs" "-q10" "-o2" "-.fftcfgtype=LE"
+Elaborating Design...
+HDL Generation ...
+Synthesis ...
+Place and Route ...
+Tech mapping ...
+Info: mpr.M0037: Unused pieces of the design have been optimized out. See the Tech mapping section of the report file for details. (App=cydsfit)
+Analog Placement ...
+Analog Routing ...
+Analog Code Generation ...
+Digital Placement ...
+Digital Routing ...
+Bitstream Generation ...
+Static timing analysis ...
+API Generation ...
+Dependency Generation ...
+Clean Temporary Files ...
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\main.lst -ffunction-sections -c .\main.c -o .\CortexM0\ARM_GCC_473\Debug\main.o
+.\main.c: In function 'main':
+.\main.c:24:5: warning: implicit declaration of function 'UART_RX_FULL_Start' [-Wimplicit-function-declaration]
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\cyfitter_cfg.lst -ffunction-sections -c .\Generated_Source\PSoC4\cyfitter_cfg.c -o .\CortexM0\ARM_GCC_473\Debug\cyfitter_cfg.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\cymetadata.lst -ffunction-sections -c .\Generated_Source\PSoC4\cymetadata.c -o .\CortexM0\ARM_GCC_473\Debug\cymetadata.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\UART.lst -ffunction-sections -c .\Generated_Source\PSoC4\UART.c -o .\CortexM0\ARM_GCC_473\Debug\UART.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\UART_SPI_UART.lst -ffunction-sections -c .\Generated_Source\PSoC4\UART_SPI_UART.c -o .\CortexM0\ARM_GCC_473\Debug\UART_SPI_UART.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\UART_SPI_UART_INT.lst -ffunction-sections -c .\Generated_Source\PSoC4\UART_SPI_UART_INT.c -o .\CortexM0\ARM_GCC_473\Debug\UART_SPI_UART_INT.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\UART_PM.lst -ffunction-sections -c .\Generated_Source\PSoC4\UART_PM.c -o .\CortexM0\ARM_GCC_473\Debug\UART_PM.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\UART_UART.lst -ffunction-sections -c .\Generated_Source\PSoC4\UART_UART.c -o .\CortexM0\ARM_GCC_473\Debug\UART_UART.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\UART_BOOT.lst -ffunction-sections -c .\Generated_Source\PSoC4\UART_BOOT.c -o .\CortexM0\ARM_GCC_473\Debug\UART_BOOT.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\UART_UART_BOOT.lst -ffunction-sections -c .\Generated_Source\PSoC4\UART_UART_BOOT.c -o .\CortexM0\ARM_GCC_473\Debug\UART_UART_BOOT.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\UART_rx.lst -ffunction-sections -c .\Generated_Source\PSoC4\UART_rx.c -o .\CortexM0\ARM_GCC_473\Debug\UART_rx.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\UART_SCBCLK.lst -ffunction-sections -c .\Generated_Source\PSoC4\UART_SCBCLK.c -o .\CortexM0\ARM_GCC_473\Debug\UART_SCBCLK.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\UART_tx.lst -ffunction-sections -c .\Generated_Source\PSoC4\UART_tx.c -o .\CortexM0\ARM_GCC_473\Debug\UART_tx.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\Cm0Start.lst -ffunction-sections -c .\Generated_Source\PSoC4\Cm0Start.c -o .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o
+arm-none-eabi-as.exe -I. -I./Generated_Source/PSoC4 -mcpu=cortex-m0 -mthumb -g -alh=.\CortexM0\ARM_GCC_473\Debug/CyBootAsmGnu.lst -o .\CortexM0\ARM_GCC_473\Debug\CyBootAsmGnu.o .\Generated_Source\PSoC4\CyBootAsmGnu.s
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\CyFlash.lst -ffunction-sections -c .\Generated_Source\PSoC4\CyFlash.c -o .\CortexM0\ARM_GCC_473\Debug\CyFlash.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\CyLib.lst -ffunction-sections -c .\Generated_Source\PSoC4\CyLib.c -o .\CortexM0\ARM_GCC_473\Debug\CyLib.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\cyPm.lst -ffunction-sections -c .\Generated_Source\PSoC4\cyPm.c -o .\CortexM0\ARM_GCC_473\Debug\cyPm.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\cyutils.lst -ffunction-sections -c .\Generated_Source\PSoC4\cyutils.c -o .\CortexM0\ARM_GCC_473\Debug\cyutils.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\TX_LED.lst -ffunction-sections -c .\Generated_Source\PSoC4\TX_LED.c -o .\CortexM0\ARM_GCC_473\Debug\TX_LED.o
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\CortexM0\ARM_GCC_473\Debug\RX_LED.lst -ffunction-sections -c .\Generated_Source\PSoC4\RX_LED.c -o .\CortexM0\ARM_GCC_473\Debug\RX_LED.o
+arm-none-eabi-ar.exe -rs ".\CortexM0\ARM_GCC_473\Debug\PSoC 4 Pioneer Modbus Slave.a" .\CortexM0\ARM_GCC_473\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_473\Debug\UART.o .\CortexM0\ARM_GCC_473\Debug\UART_SPI_UART.o .\CortexM0\ARM_GCC_473\Debug\UART_SPI_UART_INT.o .\CortexM0\ARM_GCC_473\Debug\UART_PM.o .\CortexM0\ARM_GCC_473\Debug\UART_UART.o .\CortexM0\ARM_GCC_473\Debug\UART_BOOT.o .\CortexM0\ARM_GCC_473\Debug\UART_UART_BOOT.o .\CortexM0\ARM_GCC_473\Debug\UART_rx.o .\CortexM0\ARM_GCC_473\Debug\UART_SCBCLK.o .\CortexM0\ARM_GCC_473\Debug\UART_tx.o .\CortexM0\ARM_GCC_473\Debug\CyBootAsmGnu.o .\CortexM0\ARM_GCC_473\Debug\CyFlash.o .\CortexM0\ARM_GCC_473\Debug\CyLib.o .\CortexM0\ARM_GCC_473\Debug\cyPm.o .\CortexM0\ARM_GCC_473\Debug\cyutils.o .\CortexM0\ARM_GCC_473\Debug\TX_LED.o .\CortexM0\ARM_GCC_473\Debug\RX_LED.o
+arm-none-eabi-ar.exe: creating .\CortexM0\ARM_GCC_473\Debug\PSoC 4 Pioneer Modbus Slave.a
+arm-none-eabi-gcc.exe -mthumb -march=armv6-m -T .\Generated_Source\PSoC4\cm0gcc.ld -g "-Wl,-Map,.\CortexM0\ARM_GCC_473\Debug\PSoC 4 Pioneer Modbus Slave.map" -specs=nano.specs -Wl,--gc-sections -Wl,--start-group -o ".\CortexM0\ARM_GCC_473\Debug\PSoC 4 Pioneer Modbus Slave.elf" .\CortexM0\ARM_GCC_473\Debug\main.o .\CortexM0\ARM_GCC_473\Debug\cymetadata.o .\CortexM0\ARM_GCC_473\Debug\Cm0Start.o ".\CortexM0\ARM_GCC_473\Debug\PSoC 4 Pioneer Modbus Slave.a" "C:\Program Files (x86)\Cypress\PSoC Creator\3.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM0\ARM_GCC_473\Debug\CyComponentLibrary.a" -Wl,--end-group
+.\CortexM0\ARM_GCC_473\Debug\main.o: In function `main':
+C:\Users\Sam\Dropbox\Work\2014\PSoC 4 Modbus Slave\PSoC 4 Pioneer Modbus Slave\PSoC 4 Pioneer Modbus Slave.cydsn/.\main.c:24: undefined reference to `UART_RX_FULL_Start'
+collect2.exe: error: ld returned 1 exit status
+The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
+--------------- Rebuild Failed: 01/29/2014 14:51:27 ---------------

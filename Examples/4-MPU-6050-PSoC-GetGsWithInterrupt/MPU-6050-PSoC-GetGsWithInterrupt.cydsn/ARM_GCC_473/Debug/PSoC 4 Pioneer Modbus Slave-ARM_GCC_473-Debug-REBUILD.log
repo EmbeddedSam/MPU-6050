@@ -1,0 +1,55 @@
+--------------- Rebuild Started: 07/23/2014 17:55:45 Project: PSoC 4 Pioneer Modbus Slave, Configuration: ARM GCC 4.7.3 Debug ---------------
+Deleting file ".\ARM_GCC_473\Debug\main.o"
+Deleting file ".\ARM_GCC_473\Debug\interrupts.o"
+Deleting file ".\ARM_GCC_473\Debug\cyfitter_cfg.o"
+Deleting file ".\ARM_GCC_473\Debug\cymetadata.o"
+Deleting file ".\ARM_GCC_473\Debug\UART.o"
+Deleting file ".\ARM_GCC_473\Debug\UART_SPI_UART.o"
+Deleting file ".\ARM_GCC_473\Debug\UART_SPI_UART_INT.o"
+Deleting file ".\ARM_GCC_473\Debug\UART_PM.o"
+Deleting file ".\ARM_GCC_473\Debug\UART_UART.o"
+Deleting file ".\ARM_GCC_473\Debug\UART_BOOT.o"
+Deleting file ".\ARM_GCC_473\Debug\UART_UART_BOOT.o"
+Deleting file ".\ARM_GCC_473\Debug\UART_rx.o"
+Deleting file ".\ARM_GCC_473\Debug\UART_tx.o"
+Deleting file ".\ARM_GCC_473\Debug\Cm0Start.o"
+Deleting file ".\ARM_GCC_473\Debug\CyBootAsmGnu.o"
+Deleting file ".\ARM_GCC_473\Debug\CyFlash.o"
+Deleting file ".\ARM_GCC_473\Debug\CyLib.o"
+Deleting file ".\ARM_GCC_473\Debug\cyPm.o"
+Deleting file ".\ARM_GCC_473\Debug\cyutils.o"
+Deleting file ".\ARM_GCC_473\Debug\TX_LED.o"
+Deleting file ".\ARM_GCC_473\Debug\RX_LED.o"
+Deleting file ".\ARM_GCC_473\Debug\UART_RX_ISR.o"
+Deleting file ".\ARM_GCC_473\Debug\PSoC 4 Pioneer Modbus Slave.hex"
+Deleting file ".\ARM_GCC_473\Debug\PSoC 4 Pioneer Modbus Slave.map"
+Deleting file ".\PSoC 4 Pioneer Modbus Slave.cycdx"
+Deleting file ".\PSoC 4 Pioneer Modbus Slave.svd"
+Deleting file ".\PSoC 4 Pioneer Modbus Slave.rpt"
+Deleting file ".\PSoC 4 Pioneer Modbus Slave_timing.html"
+Deleting file ".\ARM_GCC_473\Debug\.deps\C_FILE.P"
+Deleting file ".\ARM_GCC_473\Debug\.deps\ARM_C_FILE.P"
+Deleting file ".\ARM_GCC_473\Debug\.deps\GNU_ARM_ASM_FILE.P"
+cydsfit.exe "-.appdatapath" "C:\Users\Sam\AppData\Local\Cypress Semiconductor\PSoC Creator\3.0" "-.fdsnotice" "-.fdswarpdepfile=warp_dependencies.txt" "-.fdselabdepfile=elab_dependencies.txt" "-.fdsbldfile=generated_files.txt" "-p" "C:\Users\Sam\AppData\Local\Evernote\Evernote\Databases\Attachments\Working UART with interrupts\Working UART with interrupts\PSoC 4 Pioneer Modbus Slave.cydsn\PSoC 4 Pioneer Modbus Slave.cyprj" "-d" "CY8C4245AXI-483" "-s" "C:\Users\Sam\AppData\Local\Evernote\Evernote\Databases\Attachments\Working UART with interrupts\Working UART with interrupts\PSoC 4 Pioneer Modbus Slave.cydsn\Generated_Source\PSoC4" "--" "-yv2" "-v3" "-ygs" "-q10" "-o2" "-.fftcfgtype=LE"
+Elaborating Design...
+HDL Generation ...
+Synthesis ...
+Place and Route ...
+Tech mapping ...
+Info: mpr.M0037: Unused pieces of the design have been optimized out. See the Tech mapping section of the report file for details. (App=cydsfit)
+Analog Placement ...
+Analog Routing ...
+Analog Code Generation ...
+Digital Placement ...
+Digital Routing ...
+Bitstream Generation ...
+Static timing analysis ...
+API Generation ...
+Dependency Generation ...
+Clean Temporary Files ...
+arm-none-eabi-gcc.exe -I. -I./Generated_Source/PSoC4 -Wno-main -mcpu=cortex-m0 -mthumb -Wall -g -D DEBUG -Wa,-alh=.\ARM_GCC_473\Debug\main.lst -ffunction-sections -c .\main.c -o .\ARM_GCC_473\Debug\main.o
+.\main.c: In function 'main':
+.\main.c:24:25: error: 'uartInterrupt' undeclared (first use in this function)
+.\main.c:24:25: note: each undeclared identifier is reported only once for each function it appears in
+The command 'arm-none-eabi-gcc.exe' failed with exit code '1'.
+--------------- Rebuild Failed: 07/23/2014 17:56:02 ---------------

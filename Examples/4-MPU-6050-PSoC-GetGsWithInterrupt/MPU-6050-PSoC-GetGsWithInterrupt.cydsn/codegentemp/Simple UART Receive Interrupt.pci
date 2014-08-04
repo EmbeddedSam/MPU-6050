@@ -1,0 +1,12 @@
+# Simple UART Receive Interrupt
+# 2014-07-29 16:35:02Z
+
+# IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 2
+# IO_3@[IOP=(3)][IoId=(3)] is reserved: SWDDebugEnabled
+dont_use_io iocell 3 3
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "RX_LED(0)" iocell 0 2
+set_io "TX_LED(0)" iocell 0 3
+set_io "\UART:rx(0)\" iocell 4 0
+set_io "\UART:tx(0)\" iocell 4 1

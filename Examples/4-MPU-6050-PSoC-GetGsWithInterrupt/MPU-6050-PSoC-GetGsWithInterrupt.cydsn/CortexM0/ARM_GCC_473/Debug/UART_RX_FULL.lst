@@ -1,0 +1,2190 @@
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"UART_RX_FULL.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.UART_RX_FULL_Start,"ax",%progbits
+  18              		.align	2
+  19              		.global	UART_RX_FULL_Start
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	UART_RX_FULL_Start, %function
+  23              	UART_RX_FULL_Start:
+  24              	.LFB0:
+  25              		.file 1 ".\\Generated_Source\\PSoC4\\UART_RX_FULL.c"
+   1:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * File Name: UART_RX_FULL.c  
+   3:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Version 1.70
+   4:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+   5:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *  Description:
+   6:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   API for controlling the state of an interrupt.
+   7:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+   8:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+   9:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *  Note:
+  10:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+  11:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+  12:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Copyright 2008-2012, Cypress Semiconductor Corporation.  All rights reserved.
+  13:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  14:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  15:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * the software package with which this file was provided.
+  16:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+  17:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  18:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  19:.\Generated_Source\PSoC4/UART_RX_FULL.c **** #include <cydevice_trm.h>
+  20:.\Generated_Source\PSoC4/UART_RX_FULL.c **** #include <CyLib.h>
+  21:.\Generated_Source\PSoC4/UART_RX_FULL.c **** #include <UART_RX_FULL.h>
+  22:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  23:.\Generated_Source\PSoC4/UART_RX_FULL.c **** #if !defined(UART_RX_FULL__REMOVED) /* Check for removal by optimization */
+  24:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  25:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+  26:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *  Place your includes, defines and code here 
+  27:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************/
+  28:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /* `#START UART_RX_FULL_intc` */
+  29:.\Generated_Source\PSoC4/UART_RX_FULL.c **** extern uint8 volatile flag;
+  30:.\Generated_Source\PSoC4/UART_RX_FULL.c **** #include <UART.h>
+  31:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /* `#END` */
+  32:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 2
+
+
+  33:.\Generated_Source\PSoC4/UART_RX_FULL.c **** extern cyisraddress CyRamVectors[CYINT_IRQ_BASE + CY_NUM_INTERRUPTS];
+  34:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  35:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /* Declared in startup, used to set unused interrupts to. */
+  36:.\Generated_Source\PSoC4/UART_RX_FULL.c **** CY_ISR_PROTO(IntDefaultHandler);
+  37:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  38:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  39:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+  40:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_Start
+  41:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+  42:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+  43:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+  44:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *  Set up the interrupt and enable it.
+  45:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+  46:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:  
+  47:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+  48:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+  49:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+  50:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+  51:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+  52:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+  53:.\Generated_Source\PSoC4/UART_RX_FULL.c **** void UART_RX_FULL_Start(void)
+  54:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+  26              		.loc 1 54 0
+  27              		.cfi_startproc
+  28 0000 80B5     		push	{r7, lr}
+  29              	.LCFI0:
+  30              		.cfi_def_cfa_offset 8
+  31              		.cfi_offset 7, -8
+  32              		.cfi_offset 14, -4
+  33 0002 00AF     		add	r7, sp, #0
+  34              	.LCFI1:
+  35              		.cfi_def_cfa_register 7
+  55:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* For all we know the interrupt is active. */
+  56:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     UART_RX_FULL_Disable();
+  36              		.loc 1 56 0
+  37 0004 FFF7FEFF 		bl	UART_RX_FULL_Disable
+  57:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  58:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* Set the ISR to point to the UART_RX_FULL Interrupt. */
+  59:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     UART_RX_FULL_SetVector(&UART_RX_FULL_Interrupt);
+  38              		.loc 1 59 0
+  39 0008 054B     		ldr	r3, .L2
+  40 000a 181C     		mov	r0, r3
+  41 000c FFF7FEFF 		bl	UART_RX_FULL_SetVector
+  60:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  61:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* Set the priority. */
+  62:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     UART_RX_FULL_SetPriority((uint8)UART_RX_FULL_INTC_PRIOR_NUMBER);
+  42              		.loc 1 62 0
+  43 0010 0320     		mov	r0, #3
+  44 0012 FFF7FEFF 		bl	UART_RX_FULL_SetPriority
+  63:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  64:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* Enable it. */
+  65:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     UART_RX_FULL_Enable();
+  45              		.loc 1 65 0
+  46 0016 FFF7FEFF 		bl	UART_RX_FULL_Enable
+  66:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+  47              		.loc 1 66 0
+  48 001a BD46     		mov	sp, r7
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 3
+
+
+  49              		@ sp needed for prologue
+  50 001c 80BD     		pop	{r7, pc}
+  51              	.L3:
+  52 001e C046     		.align	2
+  53              	.L2:
+  54 0020 00000000 		.word	UART_RX_FULL_Interrupt
+  55              		.cfi_endproc
+  56              	.LFE0:
+  57              		.size	UART_RX_FULL_Start, .-UART_RX_FULL_Start
+  58              		.section	.text.UART_RX_FULL_StartEx,"ax",%progbits
+  59              		.align	2
+  60              		.global	UART_RX_FULL_StartEx
+  61              		.code	16
+  62              		.thumb_func
+  63              		.type	UART_RX_FULL_StartEx, %function
+  64              	UART_RX_FULL_StartEx:
+  65              	.LFB1:
+  67:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  68:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  69:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+  70:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_StartEx
+  71:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+  72:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+  73:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+  74:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *  Set up the interrupt and enable it.
+  75:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+  76:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:  
+  77:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   address: Address of the ISR to set in the interrupt vector table.
+  78:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+  79:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+  80:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+  81:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+  82:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+  83:.\Generated_Source\PSoC4/UART_RX_FULL.c **** void UART_RX_FULL_StartEx(cyisraddress address)
+  84:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+  66              		.loc 1 84 0
+  67              		.cfi_startproc
+  68 0000 80B5     		push	{r7, lr}
+  69              	.LCFI2:
+  70              		.cfi_def_cfa_offset 8
+  71              		.cfi_offset 7, -8
+  72              		.cfi_offset 14, -4
+  73 0002 82B0     		sub	sp, sp, #8
+  74              	.LCFI3:
+  75              		.cfi_def_cfa_offset 16
+  76 0004 00AF     		add	r7, sp, #0
+  77              	.LCFI4:
+  78              		.cfi_def_cfa_register 7
+  79 0006 7860     		str	r0, [r7, #4]
+  85:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* For all we know the interrupt is active. */
+  86:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     UART_RX_FULL_Disable();
+  80              		.loc 1 86 0
+  81 0008 FFF7FEFF 		bl	UART_RX_FULL_Disable
+  87:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  88:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* Set the ISR to point to the UART_RX_FULL Interrupt. */
+  89:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     UART_RX_FULL_SetVector(address);
+  82              		.loc 1 89 0
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 4
+
+
+  83 000c 7B68     		ldr	r3, [r7, #4]
+  84 000e 181C     		mov	r0, r3
+  85 0010 FFF7FEFF 		bl	UART_RX_FULL_SetVector
+  90:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  91:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* Set the priority. */
+  92:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     UART_RX_FULL_SetPriority((uint8)UART_RX_FULL_INTC_PRIOR_NUMBER);
+  86              		.loc 1 92 0
+  87 0014 0320     		mov	r0, #3
+  88 0016 FFF7FEFF 		bl	UART_RX_FULL_SetPriority
+  93:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  94:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* Enable it. */
+  95:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     UART_RX_FULL_Enable();
+  89              		.loc 1 95 0
+  90 001a FFF7FEFF 		bl	UART_RX_FULL_Enable
+  96:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+  91              		.loc 1 96 0
+  92 001e BD46     		mov	sp, r7
+  93 0020 02B0     		add	sp, sp, #8
+  94              		@ sp needed for prologue
+  95 0022 80BD     		pop	{r7, pc}
+  96              		.cfi_endproc
+  97              	.LFE1:
+  98              		.size	UART_RX_FULL_StartEx, .-UART_RX_FULL_StartEx
+  99              		.section	.text.UART_RX_FULL_Stop,"ax",%progbits
+ 100              		.align	2
+ 101              		.global	UART_RX_FULL_Stop
+ 102              		.code	16
+ 103              		.thumb_func
+ 104              		.type	UART_RX_FULL_Stop, %function
+ 105              	UART_RX_FULL_Stop:
+ 106              	.LFB2:
+  97:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  98:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+  99:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+ 100:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_Stop
+ 101:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+ 102:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 103:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+ 104:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Disables and removes the interrupt.
+ 105:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 106:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:  
+ 107:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 108:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+ 109:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 110:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 111:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+ 112:.\Generated_Source\PSoC4/UART_RX_FULL.c **** void UART_RX_FULL_Stop(void)
+ 113:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+ 107              		.loc 1 113 0
+ 108              		.cfi_startproc
+ 109 0000 80B5     		push	{r7, lr}
+ 110              	.LCFI5:
+ 111              		.cfi_def_cfa_offset 8
+ 112              		.cfi_offset 7, -8
+ 113              		.cfi_offset 14, -4
+ 114 0002 00AF     		add	r7, sp, #0
+ 115              	.LCFI6:
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 5
+
+
+ 116              		.cfi_def_cfa_register 7
+ 114:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* Disable this interrupt. */
+ 115:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     UART_RX_FULL_Disable();
+ 117              		.loc 1 115 0
+ 118 0004 FFF7FEFF 		bl	UART_RX_FULL_Disable
+ 116:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 117:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* Set the ISR to point to the passive one. */
+ 118:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     UART_RX_FULL_SetVector(&IntDefaultHandler);
+ 119              		.loc 1 118 0
+ 120 0008 024B     		ldr	r3, .L6
+ 121 000a 181C     		mov	r0, r3
+ 122 000c FFF7FEFF 		bl	UART_RX_FULL_SetVector
+ 119:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+ 123              		.loc 1 119 0
+ 124 0010 BD46     		mov	sp, r7
+ 125              		@ sp needed for prologue
+ 126 0012 80BD     		pop	{r7, pc}
+ 127              	.L7:
+ 128              		.align	2
+ 129              	.L6:
+ 130 0014 00000000 		.word	IntDefaultHandler
+ 131              		.cfi_endproc
+ 132              	.LFE2:
+ 133              		.size	UART_RX_FULL_Stop, .-UART_RX_FULL_Stop
+ 134              		.section	.text.UART_RX_FULL_Interrupt,"ax",%progbits
+ 135              		.align	2
+ 136              		.global	UART_RX_FULL_Interrupt
+ 137              		.code	16
+ 138              		.thumb_func
+ 139              		.type	UART_RX_FULL_Interrupt, %function
+ 140              	UART_RX_FULL_Interrupt:
+ 141              	.LFB3:
+ 120:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 121:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 122:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+ 123:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_Interrupt
+ 124:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+ 125:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 126:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+ 127:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   The default Interrupt Service Routine for UART_RX_FULL.
+ 128:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 129:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Add custom code between the coments to keep the next version of this file
+ 130:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   from over writting your code.
+ 131:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 132:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:  
+ 133:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 134:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 135:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+ 136:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 137:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 138:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+ 139:.\Generated_Source\PSoC4/UART_RX_FULL.c **** CY_ISR(UART_RX_FULL_Interrupt)
+ 140:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+ 142              		.loc 1 140 0
+ 143              		.cfi_startproc
+ 144 0000 80B5     		push	{r7, lr}
+ 145              	.LCFI7:
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 6
+
+
+ 146              		.cfi_def_cfa_offset 8
+ 147              		.cfi_offset 7, -8
+ 148              		.cfi_offset 14, -4
+ 149 0002 00AF     		add	r7, sp, #0
+ 150              	.LCFI8:
+ 151              		.cfi_def_cfa_register 7
+ 141:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /*  Place your Interrupt code here. */
+ 142:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* `#START UART_RX_FULL_Interrupt` */
+ 143:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     flag = 1;
+ 152              		.loc 1 143 0
+ 153 0004 034B     		ldr	r3, .L9
+ 154 0006 0122     		mov	r2, #1
+ 155 0008 1A70     		strb	r2, [r3]
+ 144:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     UART_rx_Read();
+ 156              		.loc 1 144 0
+ 157 000a FFF7FEFF 		bl	UART_rx_Read
+ 145:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     
+ 146:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* `#END` */
+ 147:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+ 158              		.loc 1 147 0
+ 159 000e BD46     		mov	sp, r7
+ 160              		@ sp needed for prologue
+ 161 0010 80BD     		pop	{r7, pc}
+ 162              	.L10:
+ 163 0012 C046     		.align	2
+ 164              	.L9:
+ 165 0014 00000000 		.word	flag
+ 166              		.cfi_endproc
+ 167              	.LFE3:
+ 168              		.size	UART_RX_FULL_Interrupt, .-UART_RX_FULL_Interrupt
+ 169              		.section	.text.UART_RX_FULL_SetVector,"ax",%progbits
+ 170              		.align	2
+ 171              		.global	UART_RX_FULL_SetVector
+ 172              		.code	16
+ 173              		.thumb_func
+ 174              		.type	UART_RX_FULL_SetVector, %function
+ 175              	UART_RX_FULL_SetVector:
+ 176              	.LFB4:
+ 148:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 149:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 150:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+ 151:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_SetVector
+ 152:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+ 153:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 154:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+ 155:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Change the ISR vector for the Interrupt. Note calling UART_RX_FULL_Start
+ 156:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   will override any effect this method would have had. To set the vector 
+ 157:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   before the component has been started use UART_RX_FULL_StartEx instead.
+ 158:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 159:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:
+ 160:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   address: Address of the ISR to set in the interrupt vector table.
+ 161:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 162:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+ 163:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 164:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 165:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+ 166:.\Generated_Source\PSoC4/UART_RX_FULL.c **** void UART_RX_FULL_SetVector(cyisraddress address)
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 7
+
+
+ 167:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+ 177              		.loc 1 167 0
+ 178              		.cfi_startproc
+ 179 0000 80B5     		push	{r7, lr}
+ 180              	.LCFI9:
+ 181              		.cfi_def_cfa_offset 8
+ 182              		.cfi_offset 7, -8
+ 183              		.cfi_offset 14, -4
+ 184 0002 82B0     		sub	sp, sp, #8
+ 185              	.LCFI10:
+ 186              		.cfi_def_cfa_offset 16
+ 187 0004 00AF     		add	r7, sp, #0
+ 188              	.LCFI11:
+ 189              		.cfi_def_cfa_register 7
+ 190 0006 7860     		str	r0, [r7, #4]
+ 168:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     CyRamVectors[CYINT_IRQ_BASE + UART_RX_FULL__INTC_NUMBER] = address;
+ 191              		.loc 1 168 0
+ 192 0008 024B     		ldr	r3, .L12
+ 193 000a 7A68     		ldr	r2, [r7, #4]
+ 194 000c DA66     		str	r2, [r3, #108]
+ 169:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+ 195              		.loc 1 169 0
+ 196 000e BD46     		mov	sp, r7
+ 197 0010 02B0     		add	sp, sp, #8
+ 198              		@ sp needed for prologue
+ 199 0012 80BD     		pop	{r7, pc}
+ 200              	.L13:
+ 201              		.align	2
+ 202              	.L12:
+ 203 0014 00000000 		.word	CyRamVectors
+ 204              		.cfi_endproc
+ 205              	.LFE4:
+ 206              		.size	UART_RX_FULL_SetVector, .-UART_RX_FULL_SetVector
+ 207              		.section	.text.UART_RX_FULL_GetVector,"ax",%progbits
+ 208              		.align	2
+ 209              		.global	UART_RX_FULL_GetVector
+ 210              		.code	16
+ 211              		.thumb_func
+ 212              		.type	UART_RX_FULL_GetVector, %function
+ 213              	UART_RX_FULL_GetVector:
+ 214              	.LFB5:
+ 170:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 171:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 172:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+ 173:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_GetVector
+ 174:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+ 175:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 176:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+ 177:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Gets the "address" of the current ISR vector for the Interrupt.
+ 178:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 179:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:
+ 180:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 181:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 182:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+ 183:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Address of the ISR in the interrupt vector table.
+ 184:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 185:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 8
+
+
+ 186:.\Generated_Source\PSoC4/UART_RX_FULL.c **** cyisraddress UART_RX_FULL_GetVector(void)
+ 187:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+ 215              		.loc 1 187 0
+ 216              		.cfi_startproc
+ 217 0000 80B5     		push	{r7, lr}
+ 218              	.LCFI12:
+ 219              		.cfi_def_cfa_offset 8
+ 220              		.cfi_offset 7, -8
+ 221              		.cfi_offset 14, -4
+ 222 0002 00AF     		add	r7, sp, #0
+ 223              	.LCFI13:
+ 224              		.cfi_def_cfa_register 7
+ 188:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     return CyRamVectors[CYINT_IRQ_BASE + UART_RX_FULL__INTC_NUMBER];
+ 225              		.loc 1 188 0
+ 226 0004 024B     		ldr	r3, .L16
+ 227 0006 DB6E     		ldr	r3, [r3, #108]
+ 189:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+ 228              		.loc 1 189 0
+ 229 0008 181C     		mov	r0, r3
+ 230 000a BD46     		mov	sp, r7
+ 231              		@ sp needed for prologue
+ 232 000c 80BD     		pop	{r7, pc}
+ 233              	.L17:
+ 234 000e C046     		.align	2
+ 235              	.L16:
+ 236 0010 00000000 		.word	CyRamVectors
+ 237              		.cfi_endproc
+ 238              	.LFE5:
+ 239              		.size	UART_RX_FULL_GetVector, .-UART_RX_FULL_GetVector
+ 240              		.section	.text.UART_RX_FULL_SetPriority,"ax",%progbits
+ 241              		.align	2
+ 242              		.global	UART_RX_FULL_SetPriority
+ 243              		.code	16
+ 244              		.thumb_func
+ 245              		.type	UART_RX_FULL_SetPriority, %function
+ 246              	UART_RX_FULL_SetPriority:
+ 247              	.LFB6:
+ 190:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 191:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 192:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+ 193:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_SetPriority
+ 194:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+ 195:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 196:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+ 197:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Sets the Priority of the Interrupt. Note calling UART_RX_FULL_Start
+ 198:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   or UART_RX_FULL_StartEx will override any effect this method would 
+ 199:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   have had. This method should only be called after UART_RX_FULL_Start or 
+ 200:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   UART_RX_FULL_StartEx has been called. To set the initial
+ 201:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   priority for the component use the cydwr file in the tool.
+ 202:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 203:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:
+ 204:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   priority: Priority of the interrupt. 0 - 3, 0 being the highest.
+ 205:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 206:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+ 207:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 208:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 209:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 9
+
+
+ 210:.\Generated_Source\PSoC4/UART_RX_FULL.c **** void UART_RX_FULL_SetPriority(uint8 priority)
+ 211:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+ 248              		.loc 1 211 0
+ 249              		.cfi_startproc
+ 250 0000 90B5     		push	{r4, r7, lr}
+ 251              	.LCFI14:
+ 252              		.cfi_def_cfa_offset 12
+ 253              		.cfi_offset 4, -12
+ 254              		.cfi_offset 7, -8
+ 255              		.cfi_offset 14, -4
+ 256 0002 85B0     		sub	sp, sp, #20
+ 257              	.LCFI15:
+ 258              		.cfi_def_cfa_offset 32
+ 259 0004 00AF     		add	r7, sp, #0
+ 260              	.LCFI16:
+ 261              		.cfi_def_cfa_register 7
+ 262 0006 021C     		mov	r2, r0
+ 263 0008 FB1D     		add	r3, r7, #7
+ 264 000a 1A70     		strb	r2, [r3]
+ 212:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 	uint8 interruptState;
+ 213:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     uint32 priorityOffset = ((UART_RX_FULL__INTC_NUMBER % 4u) * 8u) + 6u;
+ 265              		.loc 1 213 0
+ 266 000c 1E23     		mov	r3, #30
+ 267 000e FB60     		str	r3, [r7, #12]
+ 214:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     
+ 215:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 	interruptState = CyEnterCriticalSection();
+ 268              		.loc 1 215 0
+ 269 0010 3C1C     		mov	r4, r7
+ 270 0012 0B34     		add	r4, r4, #11
+ 271 0014 FFF7FEFF 		bl	CyEnterCriticalSection
+ 272 0018 031C     		mov	r3, r0
+ 273 001a 2370     		strb	r3, [r4]
+ 216:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     *UART_RX_FULL_INTC_PRIOR = (*UART_RX_FULL_INTC_PRIOR & (uint32)(~UART_RX_FULL__INTC_PRIOR_MASK)
+ 274              		.loc 1 216 0
+ 275 001c 0A4B     		ldr	r3, .L19
+ 276 001e 0A4A     		ldr	r2, .L19
+ 277 0020 1268     		ldr	r2, [r2]
+ 278 0022 9200     		lsl	r2, r2, #2
+ 279 0024 9108     		lsr	r1, r2, #2
+ 217:.\Generated_Source\PSoC4/UART_RX_FULL.c ****                                     ((uint32)priority << priorityOffset);
+ 280              		.loc 1 217 0
+ 281 0026 FA1D     		add	r2, r7, #7
+ 282 0028 1078     		ldrb	r0, [r2]
+ 283 002a FA68     		ldr	r2, [r7, #12]
+ 284 002c 041C     		mov	r4, r0
+ 285 002e 9440     		lsl	r4, r4, r2
+ 286 0030 221C     		mov	r2, r4
+ 216:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     *UART_RX_FULL_INTC_PRIOR = (*UART_RX_FULL_INTC_PRIOR & (uint32)(~UART_RX_FULL__INTC_PRIOR_MASK)
+ 287              		.loc 1 216 0
+ 288 0032 0A43     		orr	r2, r1
+ 289 0034 1A60     		str	r2, [r3]
+ 218:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 	CyExitCriticalSection(interruptState);
+ 290              		.loc 1 218 0
+ 291 0036 3B1C     		mov	r3, r7
+ 292 0038 0B33     		add	r3, r3, #11
+ 293 003a 1B78     		ldrb	r3, [r3]
+ 294 003c 181C     		mov	r0, r3
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 10
+
+
+ 295 003e FFF7FEFF 		bl	CyExitCriticalSection
+ 219:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+ 296              		.loc 1 219 0
+ 297 0042 BD46     		mov	sp, r7
+ 298 0044 05B0     		add	sp, sp, #20
+ 299              		@ sp needed for prologue
+ 300 0046 90BD     		pop	{r4, r7, pc}
+ 301              	.L20:
+ 302              		.align	2
+ 303              	.L19:
+ 304 0048 08E400E0 		.word	-536812536
+ 305              		.cfi_endproc
+ 306              	.LFE6:
+ 307              		.size	UART_RX_FULL_SetPriority, .-UART_RX_FULL_SetPriority
+ 308              		.section	.text.UART_RX_FULL_GetPriority,"ax",%progbits
+ 309              		.align	2
+ 310              		.global	UART_RX_FULL_GetPriority
+ 311              		.code	16
+ 312              		.thumb_func
+ 313              		.type	UART_RX_FULL_GetPriority, %function
+ 314              	UART_RX_FULL_GetPriority:
+ 315              	.LFB7:
+ 220:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 221:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 222:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+ 223:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_GetPriority
+ 224:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+ 225:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 226:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+ 227:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Gets the Priority of the Interrupt.
+ 228:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 229:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:
+ 230:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 231:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 232:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+ 233:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Priority of the interrupt. 0 - 3, 0 being the highest.
+ 234:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 235:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+ 236:.\Generated_Source\PSoC4/UART_RX_FULL.c **** uint8 UART_RX_FULL_GetPriority(void)
+ 237:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+ 316              		.loc 1 237 0
+ 317              		.cfi_startproc
+ 318 0000 80B5     		push	{r7, lr}
+ 319              	.LCFI17:
+ 320              		.cfi_def_cfa_offset 8
+ 321              		.cfi_offset 7, -8
+ 322              		.cfi_offset 14, -4
+ 323 0002 82B0     		sub	sp, sp, #8
+ 324              	.LCFI18:
+ 325              		.cfi_def_cfa_offset 16
+ 326 0004 00AF     		add	r7, sp, #0
+ 327              	.LCFI19:
+ 328              		.cfi_def_cfa_register 7
+ 238:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     uint32 priority;
+ 239:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 	uint32 priorityOffset = ((UART_RX_FULL__INTC_NUMBER % 4u) * 8u) + 6u;
+ 329              		.loc 1 239 0
+ 330 0006 1E23     		mov	r3, #30
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 11
+
+
+ 331 0008 7B60     		str	r3, [r7, #4]
+ 240:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 241:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     priority = (*UART_RX_FULL_INTC_PRIOR & UART_RX_FULL__INTC_PRIOR_MASK) >> priorityOffset;
+ 332              		.loc 1 241 0
+ 333 000a 074B     		ldr	r3, .L23
+ 334 000c 1B68     		ldr	r3, [r3]
+ 335 000e 9B0F     		lsr	r3, r3, #30
+ 336 0010 9A07     		lsl	r2, r3, #30
+ 337 0012 7B68     		ldr	r3, [r7, #4]
+ 338 0014 111C     		mov	r1, r2
+ 339 0016 D940     		lsr	r1, r1, r3
+ 340 0018 0B1C     		mov	r3, r1
+ 341 001a 3B60     		str	r3, [r7]
+ 242:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 243:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     return (uint8)priority;
+ 342              		.loc 1 243 0
+ 343 001c 3B68     		ldr	r3, [r7]
+ 344 001e DBB2     		uxtb	r3, r3
+ 244:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+ 345              		.loc 1 244 0
+ 346 0020 181C     		mov	r0, r3
+ 347 0022 BD46     		mov	sp, r7
+ 348 0024 02B0     		add	sp, sp, #8
+ 349              		@ sp needed for prologue
+ 350 0026 80BD     		pop	{r7, pc}
+ 351              	.L24:
+ 352              		.align	2
+ 353              	.L23:
+ 354 0028 08E400E0 		.word	-536812536
+ 355              		.cfi_endproc
+ 356              	.LFE7:
+ 357              		.size	UART_RX_FULL_GetPriority, .-UART_RX_FULL_GetPriority
+ 358              		.section	.text.UART_RX_FULL_Enable,"ax",%progbits
+ 359              		.align	2
+ 360              		.global	UART_RX_FULL_Enable
+ 361              		.code	16
+ 362              		.thumb_func
+ 363              		.type	UART_RX_FULL_Enable, %function
+ 364              	UART_RX_FULL_Enable:
+ 365              	.LFB8:
+ 245:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 246:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 247:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+ 248:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_Enable
+ 249:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+ 250:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 251:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+ 252:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Enables the interrupt.
+ 253:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 254:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:
+ 255:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 256:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 257:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+ 258:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 259:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 260:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+ 261:.\Generated_Source\PSoC4/UART_RX_FULL.c **** void UART_RX_FULL_Enable(void)
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 12
+
+
+ 262:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+ 366              		.loc 1 262 0
+ 367              		.cfi_startproc
+ 368 0000 80B5     		push	{r7, lr}
+ 369              	.LCFI20:
+ 370              		.cfi_def_cfa_offset 8
+ 371              		.cfi_offset 7, -8
+ 372              		.cfi_offset 14, -4
+ 373 0002 00AF     		add	r7, sp, #0
+ 374              	.LCFI21:
+ 375              		.cfi_def_cfa_register 7
+ 263:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* Enable the general interrupt. */
+ 264:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     *UART_RX_FULL_INTC_SET_EN = UART_RX_FULL__INTC_MASK;
+ 376              		.loc 1 264 0
+ 377 0004 024B     		ldr	r3, .L26
+ 378 0006 8022     		mov	r2, #128
+ 379 0008 1201     		lsl	r2, r2, #4
+ 380 000a 1A60     		str	r2, [r3]
+ 265:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+ 381              		.loc 1 265 0
+ 382 000c BD46     		mov	sp, r7
+ 383              		@ sp needed for prologue
+ 384 000e 80BD     		pop	{r7, pc}
+ 385              	.L27:
+ 386              		.align	2
+ 387              	.L26:
+ 388 0010 00E100E0 		.word	-536813312
+ 389              		.cfi_endproc
+ 390              	.LFE8:
+ 391              		.size	UART_RX_FULL_Enable, .-UART_RX_FULL_Enable
+ 392              		.section	.text.UART_RX_FULL_GetState,"ax",%progbits
+ 393              		.align	2
+ 394              		.global	UART_RX_FULL_GetState
+ 395              		.code	16
+ 396              		.thumb_func
+ 397              		.type	UART_RX_FULL_GetState, %function
+ 398              	UART_RX_FULL_GetState:
+ 399              	.LFB9:
+ 266:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 267:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 268:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+ 269:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_GetState
+ 270:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+ 271:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 272:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+ 273:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Gets the state (enabled, disabled) of the Interrupt.
+ 274:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 275:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:
+ 276:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 277:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 278:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+ 279:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   1 if enabled, 0 if disabled.
+ 280:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 281:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+ 282:.\Generated_Source\PSoC4/UART_RX_FULL.c **** uint8 UART_RX_FULL_GetState(void)
+ 283:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+ 400              		.loc 1 283 0
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 13
+
+
+ 401              		.cfi_startproc
+ 402 0000 80B5     		push	{r7, lr}
+ 403              	.LCFI22:
+ 404              		.cfi_def_cfa_offset 8
+ 405              		.cfi_offset 7, -8
+ 406              		.cfi_offset 14, -4
+ 407 0002 00AF     		add	r7, sp, #0
+ 408              	.LCFI23:
+ 409              		.cfi_def_cfa_register 7
+ 284:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* Get the state of the general interrupt. */
+ 285:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     return ((*UART_RX_FULL_INTC_SET_EN & (uint32)UART_RX_FULL__INTC_MASK) != 0u) ? 1u:0u;
+ 410              		.loc 1 285 0
+ 411 0004 054B     		ldr	r3, .L32
+ 412 0006 1A68     		ldr	r2, [r3]
+ 413 0008 8023     		mov	r3, #128
+ 414 000a 1B01     		lsl	r3, r3, #4
+ 415 000c 1340     		and	r3, r2
+ 416 000e 01D0     		beq	.L29
+ 417              		.loc 1 285 0 is_stmt 0 discriminator 1
+ 418 0010 0123     		mov	r3, #1
+ 419 0012 00E0     		b	.L30
+ 420              	.L29:
+ 421              		.loc 1 285 0 discriminator 2
+ 422 0014 0023     		mov	r3, #0
+ 423              	.L30:
+ 286:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+ 424              		.loc 1 286 0 is_stmt 1 discriminator 3
+ 425 0016 181C     		mov	r0, r3
+ 426 0018 BD46     		mov	sp, r7
+ 427              		@ sp needed for prologue
+ 428 001a 80BD     		pop	{r7, pc}
+ 429              	.L33:
+ 430              		.align	2
+ 431              	.L32:
+ 432 001c 00E100E0 		.word	-536813312
+ 433              		.cfi_endproc
+ 434              	.LFE9:
+ 435              		.size	UART_RX_FULL_GetState, .-UART_RX_FULL_GetState
+ 436              		.section	.text.UART_RX_FULL_Disable,"ax",%progbits
+ 437              		.align	2
+ 438              		.global	UART_RX_FULL_Disable
+ 439              		.code	16
+ 440              		.thumb_func
+ 441              		.type	UART_RX_FULL_Disable, %function
+ 442              	UART_RX_FULL_Disable:
+ 443              	.LFB10:
+ 287:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 288:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 289:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+ 290:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_Disable
+ 291:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+ 292:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 293:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+ 294:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Disables the Interrupt.
+ 295:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 296:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:
+ 297:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 14
+
+
+ 298:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 299:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+ 300:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 301:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 302:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+ 303:.\Generated_Source\PSoC4/UART_RX_FULL.c **** void UART_RX_FULL_Disable(void)
+ 304:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+ 444              		.loc 1 304 0
+ 445              		.cfi_startproc
+ 446 0000 80B5     		push	{r7, lr}
+ 447              	.LCFI24:
+ 448              		.cfi_def_cfa_offset 8
+ 449              		.cfi_offset 7, -8
+ 450              		.cfi_offset 14, -4
+ 451 0002 00AF     		add	r7, sp, #0
+ 452              	.LCFI25:
+ 453              		.cfi_def_cfa_register 7
+ 305:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     /* Disable the general interrupt. */
+ 306:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     *UART_RX_FULL_INTC_CLR_EN = UART_RX_FULL__INTC_MASK;
+ 454              		.loc 1 306 0
+ 455 0004 024B     		ldr	r3, .L35
+ 456 0006 8022     		mov	r2, #128
+ 457 0008 1201     		lsl	r2, r2, #4
+ 458 000a 1A60     		str	r2, [r3]
+ 307:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+ 459              		.loc 1 307 0
+ 460 000c BD46     		mov	sp, r7
+ 461              		@ sp needed for prologue
+ 462 000e 80BD     		pop	{r7, pc}
+ 463              	.L36:
+ 464              		.align	2
+ 465              	.L35:
+ 466 0010 80E100E0 		.word	-536813184
+ 467              		.cfi_endproc
+ 468              	.LFE10:
+ 469              		.size	UART_RX_FULL_Disable, .-UART_RX_FULL_Disable
+ 470              		.section	.text.UART_RX_FULL_SetPending,"ax",%progbits
+ 471              		.align	2
+ 472              		.global	UART_RX_FULL_SetPending
+ 473              		.code	16
+ 474              		.thumb_func
+ 475              		.type	UART_RX_FULL_SetPending, %function
+ 476              	UART_RX_FULL_SetPending:
+ 477              	.LFB11:
+ 308:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 309:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 310:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+ 311:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_SetPending
+ 312:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+ 313:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 314:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+ 315:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Causes the Interrupt to enter the pending state, a software method of
+ 316:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   generating the interrupt.
+ 317:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 318:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:
+ 319:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 320:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 15
+
+
+ 321:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+ 322:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 323:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 324:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+ 325:.\Generated_Source\PSoC4/UART_RX_FULL.c **** void UART_RX_FULL_SetPending(void)
+ 326:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+ 478              		.loc 1 326 0
+ 479              		.cfi_startproc
+ 480 0000 80B5     		push	{r7, lr}
+ 481              	.LCFI26:
+ 482              		.cfi_def_cfa_offset 8
+ 483              		.cfi_offset 7, -8
+ 484              		.cfi_offset 14, -4
+ 485 0002 00AF     		add	r7, sp, #0
+ 486              	.LCFI27:
+ 487              		.cfi_def_cfa_register 7
+ 327:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     *UART_RX_FULL_INTC_SET_PD = UART_RX_FULL__INTC_MASK;
+ 488              		.loc 1 327 0
+ 489 0004 024B     		ldr	r3, .L38
+ 490 0006 8022     		mov	r2, #128
+ 491 0008 1201     		lsl	r2, r2, #4
+ 492 000a 1A60     		str	r2, [r3]
+ 328:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+ 493              		.loc 1 328 0
+ 494 000c BD46     		mov	sp, r7
+ 495              		@ sp needed for prologue
+ 496 000e 80BD     		pop	{r7, pc}
+ 497              	.L39:
+ 498              		.align	2
+ 499              	.L38:
+ 500 0010 00E200E0 		.word	-536813056
+ 501              		.cfi_endproc
+ 502              	.LFE11:
+ 503              		.size	UART_RX_FULL_SetPending, .-UART_RX_FULL_SetPending
+ 504              		.section	.text.UART_RX_FULL_ClearPending,"ax",%progbits
+ 505              		.align	2
+ 506              		.global	UART_RX_FULL_ClearPending
+ 507              		.code	16
+ 508              		.thumb_func
+ 509              		.type	UART_RX_FULL_ClearPending, %function
+ 510              	UART_RX_FULL_ClearPending:
+ 511              	.LFB12:
+ 329:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 330:.\Generated_Source\PSoC4/UART_RX_FULL.c **** 
+ 331:.\Generated_Source\PSoC4/UART_RX_FULL.c **** /*******************************************************************************
+ 332:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Function Name: UART_RX_FULL_ClearPending
+ 333:.\Generated_Source\PSoC4/UART_RX_FULL.c **** ********************************************************************************
+ 334:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 335:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Summary:
+ 336:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   Clears a pending interrupt.
+ 337:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 338:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Parameters:
+ 339:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 340:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ 341:.\Generated_Source\PSoC4/UART_RX_FULL.c **** * Return:
+ 342:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *   None
+ 343:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 16
+
+
+ 344:.\Generated_Source\PSoC4/UART_RX_FULL.c **** *******************************************************************************/
+ 345:.\Generated_Source\PSoC4/UART_RX_FULL.c **** void UART_RX_FULL_ClearPending(void)
+ 346:.\Generated_Source\PSoC4/UART_RX_FULL.c **** {
+ 512              		.loc 1 346 0
+ 513              		.cfi_startproc
+ 514 0000 80B5     		push	{r7, lr}
+ 515              	.LCFI28:
+ 516              		.cfi_def_cfa_offset 8
+ 517              		.cfi_offset 7, -8
+ 518              		.cfi_offset 14, -4
+ 519 0002 00AF     		add	r7, sp, #0
+ 520              	.LCFI29:
+ 521              		.cfi_def_cfa_register 7
+ 347:.\Generated_Source\PSoC4/UART_RX_FULL.c ****     *UART_RX_FULL_INTC_CLR_PD = UART_RX_FULL__INTC_MASK;
+ 522              		.loc 1 347 0
+ 523 0004 024B     		ldr	r3, .L41
+ 524 0006 8022     		mov	r2, #128
+ 525 0008 1201     		lsl	r2, r2, #4
+ 526 000a 1A60     		str	r2, [r3]
+ 348:.\Generated_Source\PSoC4/UART_RX_FULL.c **** }
+ 527              		.loc 1 348 0
+ 528 000c BD46     		mov	sp, r7
+ 529              		@ sp needed for prologue
+ 530 000e 80BD     		pop	{r7, pc}
+ 531              	.L42:
+ 532              		.align	2
+ 533              	.L41:
+ 534 0010 80E200E0 		.word	-536812928
+ 535              		.cfi_endproc
+ 536              	.LFE12:
+ 537              		.size	UART_RX_FULL_ClearPending, .-UART_RX_FULL_ClearPending
+ 538              		.text
+ 539              	.Letext0:
+ 540              		.file 2 "./Generated_Source/PSoC4/cytypes.h"
+ 541              		.section	.debug_info,"",%progbits
+ 542              	.Ldebug_info0:
+ 543 0000 96020000 		.4byte	0x296
+ 544 0004 0200     		.2byte	0x2
+ 545 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 546 000a 04       		.byte	0x4
+ 547 000b 01       		.uleb128 0x1
+ 548 000c 6B020000 		.4byte	.LASF35
+ 549 0010 01       		.byte	0x1
+ 550 0011 1F000000 		.4byte	.LASF36
+ 551 0015 29010000 		.4byte	.LASF37
+ 552 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 553 001d 00000000 		.4byte	0
+ 554 0021 00000000 		.4byte	0
+ 555 0025 00000000 		.4byte	.Ldebug_line0
+ 556 0029 02       		.uleb128 0x2
+ 557 002a 01       		.byte	0x1
+ 558 002b 06       		.byte	0x6
+ 559 002c E1020000 		.4byte	.LASF0
+ 560 0030 02       		.uleb128 0x2
+ 561 0031 01       		.byte	0x1
+ 562 0032 08       		.byte	0x8
+ 563 0033 89000000 		.4byte	.LASF1
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 17
+
+
+ 564 0037 02       		.uleb128 0x2
+ 565 0038 02       		.byte	0x2
+ 566 0039 05       		.byte	0x5
+ 567 003a 4F020000 		.4byte	.LASF2
+ 568 003e 02       		.uleb128 0x2
+ 569 003f 02       		.byte	0x2
+ 570 0040 07       		.byte	0x7
+ 571 0041 5D000000 		.4byte	.LASF3
+ 572 0045 02       		.uleb128 0x2
+ 573 0046 04       		.byte	0x4
+ 574 0047 05       		.byte	0x5
+ 575 0048 D8020000 		.4byte	.LASF4
+ 576 004c 02       		.uleb128 0x2
+ 577 004d 04       		.byte	0x4
+ 578 004e 07       		.byte	0x7
+ 579 004f BD000000 		.4byte	.LASF5
+ 580 0053 02       		.uleb128 0x2
+ 581 0054 08       		.byte	0x8
+ 582 0055 05       		.byte	0x5
+ 583 0056 16020000 		.4byte	.LASF6
+ 584 005a 02       		.uleb128 0x2
+ 585 005b 08       		.byte	0x8
+ 586 005c 07       		.byte	0x7
+ 587 005d D5010000 		.4byte	.LASF7
+ 588 0061 03       		.uleb128 0x3
+ 589 0062 04       		.byte	0x4
+ 590 0063 05       		.byte	0x5
+ 591 0064 696E7400 		.ascii	"int\000"
+ 592 0068 02       		.uleb128 0x2
+ 593 0069 04       		.byte	0x4
+ 594 006a 07       		.byte	0x7
+ 595 006b A6010000 		.4byte	.LASF8
+ 596 006f 04       		.uleb128 0x4
+ 597 0070 CF000000 		.4byte	.LASF9
+ 598 0074 02       		.byte	0x2
+ 599 0075 5B       		.byte	0x5b
+ 600 0076 30000000 		.4byte	0x30
+ 601 007a 04       		.uleb128 0x4
+ 602 007b 9A010000 		.4byte	.LASF10
+ 603 007f 02       		.byte	0x2
+ 604 0080 5D       		.byte	0x5d
+ 605 0081 4C000000 		.4byte	0x4c
+ 606 0085 02       		.uleb128 0x2
+ 607 0086 04       		.byte	0x4
+ 608 0087 04       		.byte	0x4
+ 609 0088 83000000 		.4byte	.LASF11
+ 610 008c 02       		.uleb128 0x2
+ 611 008d 08       		.byte	0x8
+ 612 008e 04       		.byte	0x4
+ 613 008f 22010000 		.4byte	.LASF12
+ 614 0093 02       		.uleb128 0x2
+ 615 0094 01       		.byte	0x1
+ 616 0095 08       		.byte	0x8
+ 617 0096 24020000 		.4byte	.LASF13
+ 618 009a 05       		.uleb128 0x5
+ 619 009b 6F000000 		.4byte	0x6f
+ 620 009f 04       		.uleb128 0x4
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 18
+
+
+ 621 00a0 00000000 		.4byte	.LASF14
+ 622 00a4 02       		.byte	0x2
+ 623 00a5 F2       		.byte	0xf2
+ 624 00a6 AA000000 		.4byte	0xaa
+ 625 00aa 05       		.uleb128 0x5
+ 626 00ab 7A000000 		.4byte	0x7a
+ 627 00af 06       		.uleb128 0x6
+ 628 00b0 EC010000 		.4byte	.LASF15
+ 629 00b4 02       		.byte	0x2
+ 630 00b5 0201     		.2byte	0x102
+ 631 00b7 BB000000 		.4byte	0xbb
+ 632 00bb 07       		.uleb128 0x7
+ 633 00bc 04       		.byte	0x4
+ 634 00bd C1000000 		.4byte	0xc1
+ 635 00c1 08       		.uleb128 0x8
+ 636 00c2 01       		.byte	0x1
+ 637 00c3 02       		.uleb128 0x2
+ 638 00c4 04       		.byte	0x4
+ 639 00c5 07       		.byte	0x7
+ 640 00c6 F9010000 		.4byte	.LASF16
+ 641 00ca 09       		.uleb128 0x9
+ 642 00cb 01       		.byte	0x1
+ 643 00cc 70000000 		.4byte	.LASF17
+ 644 00d0 01       		.byte	0x1
+ 645 00d1 35       		.byte	0x35
+ 646 00d2 01       		.byte	0x1
+ 647 00d3 00000000 		.4byte	.LFB0
+ 648 00d7 24000000 		.4byte	.LFE0
+ 649 00db 00000000 		.4byte	.LLST0
+ 650 00df 01       		.byte	0x1
+ 651 00e0 0A       		.uleb128 0xa
+ 652 00e1 01       		.byte	0x1
+ 653 00e2 F6000000 		.4byte	.LASF20
+ 654 00e6 01       		.byte	0x1
+ 655 00e7 53       		.byte	0x53
+ 656 00e8 01       		.byte	0x1
+ 657 00e9 00000000 		.4byte	.LFB1
+ 658 00ed 24000000 		.4byte	.LFE1
+ 659 00f1 2C000000 		.4byte	.LLST1
+ 660 00f5 01       		.byte	0x1
+ 661 00f6 09010000 		.4byte	0x109
+ 662 00fa 0B       		.uleb128 0xb
+ 663 00fb CD010000 		.4byte	.LASF22
+ 664 00ff 01       		.byte	0x1
+ 665 0100 53       		.byte	0x53
+ 666 0101 AF000000 		.4byte	0xaf
+ 667 0105 02       		.byte	0x2
+ 668 0106 91       		.byte	0x91
+ 669 0107 74       		.sleb128 -12
+ 670 0108 00       		.byte	0
+ 671 0109 09       		.uleb128 0x9
+ 672 010a 01       		.byte	0x1
+ 673 010b 59020000 		.4byte	.LASF18
+ 674 010f 01       		.byte	0x1
+ 675 0110 70       		.byte	0x70
+ 676 0111 01       		.byte	0x1
+ 677 0112 00000000 		.4byte	.LFB2
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 19
+
+
+ 678 0116 18000000 		.4byte	.LFE2
+ 679 011a 64000000 		.4byte	.LLST2
+ 680 011e 01       		.byte	0x1
+ 681 011f 09       		.uleb128 0x9
+ 682 0120 01       		.byte	0x1
+ 683 0121 0B010000 		.4byte	.LASF19
+ 684 0125 01       		.byte	0x1
+ 685 0126 8B       		.byte	0x8b
+ 686 0127 01       		.byte	0x1
+ 687 0128 00000000 		.4byte	.LFB3
+ 688 012c 18000000 		.4byte	.LFE3
+ 689 0130 90000000 		.4byte	.LLST3
+ 690 0134 01       		.byte	0x1
+ 691 0135 0C       		.uleb128 0xc
+ 692 0136 01       		.byte	0x1
+ 693 0137 ED020000 		.4byte	.LASF21
+ 694 013b 01       		.byte	0x1
+ 695 013c A6       		.byte	0xa6
+ 696 013d 01       		.byte	0x1
+ 697 013e 00000000 		.4byte	.LFB4
+ 698 0142 18000000 		.4byte	.LFE4
+ 699 0146 BC000000 		.4byte	.LLST4
+ 700 014a 01       		.byte	0x1
+ 701 014b 5E010000 		.4byte	0x15e
+ 702 014f 0B       		.uleb128 0xb
+ 703 0150 CD010000 		.4byte	.LASF22
+ 704 0154 01       		.byte	0x1
+ 705 0155 A6       		.byte	0xa6
+ 706 0156 AF000000 		.4byte	0xaf
+ 707 015a 02       		.byte	0x2
+ 708 015b 91       		.byte	0x91
+ 709 015c 74       		.sleb128 -12
+ 710 015d 00       		.byte	0
+ 711 015e 0D       		.uleb128 0xd
+ 712 015f 01       		.byte	0x1
+ 713 0160 97000000 		.4byte	.LASF28
+ 714 0164 01       		.byte	0x1
+ 715 0165 BA       		.byte	0xba
+ 716 0166 01       		.byte	0x1
+ 717 0167 AF000000 		.4byte	0xaf
+ 718 016b 00000000 		.4byte	.LFB5
+ 719 016f 14000000 		.4byte	.LFE5
+ 720 0173 F4000000 		.4byte	.LLST5
+ 721 0177 01       		.byte	0x1
+ 722 0178 0A       		.uleb128 0xa
+ 723 0179 01       		.byte	0x1
+ 724 017a 06000000 		.4byte	.LASF23
+ 725 017e 01       		.byte	0x1
+ 726 017f D2       		.byte	0xd2
+ 727 0180 01       		.byte	0x1
+ 728 0181 00000000 		.4byte	.LFB6
+ 729 0185 4C000000 		.4byte	.LFE6
+ 730 0189 20010000 		.4byte	.LLST6
+ 731 018d 01       		.byte	0x1
+ 732 018e BD010000 		.4byte	0x1bd
+ 733 0192 0B       		.uleb128 0xb
+ 734 0193 ED000000 		.4byte	.LASF24
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 20
+
+
+ 735 0197 01       		.byte	0x1
+ 736 0198 D2       		.byte	0xd2
+ 737 0199 6F000000 		.4byte	0x6f
+ 738 019d 02       		.byte	0x2
+ 739 019e 91       		.byte	0x91
+ 740 019f 67       		.sleb128 -25
+ 741 01a0 0E       		.uleb128 0xe
+ 742 01a1 AE000000 		.4byte	.LASF25
+ 743 01a5 01       		.byte	0x1
+ 744 01a6 D4       		.byte	0xd4
+ 745 01a7 6F000000 		.4byte	0x6f
+ 746 01ab 02       		.byte	0x2
+ 747 01ac 91       		.byte	0x91
+ 748 01ad 6B       		.sleb128 -21
+ 749 01ae 0E       		.uleb128 0xe
+ 750 01af B4020000 		.4byte	.LASF26
+ 751 01b3 01       		.byte	0x1
+ 752 01b4 D5       		.byte	0xd5
+ 753 01b5 7A000000 		.4byte	0x7a
+ 754 01b9 02       		.byte	0x2
+ 755 01ba 91       		.byte	0x91
+ 756 01bb 6C       		.sleb128 -20
+ 757 01bc 00       		.byte	0
+ 758 01bd 0F       		.uleb128 0xf
+ 759 01be 01       		.byte	0x1
+ 760 01bf 36020000 		.4byte	.LASF38
+ 761 01c3 01       		.byte	0x1
+ 762 01c4 EC       		.byte	0xec
+ 763 01c5 01       		.byte	0x1
+ 764 01c6 6F000000 		.4byte	0x6f
+ 765 01ca 00000000 		.4byte	.LFB7
+ 766 01ce 2C000000 		.4byte	.LFE7
+ 767 01d2 58010000 		.4byte	.LLST7
+ 768 01d6 01       		.byte	0x1
+ 769 01d7 F8010000 		.4byte	0x1f8
+ 770 01db 0E       		.uleb128 0xe
+ 771 01dc ED000000 		.4byte	.LASF24
+ 772 01e0 01       		.byte	0x1
+ 773 01e1 EE       		.byte	0xee
+ 774 01e2 7A000000 		.4byte	0x7a
+ 775 01e6 02       		.byte	0x2
+ 776 01e7 91       		.byte	0x91
+ 777 01e8 70       		.sleb128 -16
+ 778 01e9 0E       		.uleb128 0xe
+ 779 01ea B4020000 		.4byte	.LASF26
+ 780 01ee 01       		.byte	0x1
+ 781 01ef EF       		.byte	0xef
+ 782 01f0 7A000000 		.4byte	0x7a
+ 783 01f4 02       		.byte	0x2
+ 784 01f5 91       		.byte	0x91
+ 785 01f6 74       		.sleb128 -12
+ 786 01f7 00       		.byte	0
+ 787 01f8 10       		.uleb128 0x10
+ 788 01f9 01       		.byte	0x1
+ 789 01fa 02020000 		.4byte	.LASF27
+ 790 01fe 01       		.byte	0x1
+ 791 01ff 0501     		.2byte	0x105
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 21
+
+
+ 792 0201 01       		.byte	0x1
+ 793 0202 00000000 		.4byte	.LFB8
+ 794 0206 14000000 		.4byte	.LFE8
+ 795 020a 90010000 		.4byte	.LLST8
+ 796 020e 01       		.byte	0x1
+ 797 020f 11       		.uleb128 0x11
+ 798 0210 01       		.byte	0x1
+ 799 0211 47000000 		.4byte	.LASF29
+ 800 0215 01       		.byte	0x1
+ 801 0216 1A01     		.2byte	0x11a
+ 802 0218 01       		.byte	0x1
+ 803 0219 6F000000 		.4byte	0x6f
+ 804 021d 00000000 		.4byte	.LFB9
+ 805 0221 20000000 		.4byte	.LFE9
+ 806 0225 BC010000 		.4byte	.LLST9
+ 807 0229 01       		.byte	0x1
+ 808 022a 10       		.uleb128 0x10
+ 809 022b 01       		.byte	0x1
+ 810 022c C3020000 		.4byte	.LASF30
+ 811 0230 01       		.byte	0x1
+ 812 0231 2F01     		.2byte	0x12f
+ 813 0233 01       		.byte	0x1
+ 814 0234 00000000 		.4byte	.LFB10
+ 815 0238 14000000 		.4byte	.LFE10
+ 816 023c E8010000 		.4byte	.LLST10
+ 817 0240 01       		.byte	0x1
+ 818 0241 10       		.uleb128 0x10
+ 819 0242 01       		.byte	0x1
+ 820 0243 D5000000 		.4byte	.LASF31
+ 821 0247 01       		.byte	0x1
+ 822 0248 4501     		.2byte	0x145
+ 823 024a 01       		.byte	0x1
+ 824 024b 00000000 		.4byte	.LFB11
+ 825 024f 14000000 		.4byte	.LFE11
+ 826 0253 14020000 		.4byte	.LLST11
+ 827 0257 01       		.byte	0x1
+ 828 0258 10       		.uleb128 0x10
+ 829 0259 01       		.byte	0x1
+ 830 025a B3010000 		.4byte	.LASF32
+ 831 025e 01       		.byte	0x1
+ 832 025f 5901     		.2byte	0x159
+ 833 0261 01       		.byte	0x1
+ 834 0262 00000000 		.4byte	.LFB12
+ 835 0266 14000000 		.4byte	.LFE12
+ 836 026a 40020000 		.4byte	.LLST12
+ 837 026e 01       		.byte	0x1
+ 838 026f 12       		.uleb128 0x12
+ 839 0270 A1010000 		.4byte	.LASF33
+ 840 0274 01       		.byte	0x1
+ 841 0275 1D       		.byte	0x1d
+ 842 0276 9A000000 		.4byte	0x9a
+ 843 027a 01       		.byte	0x1
+ 844 027b 01       		.byte	0x1
+ 845 027c 13       		.uleb128 0x13
+ 846 027d AF000000 		.4byte	0xaf
+ 847 0281 8C020000 		.4byte	0x28c
+ 848 0285 14       		.uleb128 0x14
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 22
+
+
+ 849 0286 C3000000 		.4byte	0xc3
+ 850 028a 2F       		.byte	0x2f
+ 851 028b 00       		.byte	0
+ 852 028c 12       		.uleb128 0x12
+ 853 028d 29020000 		.4byte	.LASF34
+ 854 0291 01       		.byte	0x1
+ 855 0292 21       		.byte	0x21
+ 856 0293 7C020000 		.4byte	0x27c
+ 857 0297 01       		.byte	0x1
+ 858 0298 01       		.byte	0x1
+ 859 0299 00       		.byte	0
+ 860              		.section	.debug_abbrev,"",%progbits
+ 861              	.Ldebug_abbrev0:
+ 862 0000 01       		.uleb128 0x1
+ 863 0001 11       		.uleb128 0x11
+ 864 0002 01       		.byte	0x1
+ 865 0003 25       		.uleb128 0x25
+ 866 0004 0E       		.uleb128 0xe
+ 867 0005 13       		.uleb128 0x13
+ 868 0006 0B       		.uleb128 0xb
+ 869 0007 03       		.uleb128 0x3
+ 870 0008 0E       		.uleb128 0xe
+ 871 0009 1B       		.uleb128 0x1b
+ 872 000a 0E       		.uleb128 0xe
+ 873 000b 55       		.uleb128 0x55
+ 874 000c 06       		.uleb128 0x6
+ 875 000d 11       		.uleb128 0x11
+ 876 000e 01       		.uleb128 0x1
+ 877 000f 52       		.uleb128 0x52
+ 878 0010 01       		.uleb128 0x1
+ 879 0011 10       		.uleb128 0x10
+ 880 0012 06       		.uleb128 0x6
+ 881 0013 00       		.byte	0
+ 882 0014 00       		.byte	0
+ 883 0015 02       		.uleb128 0x2
+ 884 0016 24       		.uleb128 0x24
+ 885 0017 00       		.byte	0
+ 886 0018 0B       		.uleb128 0xb
+ 887 0019 0B       		.uleb128 0xb
+ 888 001a 3E       		.uleb128 0x3e
+ 889 001b 0B       		.uleb128 0xb
+ 890 001c 03       		.uleb128 0x3
+ 891 001d 0E       		.uleb128 0xe
+ 892 001e 00       		.byte	0
+ 893 001f 00       		.byte	0
+ 894 0020 03       		.uleb128 0x3
+ 895 0021 24       		.uleb128 0x24
+ 896 0022 00       		.byte	0
+ 897 0023 0B       		.uleb128 0xb
+ 898 0024 0B       		.uleb128 0xb
+ 899 0025 3E       		.uleb128 0x3e
+ 900 0026 0B       		.uleb128 0xb
+ 901 0027 03       		.uleb128 0x3
+ 902 0028 08       		.uleb128 0x8
+ 903 0029 00       		.byte	0
+ 904 002a 00       		.byte	0
+ 905 002b 04       		.uleb128 0x4
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 23
+
+
+ 906 002c 16       		.uleb128 0x16
+ 907 002d 00       		.byte	0
+ 908 002e 03       		.uleb128 0x3
+ 909 002f 0E       		.uleb128 0xe
+ 910 0030 3A       		.uleb128 0x3a
+ 911 0031 0B       		.uleb128 0xb
+ 912 0032 3B       		.uleb128 0x3b
+ 913 0033 0B       		.uleb128 0xb
+ 914 0034 49       		.uleb128 0x49
+ 915 0035 13       		.uleb128 0x13
+ 916 0036 00       		.byte	0
+ 917 0037 00       		.byte	0
+ 918 0038 05       		.uleb128 0x5
+ 919 0039 35       		.uleb128 0x35
+ 920 003a 00       		.byte	0
+ 921 003b 49       		.uleb128 0x49
+ 922 003c 13       		.uleb128 0x13
+ 923 003d 00       		.byte	0
+ 924 003e 00       		.byte	0
+ 925 003f 06       		.uleb128 0x6
+ 926 0040 16       		.uleb128 0x16
+ 927 0041 00       		.byte	0
+ 928 0042 03       		.uleb128 0x3
+ 929 0043 0E       		.uleb128 0xe
+ 930 0044 3A       		.uleb128 0x3a
+ 931 0045 0B       		.uleb128 0xb
+ 932 0046 3B       		.uleb128 0x3b
+ 933 0047 05       		.uleb128 0x5
+ 934 0048 49       		.uleb128 0x49
+ 935 0049 13       		.uleb128 0x13
+ 936 004a 00       		.byte	0
+ 937 004b 00       		.byte	0
+ 938 004c 07       		.uleb128 0x7
+ 939 004d 0F       		.uleb128 0xf
+ 940 004e 00       		.byte	0
+ 941 004f 0B       		.uleb128 0xb
+ 942 0050 0B       		.uleb128 0xb
+ 943 0051 49       		.uleb128 0x49
+ 944 0052 13       		.uleb128 0x13
+ 945 0053 00       		.byte	0
+ 946 0054 00       		.byte	0
+ 947 0055 08       		.uleb128 0x8
+ 948 0056 15       		.uleb128 0x15
+ 949 0057 00       		.byte	0
+ 950 0058 27       		.uleb128 0x27
+ 951 0059 0C       		.uleb128 0xc
+ 952 005a 00       		.byte	0
+ 953 005b 00       		.byte	0
+ 954 005c 09       		.uleb128 0x9
+ 955 005d 2E       		.uleb128 0x2e
+ 956 005e 00       		.byte	0
+ 957 005f 3F       		.uleb128 0x3f
+ 958 0060 0C       		.uleb128 0xc
+ 959 0061 03       		.uleb128 0x3
+ 960 0062 0E       		.uleb128 0xe
+ 961 0063 3A       		.uleb128 0x3a
+ 962 0064 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 24
+
+
+ 963 0065 3B       		.uleb128 0x3b
+ 964 0066 0B       		.uleb128 0xb
+ 965 0067 27       		.uleb128 0x27
+ 966 0068 0C       		.uleb128 0xc
+ 967 0069 11       		.uleb128 0x11
+ 968 006a 01       		.uleb128 0x1
+ 969 006b 12       		.uleb128 0x12
+ 970 006c 01       		.uleb128 0x1
+ 971 006d 40       		.uleb128 0x40
+ 972 006e 06       		.uleb128 0x6
+ 973 006f 9642     		.uleb128 0x2116
+ 974 0071 0C       		.uleb128 0xc
+ 975 0072 00       		.byte	0
+ 976 0073 00       		.byte	0
+ 977 0074 0A       		.uleb128 0xa
+ 978 0075 2E       		.uleb128 0x2e
+ 979 0076 01       		.byte	0x1
+ 980 0077 3F       		.uleb128 0x3f
+ 981 0078 0C       		.uleb128 0xc
+ 982 0079 03       		.uleb128 0x3
+ 983 007a 0E       		.uleb128 0xe
+ 984 007b 3A       		.uleb128 0x3a
+ 985 007c 0B       		.uleb128 0xb
+ 986 007d 3B       		.uleb128 0x3b
+ 987 007e 0B       		.uleb128 0xb
+ 988 007f 27       		.uleb128 0x27
+ 989 0080 0C       		.uleb128 0xc
+ 990 0081 11       		.uleb128 0x11
+ 991 0082 01       		.uleb128 0x1
+ 992 0083 12       		.uleb128 0x12
+ 993 0084 01       		.uleb128 0x1
+ 994 0085 40       		.uleb128 0x40
+ 995 0086 06       		.uleb128 0x6
+ 996 0087 9642     		.uleb128 0x2116
+ 997 0089 0C       		.uleb128 0xc
+ 998 008a 01       		.uleb128 0x1
+ 999 008b 13       		.uleb128 0x13
+ 1000 008c 00       		.byte	0
+ 1001 008d 00       		.byte	0
+ 1002 008e 0B       		.uleb128 0xb
+ 1003 008f 05       		.uleb128 0x5
+ 1004 0090 00       		.byte	0
+ 1005 0091 03       		.uleb128 0x3
+ 1006 0092 0E       		.uleb128 0xe
+ 1007 0093 3A       		.uleb128 0x3a
+ 1008 0094 0B       		.uleb128 0xb
+ 1009 0095 3B       		.uleb128 0x3b
+ 1010 0096 0B       		.uleb128 0xb
+ 1011 0097 49       		.uleb128 0x49
+ 1012 0098 13       		.uleb128 0x13
+ 1013 0099 02       		.uleb128 0x2
+ 1014 009a 0A       		.uleb128 0xa
+ 1015 009b 00       		.byte	0
+ 1016 009c 00       		.byte	0
+ 1017 009d 0C       		.uleb128 0xc
+ 1018 009e 2E       		.uleb128 0x2e
+ 1019 009f 01       		.byte	0x1
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 25
+
+
+ 1020 00a0 3F       		.uleb128 0x3f
+ 1021 00a1 0C       		.uleb128 0xc
+ 1022 00a2 03       		.uleb128 0x3
+ 1023 00a3 0E       		.uleb128 0xe
+ 1024 00a4 3A       		.uleb128 0x3a
+ 1025 00a5 0B       		.uleb128 0xb
+ 1026 00a6 3B       		.uleb128 0x3b
+ 1027 00a7 0B       		.uleb128 0xb
+ 1028 00a8 27       		.uleb128 0x27
+ 1029 00a9 0C       		.uleb128 0xc
+ 1030 00aa 11       		.uleb128 0x11
+ 1031 00ab 01       		.uleb128 0x1
+ 1032 00ac 12       		.uleb128 0x12
+ 1033 00ad 01       		.uleb128 0x1
+ 1034 00ae 40       		.uleb128 0x40
+ 1035 00af 06       		.uleb128 0x6
+ 1036 00b0 9742     		.uleb128 0x2117
+ 1037 00b2 0C       		.uleb128 0xc
+ 1038 00b3 01       		.uleb128 0x1
+ 1039 00b4 13       		.uleb128 0x13
+ 1040 00b5 00       		.byte	0
+ 1041 00b6 00       		.byte	0
+ 1042 00b7 0D       		.uleb128 0xd
+ 1043 00b8 2E       		.uleb128 0x2e
+ 1044 00b9 00       		.byte	0
+ 1045 00ba 3F       		.uleb128 0x3f
+ 1046 00bb 0C       		.uleb128 0xc
+ 1047 00bc 03       		.uleb128 0x3
+ 1048 00bd 0E       		.uleb128 0xe
+ 1049 00be 3A       		.uleb128 0x3a
+ 1050 00bf 0B       		.uleb128 0xb
+ 1051 00c0 3B       		.uleb128 0x3b
+ 1052 00c1 0B       		.uleb128 0xb
+ 1053 00c2 27       		.uleb128 0x27
+ 1054 00c3 0C       		.uleb128 0xc
+ 1055 00c4 49       		.uleb128 0x49
+ 1056 00c5 13       		.uleb128 0x13
+ 1057 00c6 11       		.uleb128 0x11
+ 1058 00c7 01       		.uleb128 0x1
+ 1059 00c8 12       		.uleb128 0x12
+ 1060 00c9 01       		.uleb128 0x1
+ 1061 00ca 40       		.uleb128 0x40
+ 1062 00cb 06       		.uleb128 0x6
+ 1063 00cc 9742     		.uleb128 0x2117
+ 1064 00ce 0C       		.uleb128 0xc
+ 1065 00cf 00       		.byte	0
+ 1066 00d0 00       		.byte	0
+ 1067 00d1 0E       		.uleb128 0xe
+ 1068 00d2 34       		.uleb128 0x34
+ 1069 00d3 00       		.byte	0
+ 1070 00d4 03       		.uleb128 0x3
+ 1071 00d5 0E       		.uleb128 0xe
+ 1072 00d6 3A       		.uleb128 0x3a
+ 1073 00d7 0B       		.uleb128 0xb
+ 1074 00d8 3B       		.uleb128 0x3b
+ 1075 00d9 0B       		.uleb128 0xb
+ 1076 00da 49       		.uleb128 0x49
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 26
+
+
+ 1077 00db 13       		.uleb128 0x13
+ 1078 00dc 02       		.uleb128 0x2
+ 1079 00dd 0A       		.uleb128 0xa
+ 1080 00de 00       		.byte	0
+ 1081 00df 00       		.byte	0
+ 1082 00e0 0F       		.uleb128 0xf
+ 1083 00e1 2E       		.uleb128 0x2e
+ 1084 00e2 01       		.byte	0x1
+ 1085 00e3 3F       		.uleb128 0x3f
+ 1086 00e4 0C       		.uleb128 0xc
+ 1087 00e5 03       		.uleb128 0x3
+ 1088 00e6 0E       		.uleb128 0xe
+ 1089 00e7 3A       		.uleb128 0x3a
+ 1090 00e8 0B       		.uleb128 0xb
+ 1091 00e9 3B       		.uleb128 0x3b
+ 1092 00ea 0B       		.uleb128 0xb
+ 1093 00eb 27       		.uleb128 0x27
+ 1094 00ec 0C       		.uleb128 0xc
+ 1095 00ed 49       		.uleb128 0x49
+ 1096 00ee 13       		.uleb128 0x13
+ 1097 00ef 11       		.uleb128 0x11
+ 1098 00f0 01       		.uleb128 0x1
+ 1099 00f1 12       		.uleb128 0x12
+ 1100 00f2 01       		.uleb128 0x1
+ 1101 00f3 40       		.uleb128 0x40
+ 1102 00f4 06       		.uleb128 0x6
+ 1103 00f5 9742     		.uleb128 0x2117
+ 1104 00f7 0C       		.uleb128 0xc
+ 1105 00f8 01       		.uleb128 0x1
+ 1106 00f9 13       		.uleb128 0x13
+ 1107 00fa 00       		.byte	0
+ 1108 00fb 00       		.byte	0
+ 1109 00fc 10       		.uleb128 0x10
+ 1110 00fd 2E       		.uleb128 0x2e
+ 1111 00fe 00       		.byte	0
+ 1112 00ff 3F       		.uleb128 0x3f
+ 1113 0100 0C       		.uleb128 0xc
+ 1114 0101 03       		.uleb128 0x3
+ 1115 0102 0E       		.uleb128 0xe
+ 1116 0103 3A       		.uleb128 0x3a
+ 1117 0104 0B       		.uleb128 0xb
+ 1118 0105 3B       		.uleb128 0x3b
+ 1119 0106 05       		.uleb128 0x5
+ 1120 0107 27       		.uleb128 0x27
+ 1121 0108 0C       		.uleb128 0xc
+ 1122 0109 11       		.uleb128 0x11
+ 1123 010a 01       		.uleb128 0x1
+ 1124 010b 12       		.uleb128 0x12
+ 1125 010c 01       		.uleb128 0x1
+ 1126 010d 40       		.uleb128 0x40
+ 1127 010e 06       		.uleb128 0x6
+ 1128 010f 9742     		.uleb128 0x2117
+ 1129 0111 0C       		.uleb128 0xc
+ 1130 0112 00       		.byte	0
+ 1131 0113 00       		.byte	0
+ 1132 0114 11       		.uleb128 0x11
+ 1133 0115 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 27
+
+
+ 1134 0116 00       		.byte	0
+ 1135 0117 3F       		.uleb128 0x3f
+ 1136 0118 0C       		.uleb128 0xc
+ 1137 0119 03       		.uleb128 0x3
+ 1138 011a 0E       		.uleb128 0xe
+ 1139 011b 3A       		.uleb128 0x3a
+ 1140 011c 0B       		.uleb128 0xb
+ 1141 011d 3B       		.uleb128 0x3b
+ 1142 011e 05       		.uleb128 0x5
+ 1143 011f 27       		.uleb128 0x27
+ 1144 0120 0C       		.uleb128 0xc
+ 1145 0121 49       		.uleb128 0x49
+ 1146 0122 13       		.uleb128 0x13
+ 1147 0123 11       		.uleb128 0x11
+ 1148 0124 01       		.uleb128 0x1
+ 1149 0125 12       		.uleb128 0x12
+ 1150 0126 01       		.uleb128 0x1
+ 1151 0127 40       		.uleb128 0x40
+ 1152 0128 06       		.uleb128 0x6
+ 1153 0129 9742     		.uleb128 0x2117
+ 1154 012b 0C       		.uleb128 0xc
+ 1155 012c 00       		.byte	0
+ 1156 012d 00       		.byte	0
+ 1157 012e 12       		.uleb128 0x12
+ 1158 012f 34       		.uleb128 0x34
+ 1159 0130 00       		.byte	0
+ 1160 0131 03       		.uleb128 0x3
+ 1161 0132 0E       		.uleb128 0xe
+ 1162 0133 3A       		.uleb128 0x3a
+ 1163 0134 0B       		.uleb128 0xb
+ 1164 0135 3B       		.uleb128 0x3b
+ 1165 0136 0B       		.uleb128 0xb
+ 1166 0137 49       		.uleb128 0x49
+ 1167 0138 13       		.uleb128 0x13
+ 1168 0139 3F       		.uleb128 0x3f
+ 1169 013a 0C       		.uleb128 0xc
+ 1170 013b 3C       		.uleb128 0x3c
+ 1171 013c 0C       		.uleb128 0xc
+ 1172 013d 00       		.byte	0
+ 1173 013e 00       		.byte	0
+ 1174 013f 13       		.uleb128 0x13
+ 1175 0140 01       		.uleb128 0x1
+ 1176 0141 01       		.byte	0x1
+ 1177 0142 49       		.uleb128 0x49
+ 1178 0143 13       		.uleb128 0x13
+ 1179 0144 01       		.uleb128 0x1
+ 1180 0145 13       		.uleb128 0x13
+ 1181 0146 00       		.byte	0
+ 1182 0147 00       		.byte	0
+ 1183 0148 14       		.uleb128 0x14
+ 1184 0149 21       		.uleb128 0x21
+ 1185 014a 00       		.byte	0
+ 1186 014b 49       		.uleb128 0x49
+ 1187 014c 13       		.uleb128 0x13
+ 1188 014d 2F       		.uleb128 0x2f
+ 1189 014e 0B       		.uleb128 0xb
+ 1190 014f 00       		.byte	0
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 28
+
+
+ 1191 0150 00       		.byte	0
+ 1192 0151 00       		.byte	0
+ 1193              		.section	.debug_loc,"",%progbits
+ 1194              	.Ldebug_loc0:
+ 1195              	.LLST0:
+ 1196 0000 00000000 		.4byte	.LFB0
+ 1197 0004 02000000 		.4byte	.LCFI0
+ 1198 0008 0200     		.2byte	0x2
+ 1199 000a 7D       		.byte	0x7d
+ 1200 000b 00       		.sleb128 0
+ 1201 000c 02000000 		.4byte	.LCFI0
+ 1202 0010 04000000 		.4byte	.LCFI1
+ 1203 0014 0200     		.2byte	0x2
+ 1204 0016 7D       		.byte	0x7d
+ 1205 0017 08       		.sleb128 8
+ 1206 0018 04000000 		.4byte	.LCFI1
+ 1207 001c 24000000 		.4byte	.LFE0
+ 1208 0020 0200     		.2byte	0x2
+ 1209 0022 77       		.byte	0x77
+ 1210 0023 08       		.sleb128 8
+ 1211 0024 00000000 		.4byte	0
+ 1212 0028 00000000 		.4byte	0
+ 1213              	.LLST1:
+ 1214 002c 00000000 		.4byte	.LFB1
+ 1215 0030 02000000 		.4byte	.LCFI2
+ 1216 0034 0200     		.2byte	0x2
+ 1217 0036 7D       		.byte	0x7d
+ 1218 0037 00       		.sleb128 0
+ 1219 0038 02000000 		.4byte	.LCFI2
+ 1220 003c 04000000 		.4byte	.LCFI3
+ 1221 0040 0200     		.2byte	0x2
+ 1222 0042 7D       		.byte	0x7d
+ 1223 0043 08       		.sleb128 8
+ 1224 0044 04000000 		.4byte	.LCFI3
+ 1225 0048 06000000 		.4byte	.LCFI4
+ 1226 004c 0200     		.2byte	0x2
+ 1227 004e 7D       		.byte	0x7d
+ 1228 004f 10       		.sleb128 16
+ 1229 0050 06000000 		.4byte	.LCFI4
+ 1230 0054 24000000 		.4byte	.LFE1
+ 1231 0058 0200     		.2byte	0x2
+ 1232 005a 77       		.byte	0x77
+ 1233 005b 10       		.sleb128 16
+ 1234 005c 00000000 		.4byte	0
+ 1235 0060 00000000 		.4byte	0
+ 1236              	.LLST2:
+ 1237 0064 00000000 		.4byte	.LFB2
+ 1238 0068 02000000 		.4byte	.LCFI5
+ 1239 006c 0200     		.2byte	0x2
+ 1240 006e 7D       		.byte	0x7d
+ 1241 006f 00       		.sleb128 0
+ 1242 0070 02000000 		.4byte	.LCFI5
+ 1243 0074 04000000 		.4byte	.LCFI6
+ 1244 0078 0200     		.2byte	0x2
+ 1245 007a 7D       		.byte	0x7d
+ 1246 007b 08       		.sleb128 8
+ 1247 007c 04000000 		.4byte	.LCFI6
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 29
+
+
+ 1248 0080 18000000 		.4byte	.LFE2
+ 1249 0084 0200     		.2byte	0x2
+ 1250 0086 77       		.byte	0x77
+ 1251 0087 08       		.sleb128 8
+ 1252 0088 00000000 		.4byte	0
+ 1253 008c 00000000 		.4byte	0
+ 1254              	.LLST3:
+ 1255 0090 00000000 		.4byte	.LFB3
+ 1256 0094 02000000 		.4byte	.LCFI7
+ 1257 0098 0200     		.2byte	0x2
+ 1258 009a 7D       		.byte	0x7d
+ 1259 009b 00       		.sleb128 0
+ 1260 009c 02000000 		.4byte	.LCFI7
+ 1261 00a0 04000000 		.4byte	.LCFI8
+ 1262 00a4 0200     		.2byte	0x2
+ 1263 00a6 7D       		.byte	0x7d
+ 1264 00a7 08       		.sleb128 8
+ 1265 00a8 04000000 		.4byte	.LCFI8
+ 1266 00ac 18000000 		.4byte	.LFE3
+ 1267 00b0 0200     		.2byte	0x2
+ 1268 00b2 77       		.byte	0x77
+ 1269 00b3 08       		.sleb128 8
+ 1270 00b4 00000000 		.4byte	0
+ 1271 00b8 00000000 		.4byte	0
+ 1272              	.LLST4:
+ 1273 00bc 00000000 		.4byte	.LFB4
+ 1274 00c0 02000000 		.4byte	.LCFI9
+ 1275 00c4 0200     		.2byte	0x2
+ 1276 00c6 7D       		.byte	0x7d
+ 1277 00c7 00       		.sleb128 0
+ 1278 00c8 02000000 		.4byte	.LCFI9
+ 1279 00cc 04000000 		.4byte	.LCFI10
+ 1280 00d0 0200     		.2byte	0x2
+ 1281 00d2 7D       		.byte	0x7d
+ 1282 00d3 08       		.sleb128 8
+ 1283 00d4 04000000 		.4byte	.LCFI10
+ 1284 00d8 06000000 		.4byte	.LCFI11
+ 1285 00dc 0200     		.2byte	0x2
+ 1286 00de 7D       		.byte	0x7d
+ 1287 00df 10       		.sleb128 16
+ 1288 00e0 06000000 		.4byte	.LCFI11
+ 1289 00e4 18000000 		.4byte	.LFE4
+ 1290 00e8 0200     		.2byte	0x2
+ 1291 00ea 77       		.byte	0x77
+ 1292 00eb 10       		.sleb128 16
+ 1293 00ec 00000000 		.4byte	0
+ 1294 00f0 00000000 		.4byte	0
+ 1295              	.LLST5:
+ 1296 00f4 00000000 		.4byte	.LFB5
+ 1297 00f8 02000000 		.4byte	.LCFI12
+ 1298 00fc 0200     		.2byte	0x2
+ 1299 00fe 7D       		.byte	0x7d
+ 1300 00ff 00       		.sleb128 0
+ 1301 0100 02000000 		.4byte	.LCFI12
+ 1302 0104 04000000 		.4byte	.LCFI13
+ 1303 0108 0200     		.2byte	0x2
+ 1304 010a 7D       		.byte	0x7d
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 30
+
+
+ 1305 010b 08       		.sleb128 8
+ 1306 010c 04000000 		.4byte	.LCFI13
+ 1307 0110 14000000 		.4byte	.LFE5
+ 1308 0114 0200     		.2byte	0x2
+ 1309 0116 77       		.byte	0x77
+ 1310 0117 08       		.sleb128 8
+ 1311 0118 00000000 		.4byte	0
+ 1312 011c 00000000 		.4byte	0
+ 1313              	.LLST6:
+ 1314 0120 00000000 		.4byte	.LFB6
+ 1315 0124 02000000 		.4byte	.LCFI14
+ 1316 0128 0200     		.2byte	0x2
+ 1317 012a 7D       		.byte	0x7d
+ 1318 012b 00       		.sleb128 0
+ 1319 012c 02000000 		.4byte	.LCFI14
+ 1320 0130 04000000 		.4byte	.LCFI15
+ 1321 0134 0200     		.2byte	0x2
+ 1322 0136 7D       		.byte	0x7d
+ 1323 0137 0C       		.sleb128 12
+ 1324 0138 04000000 		.4byte	.LCFI15
+ 1325 013c 06000000 		.4byte	.LCFI16
+ 1326 0140 0200     		.2byte	0x2
+ 1327 0142 7D       		.byte	0x7d
+ 1328 0143 20       		.sleb128 32
+ 1329 0144 06000000 		.4byte	.LCFI16
+ 1330 0148 4C000000 		.4byte	.LFE6
+ 1331 014c 0200     		.2byte	0x2
+ 1332 014e 77       		.byte	0x77
+ 1333 014f 20       		.sleb128 32
+ 1334 0150 00000000 		.4byte	0
+ 1335 0154 00000000 		.4byte	0
+ 1336              	.LLST7:
+ 1337 0158 00000000 		.4byte	.LFB7
+ 1338 015c 02000000 		.4byte	.LCFI17
+ 1339 0160 0200     		.2byte	0x2
+ 1340 0162 7D       		.byte	0x7d
+ 1341 0163 00       		.sleb128 0
+ 1342 0164 02000000 		.4byte	.LCFI17
+ 1343 0168 04000000 		.4byte	.LCFI18
+ 1344 016c 0200     		.2byte	0x2
+ 1345 016e 7D       		.byte	0x7d
+ 1346 016f 08       		.sleb128 8
+ 1347 0170 04000000 		.4byte	.LCFI18
+ 1348 0174 06000000 		.4byte	.LCFI19
+ 1349 0178 0200     		.2byte	0x2
+ 1350 017a 7D       		.byte	0x7d
+ 1351 017b 10       		.sleb128 16
+ 1352 017c 06000000 		.4byte	.LCFI19
+ 1353 0180 2C000000 		.4byte	.LFE7
+ 1354 0184 0200     		.2byte	0x2
+ 1355 0186 77       		.byte	0x77
+ 1356 0187 10       		.sleb128 16
+ 1357 0188 00000000 		.4byte	0
+ 1358 018c 00000000 		.4byte	0
+ 1359              	.LLST8:
+ 1360 0190 00000000 		.4byte	.LFB8
+ 1361 0194 02000000 		.4byte	.LCFI20
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 31
+
+
+ 1362 0198 0200     		.2byte	0x2
+ 1363 019a 7D       		.byte	0x7d
+ 1364 019b 00       		.sleb128 0
+ 1365 019c 02000000 		.4byte	.LCFI20
+ 1366 01a0 04000000 		.4byte	.LCFI21
+ 1367 01a4 0200     		.2byte	0x2
+ 1368 01a6 7D       		.byte	0x7d
+ 1369 01a7 08       		.sleb128 8
+ 1370 01a8 04000000 		.4byte	.LCFI21
+ 1371 01ac 14000000 		.4byte	.LFE8
+ 1372 01b0 0200     		.2byte	0x2
+ 1373 01b2 77       		.byte	0x77
+ 1374 01b3 08       		.sleb128 8
+ 1375 01b4 00000000 		.4byte	0
+ 1376 01b8 00000000 		.4byte	0
+ 1377              	.LLST9:
+ 1378 01bc 00000000 		.4byte	.LFB9
+ 1379 01c0 02000000 		.4byte	.LCFI22
+ 1380 01c4 0200     		.2byte	0x2
+ 1381 01c6 7D       		.byte	0x7d
+ 1382 01c7 00       		.sleb128 0
+ 1383 01c8 02000000 		.4byte	.LCFI22
+ 1384 01cc 04000000 		.4byte	.LCFI23
+ 1385 01d0 0200     		.2byte	0x2
+ 1386 01d2 7D       		.byte	0x7d
+ 1387 01d3 08       		.sleb128 8
+ 1388 01d4 04000000 		.4byte	.LCFI23
+ 1389 01d8 20000000 		.4byte	.LFE9
+ 1390 01dc 0200     		.2byte	0x2
+ 1391 01de 77       		.byte	0x77
+ 1392 01df 08       		.sleb128 8
+ 1393 01e0 00000000 		.4byte	0
+ 1394 01e4 00000000 		.4byte	0
+ 1395              	.LLST10:
+ 1396 01e8 00000000 		.4byte	.LFB10
+ 1397 01ec 02000000 		.4byte	.LCFI24
+ 1398 01f0 0200     		.2byte	0x2
+ 1399 01f2 7D       		.byte	0x7d
+ 1400 01f3 00       		.sleb128 0
+ 1401 01f4 02000000 		.4byte	.LCFI24
+ 1402 01f8 04000000 		.4byte	.LCFI25
+ 1403 01fc 0200     		.2byte	0x2
+ 1404 01fe 7D       		.byte	0x7d
+ 1405 01ff 08       		.sleb128 8
+ 1406 0200 04000000 		.4byte	.LCFI25
+ 1407 0204 14000000 		.4byte	.LFE10
+ 1408 0208 0200     		.2byte	0x2
+ 1409 020a 77       		.byte	0x77
+ 1410 020b 08       		.sleb128 8
+ 1411 020c 00000000 		.4byte	0
+ 1412 0210 00000000 		.4byte	0
+ 1413              	.LLST11:
+ 1414 0214 00000000 		.4byte	.LFB11
+ 1415 0218 02000000 		.4byte	.LCFI26
+ 1416 021c 0200     		.2byte	0x2
+ 1417 021e 7D       		.byte	0x7d
+ 1418 021f 00       		.sleb128 0
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 32
+
+
+ 1419 0220 02000000 		.4byte	.LCFI26
+ 1420 0224 04000000 		.4byte	.LCFI27
+ 1421 0228 0200     		.2byte	0x2
+ 1422 022a 7D       		.byte	0x7d
+ 1423 022b 08       		.sleb128 8
+ 1424 022c 04000000 		.4byte	.LCFI27
+ 1425 0230 14000000 		.4byte	.LFE11
+ 1426 0234 0200     		.2byte	0x2
+ 1427 0236 77       		.byte	0x77
+ 1428 0237 08       		.sleb128 8
+ 1429 0238 00000000 		.4byte	0
+ 1430 023c 00000000 		.4byte	0
+ 1431              	.LLST12:
+ 1432 0240 00000000 		.4byte	.LFB12
+ 1433 0244 02000000 		.4byte	.LCFI28
+ 1434 0248 0200     		.2byte	0x2
+ 1435 024a 7D       		.byte	0x7d
+ 1436 024b 00       		.sleb128 0
+ 1437 024c 02000000 		.4byte	.LCFI28
+ 1438 0250 04000000 		.4byte	.LCFI29
+ 1439 0254 0200     		.2byte	0x2
+ 1440 0256 7D       		.byte	0x7d
+ 1441 0257 08       		.sleb128 8
+ 1442 0258 04000000 		.4byte	.LCFI29
+ 1443 025c 14000000 		.4byte	.LFE12
+ 1444 0260 0200     		.2byte	0x2
+ 1445 0262 77       		.byte	0x77
+ 1446 0263 08       		.sleb128 8
+ 1447 0264 00000000 		.4byte	0
+ 1448 0268 00000000 		.4byte	0
+ 1449              		.section	.debug_aranges,"",%progbits
+ 1450 0000 7C000000 		.4byte	0x7c
+ 1451 0004 0200     		.2byte	0x2
+ 1452 0006 00000000 		.4byte	.Ldebug_info0
+ 1453 000a 04       		.byte	0x4
+ 1454 000b 00       		.byte	0
+ 1455 000c 0000     		.2byte	0
+ 1456 000e 0000     		.2byte	0
+ 1457 0010 00000000 		.4byte	.LFB0
+ 1458 0014 24000000 		.4byte	.LFE0-.LFB0
+ 1459 0018 00000000 		.4byte	.LFB1
+ 1460 001c 24000000 		.4byte	.LFE1-.LFB1
+ 1461 0020 00000000 		.4byte	.LFB2
+ 1462 0024 18000000 		.4byte	.LFE2-.LFB2
+ 1463 0028 00000000 		.4byte	.LFB3
+ 1464 002c 18000000 		.4byte	.LFE3-.LFB3
+ 1465 0030 00000000 		.4byte	.LFB4
+ 1466 0034 18000000 		.4byte	.LFE4-.LFB4
+ 1467 0038 00000000 		.4byte	.LFB5
+ 1468 003c 14000000 		.4byte	.LFE5-.LFB5
+ 1469 0040 00000000 		.4byte	.LFB6
+ 1470 0044 4C000000 		.4byte	.LFE6-.LFB6
+ 1471 0048 00000000 		.4byte	.LFB7
+ 1472 004c 2C000000 		.4byte	.LFE7-.LFB7
+ 1473 0050 00000000 		.4byte	.LFB8
+ 1474 0054 14000000 		.4byte	.LFE8-.LFB8
+ 1475 0058 00000000 		.4byte	.LFB9
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 33
+
+
+ 1476 005c 20000000 		.4byte	.LFE9-.LFB9
+ 1477 0060 00000000 		.4byte	.LFB10
+ 1478 0064 14000000 		.4byte	.LFE10-.LFB10
+ 1479 0068 00000000 		.4byte	.LFB11
+ 1480 006c 14000000 		.4byte	.LFE11-.LFB11
+ 1481 0070 00000000 		.4byte	.LFB12
+ 1482 0074 14000000 		.4byte	.LFE12-.LFB12
+ 1483 0078 00000000 		.4byte	0
+ 1484 007c 00000000 		.4byte	0
+ 1485              		.section	.debug_ranges,"",%progbits
+ 1486              	.Ldebug_ranges0:
+ 1487 0000 00000000 		.4byte	.LFB0
+ 1488 0004 24000000 		.4byte	.LFE0
+ 1489 0008 00000000 		.4byte	.LFB1
+ 1490 000c 24000000 		.4byte	.LFE1
+ 1491 0010 00000000 		.4byte	.LFB2
+ 1492 0014 18000000 		.4byte	.LFE2
+ 1493 0018 00000000 		.4byte	.LFB3
+ 1494 001c 18000000 		.4byte	.LFE3
+ 1495 0020 00000000 		.4byte	.LFB4
+ 1496 0024 18000000 		.4byte	.LFE4
+ 1497 0028 00000000 		.4byte	.LFB5
+ 1498 002c 14000000 		.4byte	.LFE5
+ 1499 0030 00000000 		.4byte	.LFB6
+ 1500 0034 4C000000 		.4byte	.LFE6
+ 1501 0038 00000000 		.4byte	.LFB7
+ 1502 003c 2C000000 		.4byte	.LFE7
+ 1503 0040 00000000 		.4byte	.LFB8
+ 1504 0044 14000000 		.4byte	.LFE8
+ 1505 0048 00000000 		.4byte	.LFB9
+ 1506 004c 20000000 		.4byte	.LFE9
+ 1507 0050 00000000 		.4byte	.LFB10
+ 1508 0054 14000000 		.4byte	.LFE10
+ 1509 0058 00000000 		.4byte	.LFB11
+ 1510 005c 14000000 		.4byte	.LFE11
+ 1511 0060 00000000 		.4byte	.LFB12
+ 1512 0064 14000000 		.4byte	.LFE12
+ 1513 0068 00000000 		.4byte	0
+ 1514 006c 00000000 		.4byte	0
+ 1515              		.section	.debug_line,"",%progbits
+ 1516              	.Ldebug_line0:
+ 1517 0000 59010000 		.section	.debug_str,"MS",%progbits,1
+ 1517      02004B00 
+ 1517      00000201 
+ 1517      FB0E0D00 
+ 1517      01010101 
+ 1518              	.LASF14:
+ 1519 0000 72656733 		.ascii	"reg32\000"
+ 1519      3200
+ 1520              	.LASF23:
+ 1521 0006 55415254 		.ascii	"UART_RX_FULL_SetPriority\000"
+ 1521      5F52585F 
+ 1521      46554C4C 
+ 1521      5F536574 
+ 1521      5072696F 
+ 1522              	.LASF36:
+ 1523 001f 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\UART_RX_FULL.c\000"
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 34
+
+
+ 1523      6E657261 
+ 1523      7465645F 
+ 1523      536F7572 
+ 1523      63655C50 
+ 1524              	.LASF29:
+ 1525 0047 55415254 		.ascii	"UART_RX_FULL_GetState\000"
+ 1525      5F52585F 
+ 1525      46554C4C 
+ 1525      5F476574 
+ 1525      53746174 
+ 1526              	.LASF3:
+ 1527 005d 73686F72 		.ascii	"short unsigned int\000"
+ 1527      7420756E 
+ 1527      7369676E 
+ 1527      65642069 
+ 1527      6E7400
+ 1528              	.LASF17:
+ 1529 0070 55415254 		.ascii	"UART_RX_FULL_Start\000"
+ 1529      5F52585F 
+ 1529      46554C4C 
+ 1529      5F537461 
+ 1529      727400
+ 1530              	.LASF11:
+ 1531 0083 666C6F61 		.ascii	"float\000"
+ 1531      7400
+ 1532              	.LASF1:
+ 1533 0089 756E7369 		.ascii	"unsigned char\000"
+ 1533      676E6564 
+ 1533      20636861 
+ 1533      7200
+ 1534              	.LASF28:
+ 1535 0097 55415254 		.ascii	"UART_RX_FULL_GetVector\000"
+ 1535      5F52585F 
+ 1535      46554C4C 
+ 1535      5F476574 
+ 1535      56656374 
+ 1536              	.LASF25:
+ 1537 00ae 696E7465 		.ascii	"interruptState\000"
+ 1537      72727570 
+ 1537      74537461 
+ 1537      746500
+ 1538              	.LASF5:
+ 1539 00bd 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1539      20756E73 
+ 1539      69676E65 
+ 1539      6420696E 
+ 1539      7400
+ 1540              	.LASF9:
+ 1541 00cf 75696E74 		.ascii	"uint8\000"
+ 1541      3800
+ 1542              	.LASF31:
+ 1543 00d5 55415254 		.ascii	"UART_RX_FULL_SetPending\000"
+ 1543      5F52585F 
+ 1543      46554C4C 
+ 1543      5F536574 
+ 1543      50656E64 
+ 1544              	.LASF24:
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 35
+
+
+ 1545 00ed 7072696F 		.ascii	"priority\000"
+ 1545      72697479 
+ 1545      00
+ 1546              	.LASF20:
+ 1547 00f6 55415254 		.ascii	"UART_RX_FULL_StartEx\000"
+ 1547      5F52585F 
+ 1547      46554C4C 
+ 1547      5F537461 
+ 1547      72744578 
+ 1548              	.LASF19:
+ 1549 010b 55415254 		.ascii	"UART_RX_FULL_Interrupt\000"
+ 1549      5F52585F 
+ 1549      46554C4C 
+ 1549      5F496E74 
+ 1549      65727275 
+ 1550              	.LASF12:
+ 1551 0122 646F7562 		.ascii	"double\000"
+ 1551      6C6500
+ 1552              	.LASF37:
+ 1553 0129 433A5C55 		.ascii	"C:\\Users\\Sam\\Dropbox\\Work\\2014\\PSoC 4 Modbus "
+ 1553      73657273 
+ 1553      5C53616D 
+ 1553      5C44726F 
+ 1553      70626F78 
+ 1554 0156 536C6176 		.ascii	"Slave\\PSoC 4 Pioneer Modbus Slave\\PSoC 4 Pioneer "
+ 1554      655C5053 
+ 1554      6F432034 
+ 1554      2050696F 
+ 1554      6E656572 
+ 1555 0187 4D6F6462 		.ascii	"Modbus Slave.cydsn\000"
+ 1555      75732053 
+ 1555      6C617665 
+ 1555      2E637964 
+ 1555      736E00
+ 1556              	.LASF10:
+ 1557 019a 75696E74 		.ascii	"uint32\000"
+ 1557      333200
+ 1558              	.LASF33:
+ 1559 01a1 666C6167 		.ascii	"flag\000"
+ 1559      00
+ 1560              	.LASF8:
+ 1561 01a6 756E7369 		.ascii	"unsigned int\000"
+ 1561      676E6564 
+ 1561      20696E74 
+ 1561      00
+ 1562              	.LASF32:
+ 1563 01b3 55415254 		.ascii	"UART_RX_FULL_ClearPending\000"
+ 1563      5F52585F 
+ 1563      46554C4C 
+ 1563      5F436C65 
+ 1563      61725065 
+ 1564              	.LASF22:
+ 1565 01cd 61646472 		.ascii	"address\000"
+ 1565      65737300 
+ 1566              	.LASF7:
+ 1567 01d5 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1567      206C6F6E 
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 36
+
+
+ 1567      6720756E 
+ 1567      7369676E 
+ 1567      65642069 
+ 1568              	.LASF15:
+ 1569 01ec 63796973 		.ascii	"cyisraddress\000"
+ 1569      72616464 
+ 1569      72657373 
+ 1569      00
+ 1570              	.LASF16:
+ 1571 01f9 73697A65 		.ascii	"sizetype\000"
+ 1571      74797065 
+ 1571      00
+ 1572              	.LASF27:
+ 1573 0202 55415254 		.ascii	"UART_RX_FULL_Enable\000"
+ 1573      5F52585F 
+ 1573      46554C4C 
+ 1573      5F456E61 
+ 1573      626C6500 
+ 1574              	.LASF6:
+ 1575 0216 6C6F6E67 		.ascii	"long long int\000"
+ 1575      206C6F6E 
+ 1575      6720696E 
+ 1575      7400
+ 1576              	.LASF13:
+ 1577 0224 63686172 		.ascii	"char\000"
+ 1577      00
+ 1578              	.LASF34:
+ 1579 0229 43795261 		.ascii	"CyRamVectors\000"
+ 1579      6D566563 
+ 1579      746F7273 
+ 1579      00
+ 1580              	.LASF38:
+ 1581 0236 55415254 		.ascii	"UART_RX_FULL_GetPriority\000"
+ 1581      5F52585F 
+ 1581      46554C4C 
+ 1581      5F476574 
+ 1581      5072696F 
+ 1582              	.LASF2:
+ 1583 024f 73686F72 		.ascii	"short int\000"
+ 1583      7420696E 
+ 1583      7400
+ 1584              	.LASF18:
+ 1585 0259 55415254 		.ascii	"UART_RX_FULL_Stop\000"
+ 1585      5F52585F 
+ 1585      46554C4C 
+ 1585      5F53746F 
+ 1585      7000
+ 1586              	.LASF35:
+ 1587 026b 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
+ 1587      4320342E 
+ 1587      372E3320 
+ 1587      32303133 
+ 1587      30333132 
+ 1588 029e 616E6368 		.ascii	"anch revision 196615]\000"
+ 1588      20726576 
+ 1588      6973696F 
+ 1588      6E203139 
+ARM GAS  C:\Users\Sam\AppData\Local\Temp\ccjtxPlZ.s 			page 37
+
+
+ 1588      36363135 
+ 1589              	.LASF26:
+ 1590 02b4 7072696F 		.ascii	"priorityOffset\000"
+ 1590      72697479 
+ 1590      4F666673 
+ 1590      657400
+ 1591              	.LASF30:
+ 1592 02c3 55415254 		.ascii	"UART_RX_FULL_Disable\000"
+ 1592      5F52585F 
+ 1592      46554C4C 
+ 1592      5F446973 
+ 1592      61626C65 
+ 1593              	.LASF4:
+ 1594 02d8 6C6F6E67 		.ascii	"long int\000"
+ 1594      20696E74 
+ 1594      00
+ 1595              	.LASF0:
+ 1596 02e1 7369676E 		.ascii	"signed char\000"
+ 1596      65642063 
+ 1596      68617200 
+ 1597              	.LASF21:
+ 1598 02ed 55415254 		.ascii	"UART_RX_FULL_SetVector\000"
+ 1598      5F52585F 
+ 1598      46554C4C 
+ 1598      5F536574 
+ 1598      56656374 
+ 1599              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br
